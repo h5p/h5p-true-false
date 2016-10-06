@@ -1,0 +1,54 @@
+{
+  "title": "True/false question",
+  "description": "Questions with two alternatives (true/false, yes/no...)",
+  "machineName": "H5P.TrueFalse",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "license": "MIT",
+  "author": "Joubel AS (fnoks)",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 9
+  },
+  "preloadedCss": [
+    {
+      "path": "styles/true-false.css"
+    }
+  ],
+  "preloadedJs": [
+    {"path": "scripts/true-false.js"},
+    {"path": "scripts/answer-group.js"},
+    {"path": "scripts/answer.js"}
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 2
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 2
+    },
+    {
+      "machineName": "H5P.FontIcons",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.RadioGroup",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}
