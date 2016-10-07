@@ -138,7 +138,7 @@
         "default": false
       },
       {
-        "label": "Automatically check answers after choosing an alternative",
+        "label": "Automatically check answer",
         "name": "autoCheck",
         "type": "boolean",
         "default": false
