@@ -6,7 +6,8 @@ H5P.TrueFalse = (function ($, Question) {
 
   var State = {
     ONGOING: 1,
-    CHECKING: 2
+    CHECKING: 2,
+    SOLUTION: 3
   };
 
   var Button = {
@@ -331,6 +332,7 @@ H5P.TrueFalse = (function ($, Question) {
      */
     self.showSolutions = function () {
       checkAnswer(true);
+      toggleButtonState(State.SOLUTION);
     };
 
     /**
