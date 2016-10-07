@@ -1,8 +1,14 @@
 H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
   'use strict';
 
-  var KEY_SPACE = 32;
-  var KEY_ENTER = 13;
+  var Keys = {
+    ENTER: 13,
+    SPACE: 32,
+    LEFT_ARROW: 37,
+    UP_ARROW: 38,
+    RIGHT_ARROW: 39,
+    DOWN_ARROW: 40
+  };
 
   /**
    * Initialize module.
@@ -26,13 +32,17 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       role: 'radio',
       'aria-checked': false,
       html: text + '<span class="aria-label"></span>',
-      tabindex: 0,
+      tabindex: -1, // Not tabable by default
       click: function () {
         self.check();
       },
       keydown: function (event) {
-        if ([KEY_SPACE, KEY_ENTER].indexOf(event.keyCode) !== -1) {
+        if ([Keys.SPACE, Keys.ENTER].indexOf(event.keyCode) !== -1) {
           self.check();
+        }
+        else if ([Keys.LEFT_ARROW, Keys.UP_ARROW, Keys.RIGHT_ARROW, Keys.DOWN_ARROW].indexOf(event.keyCode) !== -1) {
+          self.uncheck();
+          self.trigger('invert');
         }
       }
     });
@@ -61,9 +71,21 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       if (enabled) {
         checked = false;
         $answer.attr({
-          'aria-checked': checked
+          'aria-checked': checked,
+          tabIndex: -1
         });
       }
+      return self;
+    };
+
+    /**
+     * Set tabable or not
+     * @method tabable
+     * @param  {Boolean} enabled
+     * @return {H5P.TrueFalse.Answer}
+     */
+    self.tabable = function (enabled) {
+      $answer.attr('tabIndex', enabled ? 0 : -1);
       return self;
     };
 
@@ -77,7 +99,8 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       if (enabled) {
         checked = true;
         $answer.attr({
-          'aria-checked': checked
+          'aria-checked': checked,
+          tabIndex: 0
         });
         $answer.focus();
         self.trigger('checked');
@@ -103,8 +126,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      */
     self.enable = function () {
       $answer.attr({
-        'aria-disabled': '',
-        tabIndex: 0
+        'aria-disabled': ''
       });
       enabled = true;
 

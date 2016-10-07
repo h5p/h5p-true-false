@@ -30,6 +30,10 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     var correctAnswer = (correctOption === 'true' ? trueAnswer : falseAnswer);
     var wrongAnswer = (correctOption === 'false' ? trueAnswer : falseAnswer);
 
+    // Default setting True answer is hit when using TAB:
+    trueAnswer.tabable(true);
+
+    // Handle checked
     trueAnswer.on('checked', function () {
       answer = true;
       falseAnswer.uncheck();
@@ -39,6 +43,19 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     falseAnswer.on('checked', function () {
       answer = false;
       trueAnswer.uncheck();
+      self.trigger('selected');
+    });
+
+    // Handle switches (using tab)
+    trueAnswer.on('invert', function () {
+      answer = false;
+      falseAnswer.check();
+      self.trigger('selected');
+    });
+
+    falseAnswer.on('invert', function () {
+      answer = true;
+      trueAnswer.check();
       self.trigger('selected');
     });
 
@@ -96,7 +113,7 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
      * @method enable
      */
     self.enable = function () {
-      trueAnswer.enable();
+      trueAnswer.enable().tabable(true);
       falseAnswer.enable();
     };
 
