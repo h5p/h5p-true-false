@@ -9,7 +9,7 @@
   border-radius: 0.3em;
   border: 0.3em solid transparent;
   margin: 0 1em 1em 0;
-  padding: .5em 3.5em .5em 0em;
+  padding: .3em 3.5em .3em 0em;
   background: #ddd;
   box-shadow: 0 0.1em 0 rgba(0,0,0,0.3);
 }
@@ -43,7 +43,7 @@
   top: 0;
   height: 100%;
   text-align: center;
-  line-height: 2.5em;
+  line-height: 2.2em;
 }
 .h5p-true-false-answer:active {
   outline: none;
