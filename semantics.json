@@ -139,6 +139,7 @@
       },
       {
         "label": "Automatically check answer",
+        "description": "Note that accessibility will suffer if enabling this option",
         "name": "autoCheck",
         "type": "boolean",
         "default": false
