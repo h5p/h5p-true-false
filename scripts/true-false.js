@@ -261,9 +261,24 @@ H5P.TrueFalse = (function ($, Question) {
 
       // Create feedback widget
       var score = self.getScore();
-      var scoreText = answerGroup.hasAnswered() ?
-                      params.score.replace('@score', score).replace('@total', MAX_SCORE) :
-                      params.noAnswerMessage;
+      var scoreText;
+
+      if (answerGroup.hasAnswered()) {
+        if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
+          scoreText = params.behaviour.feedbackOnCorrect;
+        }
+        else if (score === 0 && params.behaviour.feedbackOnWrong) {
+          scoreText = params.behaviour.feedbackOnWrong;
+        }
+        else {
+          scoreText = params.score;
+        }
+        // Replace relevant variables:
+        scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
+      }
+      else {
+        scoreText = params.noAnswerMessage;
+      }
 
       self.setFeedback(scoreText, score, MAX_SCORE);
 

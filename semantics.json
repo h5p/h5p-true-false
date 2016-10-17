@@ -143,6 +143,20 @@
         "name": "autoCheck",
         "type": "boolean",
         "default": false
+      },
+      {
+        "name": "feedbackOnCorrect",
+        "label": "Feedback on correct answer",
+        "description": "This will override the default feedback text. Variables available: @score and @total",
+        "type": "text",
+        "optional": true
+      },
+      {
+        "name": "feedbackOnWrong",
+        "label": "Feedback on wrong answer",
+        "description": "This will override the default feedback text. Variables available: @score and @total",
+        "type": "text",
+        "optional": true
       }
     ]
   },
