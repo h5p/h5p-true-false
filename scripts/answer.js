@@ -32,7 +32,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       role: 'radio',
       'aria-checked': false,
       html: text + '<span class="aria-label"></span>',
-      tabindex: -1, // Not tabable by default
+      tabindex: 0, // Tabable by default
       click: function () {
         self.check();
       },
@@ -44,6 +44,12 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
           self.uncheck();
           self.trigger('invert');
         }
+      },
+      focus: function () {
+        self.trigger('focus');
+      },
+      blur: function () {
+        self.trigger('blur');
       }
     });
 
@@ -70,10 +76,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
     self.uncheck = function () {
       if (enabled) {
         checked = false;
-        $answer.attr({
-          'aria-checked': checked,
-          tabIndex: -1
-        });
+        $answer.attr('aria-checked', checked);
       }
       return self;
     };
@@ -98,10 +101,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
     self.check = function () {
       if (enabled) {
         checked = true;
-        $answer.attr({
-          'aria-checked': checked,
-          tabIndex: 0
-        });
+        $answer.attr('aria-checked', checked);
         $answer.focus();
         self.trigger('checked');
       }
@@ -126,7 +126,8 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      */
     self.enable = function () {
       $answer.attr({
-        'aria-disabled': ''
+        'aria-disabled': '',
+        tabIndex: 0
       });
       enabled = true;
 

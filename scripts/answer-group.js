@@ -30,34 +30,40 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     var correctAnswer = (correctOption === 'true' ? trueAnswer : falseAnswer);
     var wrongAnswer = (correctOption === 'false' ? trueAnswer : falseAnswer);
 
-    // Default setting True answer is hit when using TAB:
-    trueAnswer.tabable(true);
-
     // Handle checked
-    trueAnswer.on('checked', function () {
-      answer = true;
-      falseAnswer.uncheck();
-      self.trigger('selected');
-    });
+    var handleChecked = function (newAnswer, other) {
+      return function () {
+        answer = newAnswer;
+        other.uncheck();
+        self.trigger('selected');
+      };
+    };
+    trueAnswer.on('checked', handleChecked(true, falseAnswer));
+    falseAnswer.on('checked', handleChecked(false, trueAnswer));
 
-    falseAnswer.on('checked', function () {
-      answer = false;
-      trueAnswer.uncheck();
-      self.trigger('selected');
-    });
+    // Handle switches (using arrow keys)
+    var handleInvert = function (newAnswer, other) {
+      return function () {
+        answer = newAnswer;
+        other.check();
+        self.trigger('selected');
+      };
+    };
+    trueAnswer.on('invert', handleInvert(false, falseAnswer));
+    falseAnswer.on('invert', handleInvert(true, trueAnswer));
 
-    // Handle switches (using tab)
-    trueAnswer.on('invert', function () {
-      answer = false;
-      falseAnswer.check();
-      self.trigger('selected');
-    });
-
-    falseAnswer.on('invert', function () {
-      answer = true;
-      trueAnswer.check();
-      self.trigger('selected');
-    });
+    // Handle tabbing
+    var handleTabable = function(other, tabable) {
+      return function () {
+        other.tabable(tabable);
+      };
+    };
+    // Need to remove tabIndex on the other alternative on focus
+    trueAnswer.on('focus', handleTabable(falseAnswer, false));
+    falseAnswer.on('focus', handleTabable(trueAnswer, false));
+    // Need to make both alternatives tabable on blur:
+    trueAnswer.on('blur', handleTabable(falseAnswer, true));
+    falseAnswer.on('blur', handleTabable(trueAnswer, true));
 
     $answers.append(trueAnswer.getDomElement());
     $answers.append(falseAnswer.getDomElement());
