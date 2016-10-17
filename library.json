@@ -1,6 +1,6 @@
 {
-  "title": "True/false question",
-  "description": "Questions with two alternatives (true/false, yes/no...)",
+  "title": "True/False Question",
+  "description": "Test your users with 'True or False' type questions",
   "machineName": "H5P.TrueFalse",
   "majorVersion": 1,
   "minorVersion": 0,
