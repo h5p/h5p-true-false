@@ -6,8 +6,10 @@ H5P.TrueFalse = (function ($, Question) {
 
   var State = {
     ONGOING: 1,
-    CHECKING: 2,
-    SOLUTION: 3
+    FINISHED_WRONG: 2,
+    FINISHED_CORRECT: 3,
+    SOLUTION: 4
+
   };
 
   var Button = {
@@ -247,7 +249,7 @@ H5P.TrueFalse = (function ($, Question) {
      */
     var toggleButtonState = function (state) {
       toggleButtonVisibility(Button.CHECK, state === State.ONGOING);
-      toggleButtonVisibility(Button.TRYAGAIN, state === State.CHECKING);
+      toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG);
     };
 
     /**
@@ -257,11 +259,12 @@ H5P.TrueFalse = (function ($, Question) {
      * @param  {Boolean}    showSolution
      */
     var checkAnswer = function (showSolution) {
-      toggleButtonState(State.CHECKING);
 
       // Create feedback widget
       var score = self.getScore();
       var scoreText;
+
+      toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
 
       if (answerGroup.hasAnswered()) {
         if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
