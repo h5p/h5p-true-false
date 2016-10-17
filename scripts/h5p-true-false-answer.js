@@ -40,6 +40,9 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
         }
       },
       keydown: function (event) {
+        if (!enabled) {
+          return;
+        }
         if ([Keys.SPACE, Keys.ENTER].indexOf(event.keyCode) !== -1) {
           self.check();
         }

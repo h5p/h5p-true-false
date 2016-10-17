@@ -44,6 +44,7 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
         answer = newAnswer;
         other.check();
         self.trigger('selected');
+        console.log('invert!');
       };
     };
     trueAnswer.on('invert', handleInvert(false, falseAnswer));
