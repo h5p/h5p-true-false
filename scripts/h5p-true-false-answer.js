@@ -33,8 +33,11 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       'aria-checked': false,
       html: text + '<span class="aria-label"></span>',
       tabindex: 0, // Tabable by default
-      click: function () {
-        self.check();
+      click: function (event) {
+        // Handle left mouse (or tap on touch devices)
+        if (event.which === 1) {
+          self.check();
+        }
       },
       keydown: function (event) {
         if ([Keys.SPACE, Keys.ENTER].indexOf(event.keyCode) !== -1) {
