@@ -51,61 +51,61 @@
     "default": "true"
   },
   {
-    "name": "trueText",
-    "type": "text",
-    "label": "Label for true button",
-    "default": "True",
-    "common": true
-  },
-  {
-    "name": "falseText",
-    "type": "text",
-    "label": "Label for false button",
-    "default": "False",
-    "common": true
-  },
-  {
-    "label": "Feedback text",
-    "name": "score",
-    "type": "text",
-    "default": "You got @score of @total points",
-    "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'",
-    "common": true
-  },
-  {
-    "label": "Text for \"Check\" button",
-    "name": "checkAnswer",
-    "type": "text",
-    "default": "Check",
-    "common": true
-  },
-  {
-    "label": "Text for \"Retry\" button",
-    "name": "tryAgain",
-    "type": "text",
-    "default": "Retry",
-    "common": true
-  },
-  {
-    "label": "Text for \"Requires answer\" message",
-    "name": "noAnswerMessage",
-    "type": "text",
-    "default": "Please choose an alternative",
-    "common": true
-  },
-  {
-    "name": "wrongAnswerMessage",
-    "type": "text",
-    "label": "Wrong Answer",
-    "default": "Wrong answer",
-    "common": true
-  },
-  {
-    "name": "correctAnswerMessage",
-    "type": "text",
-    "label": "Correct Answer",
-    "default": "Correct answer",
-    "common": true
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "User interface translations for True/False Questions",
+    "fields": [
+      {
+        "name": "trueText",
+        "type": "text",
+        "label": "Label for true button",
+        "default": "True"
+      },
+      {
+        "name": "falseText",
+        "type": "text",
+        "label": "Label for false button",
+        "default": "False"
+      },
+      {
+        "label": "Feedback text",
+        "name": "score",
+        "type": "text",
+        "default": "You got @score of @total points",
+        "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+      },
+      {
+        "label": "Text for \"Check\" button",
+        "name": "checkAnswer",
+        "type": "text",
+        "default": "Check"
+      },
+      {
+        "label": "Text for \"Retry\" button",
+        "name": "tryAgain",
+        "type": "text",
+        "default": "Retry"
+      },
+      {
+        "label": "Text for \"Requires answer\" message",
+        "name": "noAnswerMessage",
+        "type": "text",
+        "default": "Please choose an alternative"
+      },
+      {
+        "name": "wrongAnswerMessage",
+        "type": "text",
+        "label": "Wrong Answer",
+        "default": "Wrong answer"
+      },
+      {
+        "name": "correctAnswerMessage",
+        "type": "text",
+        "label": "Correct Answer",
+        "default": "Correct answer"
+      }
+    ]
   },
   {
     "name": "behaviour",

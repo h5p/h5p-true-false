@@ -7,13 +7,10 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
    * @class H5P.TrueFalse.AnswerGroup
    * @extends H5P.EventDispatcher
    * @param {String} domId Id for label
-   * @param {String} trueLabel text on "True" alternative
-   * @param {String} falseLabel text on "False" alternative
-   * @param {String} correctOption solution
-   * @param {String} correctMessage Message read by readspeaker when correct alternative is chosen
-   * @param {String} wrongMessage Message read by readspeaker when wrong alternative is chosen
+   * @param {String} correctOption Correct option ('true' or 'false')
+   * @param {Object} l10n Object containing all interface translations
    */
-  function AnswerGroup(domId, trueLabel, falseLabel, correctOption, correctMessage, wrongMessage) {
+  function AnswerGroup(domId, correctOption, l10n) {
     var self = this;
 
     EventDispatcher.call(self);
@@ -25,8 +22,8 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     });
 
     var answer;
-    var trueAnswer = new H5P.TrueFalse.Answer(trueLabel, correctMessage, wrongMessage);
-    var falseAnswer = new H5P.TrueFalse.Answer(falseLabel, correctMessage, wrongMessage);
+    var trueAnswer = new H5P.TrueFalse.Answer(l10n.trueText, l10n.correctAnswerMessage, l10n.wrongAnswerMessage);
+    var falseAnswer = new H5P.TrueFalse.Answer(l10n.falseText, l10n.correctAnswerMessage, l10n.wrongAnswerMessage);
     var correctAnswer = (correctOption === 'true' ? trueAnswer : falseAnswer);
     var wrongAnswer = (correctOption === 'false' ? trueAnswer : falseAnswer);
 
