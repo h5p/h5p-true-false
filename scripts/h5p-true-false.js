@@ -234,9 +234,8 @@ H5P.TrueFalse = (function ($, Question) {
      *
      * @method checkAnswer
      * @private
-     * @param  {Boolean}    showSolution
      */
-    var checkAnswer = function (showSolution) {
+    var checkAnswer = function () {
 
       // Create feedback widget
       var score = self.getScore();
@@ -265,7 +264,7 @@ H5P.TrueFalse = (function ($, Question) {
 
       if (answerGroup.hasAnswered()) {
         // Show solution
-        answerGroup.reveal(showSolution);
+        answerGroup.reveal();
         triggerXAPIAnswered();
       }
       else {
@@ -380,7 +379,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @public
      */
     self.showSolutions = function () {
-      checkAnswer(true);
+      checkAnswer();
       toggleButtonState(State.SOLUTION);
     };
 
