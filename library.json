@@ -14,13 +14,13 @@
   },
   "preloadedCss": [
     {
-      "path": "styles/true-false.css"
+      "path": "styles/h5p-true-false.css"
     }
   ],
   "preloadedJs": [
-    {"path": "scripts/true-false.js"},
-    {"path": "scripts/answer-group.js"},
-    {"path": "scripts/answer.js"}
+    {"path": "scripts/h5p-true-false.js"},
+    {"path": "scripts/h5p-true-false-answer-group.js"},
+    {"path": "scripts/h5p-true-false-answer.js"}
   ],
   "preloadedDependencies": [
     {

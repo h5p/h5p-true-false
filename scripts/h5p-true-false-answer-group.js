@@ -100,6 +100,11 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
       return answer;
     };
 
+    /**
+     * Check if user has answered question yet
+     * @method hasAnswered
+     * @return {Boolean}
+     */
     self.hasAnswered = function () {
       return answer !== undefined;
     };

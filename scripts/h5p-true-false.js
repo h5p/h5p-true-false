@@ -1,4 +1,3 @@
-var H5P = H5P || {};
 H5P.TrueFalse = (function ($, Question) {
   'use strict';
 
@@ -30,7 +29,7 @@ H5P.TrueFalse = (function ($, Question) {
     var self = this;
 
     // Inheritance
-    Question.call(self, 'blanks');
+    Question.call(self, 'true-false');
 
     var params = $.extend(true, {}, {
       question: 'No question text provided',
