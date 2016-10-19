@@ -52,7 +52,10 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     // Handle tabbing
     var handleTabable = function(other, tabable) {
       return function () {
-        other.tabable(tabable);
+        // If one of them are checked, that one should get tabfocus
+        if (!tabable || !self.hasAnswered() || other.isChecked()) {
+          other.tabable(tabable);
+        }
       };
     };
     // Need to remove tabIndex on the other alternative on focus
