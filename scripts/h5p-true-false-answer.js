@@ -94,7 +94,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.tabable = function (enabled) {
-      $answer.attr('tabIndex', enabled ? 0 : -1);
+      $answer.attr('tabIndex', enabled ? 0 : null);
       return self;
     };
 
@@ -147,10 +147,14 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.disable = function () {
-      $answer.attr({
-        'aria-disabled': true,
-        tabIndex: -1
-      });
+      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
+      // Doing this in a timeout solves this
+      setTimeout(function () {
+        $answer.attr({
+          'aria-disabled': true,
+          tabIndex: null
+        });
+      }, 1);
       enabled = false;
 
       return self;
