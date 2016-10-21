@@ -142,14 +142,15 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
      * Reveal correct/wrong answer
      *
      * @method reveal
-     * @param  {Boolean} markWrong When true, the wrong alternative is also visualized
      */
-    self.reveal = function (markBoth) {
-      if (markBoth || self.isCorrect()) {
-        correctAnswer.markCorrect();
-      }
-      if (markBoth || !self.isCorrect()){
-        wrongAnswer.markWrong();
+    self.reveal = function () {
+      if (self.hasAnswered()) {
+        if (self.isCorrect()) {
+          correctAnswer.markCorrect();
+        }
+        else {
+          wrongAnswer.markWrong();
+        }
       }
 
       self.disable();
@@ -164,6 +165,16 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
       falseAnswer.reset();
       self.enable();
       answer = undefined;
+    };
+
+    /**
+     * Show the solution
+     * @method showSolution
+     * @return {[type]}
+     */
+    self.showSolution = function () {
+      correctAnswer.markCorrect();
+      wrongAnswer.unmark();
     };
   }
 

@@ -147,14 +147,10 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.disable = function () {
-      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
-      // Doing this in a timeout solves this
-      setTimeout(function () {
-        $answer.attr({
-          'aria-disabled': true,
-          tabIndex: null
-        });
-      }, 1);
+      $answer.attr({
+        'aria-disabled': true,
+        tabIndex: null
+      });
       enabled = false;
 
       return self;
@@ -169,7 +165,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
     self.reset = function () {
       self.enable();
       self.uncheck();
-      $answer.removeClass('wrong correct');
+      self.unmark();
       $ariaLabel.html('');
 
       return self;
@@ -182,7 +178,11 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.markWrong = function () {
-      $answer.addClass('wrong');
+      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
+      // Doing this in a timeout solves this
+      setTimeout(function () {
+        $answer.addClass('wrong');
+      }, 0);
       $ariaLabel.html('.' + wrongMessage);
 
       return self;
@@ -195,8 +195,22 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.markCorrect = function () {
-      $answer.addClass('correct');
+      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
+      // Doing this in a timeout solves this
+      setTimeout(function () {
+        $answer.addClass('correct');
+      }, 0);
       $ariaLabel.html('.' + correctMessage);
+
+      return self;
+    };
+
+    self.unmark = function () {
+      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
+      // Doing this in a timeout solves this
+      setTimeout(function () {
+        $answer.removeClass('wrong correct');
+      }, 0);
 
       return self;
     };

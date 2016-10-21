@@ -21,7 +21,8 @@ H5P.TrueFalse = (function ($, Question) {
    */
   var Button = Object.freeze({
     CHECK: 'check-answer',
-    TRYAGAIN: 'try-again'
+    TRYAGAIN: 'try-again',
+    SHOW_SOLUTION: 'show-solution'
   });
 
   /**
@@ -48,12 +49,12 @@ H5P.TrueFalse = (function ($, Question) {
         score: 'You got @score of @total points',
         checkAnswer: 'Check',
         tryAgain: 'Retry',
-        noAnswerMessage: 'Please choose an alternative',
         wrongAnswerMessage: 'Wrong answer',
         correctAnswerMessage: 'Correct answer'
       },
       behaviour: {
         enableRetry: true,
+        enableSolutionsButton: true,
         disableImageZooming: false,
         confirmCheckDialog: false,
         confirmRetryDialog: false,
@@ -101,6 +102,13 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var registerButtons = function () {
+      // Show solution button
+      if (params.behaviour.enableSolutionsButton === true) {
+        self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
+          self.showSolutions();
+        }, false);
+      }
+
       // Check button
       if (!params.behaviour.autoCheck) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
@@ -225,8 +233,9 @@ H5P.TrueFalse = (function ($, Question) {
      * @param  {String}          state
      */
     var toggleButtonState = function (state) {
+      toggleButtonVisibility(Button.SHOW_SOLUTION, state === State.FINISHED_WRONG);
       toggleButtonVisibility(Button.CHECK, state === State.ONGOING);
-      toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG);
+      toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG || state === State.SOLUTION);
     };
 
     /**
@@ -236,40 +245,26 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var checkAnswer = function () {
-
       // Create feedback widget
       var score = self.getScore();
       var scoreText;
 
       toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
 
-      if (answerGroup.hasAnswered()) {
-        if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
-          scoreText = params.behaviour.feedbackOnCorrect;
-        }
-        else if (score === 0 && params.behaviour.feedbackOnWrong) {
-          scoreText = params.behaviour.feedbackOnWrong;
-        }
-        else {
-          scoreText = params.l10n.score;
-        }
-        // Replace relevant variables:
-        scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
+      if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
+        scoreText = params.behaviour.feedbackOnCorrect;
+      }
+      else if (score === 0 && params.behaviour.feedbackOnWrong) {
+        scoreText = params.behaviour.feedbackOnWrong;
       }
       else {
-        scoreText = params.l10n.noAnswerMessage;
+        scoreText = params.l10n.score;
       }
-
+      // Replace relevant variables:
+      scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
       self.setFeedback(scoreText, score, MAX_SCORE);
-
-      if (answerGroup.hasAnswered()) {
-        // Show solution
-        answerGroup.reveal();
-        triggerXAPIAnswered();
-      }
-      else {
-        answerGroup.disable();
-      }
+      answerGroup.reveal();
+      triggerXAPIAnswered();
     };
 
     /**
@@ -379,7 +374,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @public
      */
     self.showSolutions = function () {
-      checkAnswer();
+      answerGroup.showSolution();
       toggleButtonState(State.SOLUTION);
     };
 

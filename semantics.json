@@ -82,16 +82,16 @@
         "default": "Check"
       },
       {
+        "label": "Text for \"Show solution\" button",
+        "name": "showSolutionButton",
+        "type": "text",
+        "default": "Show solution"
+      },
+      {
         "label": "Text for \"Retry\" button",
         "name": "tryAgain",
         "type": "text",
         "default": "Retry"
-      },
-      {
-        "label": "Text for \"Requires answer\" message",
-        "name": "noAnswerMessage",
-        "type": "text",
-        "default": "Please choose an alternative"
       },
       {
         "name": "wrongAnswerMessage",
@@ -117,6 +117,12 @@
         "name": "enableRetry",
         "type": "boolean",
         "label": "Enable \"Retry\" button",
+        "default": true
+      },
+      {
+        "name": "enableSolutionsButton",
+        "type": "boolean",
+        "label": "Enable \"Show Solution\" button",
         "default": true
       },
       {
