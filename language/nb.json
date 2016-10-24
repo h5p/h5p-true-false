@@ -1,0 +1,140 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "En valgfri mediakilde som vises over spørsmålet."
+        }
+      ]
+    },
+    {
+      "label": "Spørsmål"
+    },
+    {
+      "label": "Rett svar",
+      "options": [
+        {
+          "label": "Rett"
+        },
+        {
+          "label": "Galt"
+        }
+      ]
+    },
+    {
+      "label": "Oversettelser for Rett/Galt spørsmål",
+      "fields": [
+        {
+          "label": "Etikett for \"Rett\"-knapp",
+          "default": "Rett"
+        },
+        {
+          "label": "Etikett for \"Galt\"-knapp",
+          "default": "Galt"
+        },
+        {
+          "label": "Tilbakemeldingstekst",
+          "default": "@score av @total poeng",
+          "description": "Tekstlig tilbakemelding, tilgjengelige variabler: @score og @total. Eksempel: 'Du fikk @score av @total poeng.'"
+        },
+        {
+          "label": "Etikett for \"Sjekk\"-knapp",
+          "default": "Sjekk"
+        },
+        {
+          "label": "Etikett for \"Fasit\"-knapp",
+          "default": "Fasit"
+        },
+        {
+          "label": "Etikett for \"Prøv igjen\"-knappen.",
+          "default": "Prøv igjen"
+        },
+        {
+          "label": "Feil svar",
+          "default": "Feil svar"
+        },
+        {
+          "label": "Rett svar",
+          "default": "Rett svar"
+        }
+      ]
+    },
+    {
+      "label": "Innstillinger for oppgave-oppførsel",
+      "description": "Disse instillingene lar deg bestemme hvordan oppgavetypen skal oppføre seg.",
+      "fields": [
+        {
+          "label": "Aktiver \"Prøv igjen\" knapp"
+        },
+        {
+          "label": "Aktiver \"Fasit\" knapp"
+        },
+        {
+          "label": "Slå av bildezooming"
+        },
+        {
+          "label": "Slå på bruker-bekreftelse før \"Fasit\""
+        },
+        {
+          "label": "Slå på bruker-bekreftelse før \"Prøv igjen\""
+        },
+        {
+          "label": "Umiddelbar tilbakemelding på avgitt svar",
+          "description": "Vær oppmerksom på at hjelpemiddelteknologi kan svekkes ved å bruke dette alternativet."
+        },
+        {
+          "label": "Tilbakemelding ved rett svar",
+          "description": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
+        },
+        {
+          "label": "Tilbakemelding ved feil svar",
+          "description": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
+        }
+      ]
+    },
+    {
+      "label": "Bruker-bekreftelse før fasit-visning",
+      "fields": [
+        {
+          "label": "Tittel",
+          "default": "Ferdig ?"
+        },
+        {
+          "label": "Tekst",
+          "default": "Er du sikker på at du er ferdig ?"
+        },
+        {
+          "label": "Avbryt etikett",
+          "default": "Avbryt"
+        },
+        {
+          "label": "Bekreft etikett",
+          "default": "Bekreft"
+        }
+      ]
+    },
+    {
+      "label": "Prøv igjen bruker-bekreftelse",
+      "fields": [
+        {
+          "label": "Tittel",
+          "default": "Prøv igjen ?"
+        },
+        {
+          "label": "Tekst",
+          "default": "Er du sikker på at du vil prøve igjen?"
+        },
+        {
+          "label": "Avbryt etikett",
+          "default": "Avbrytt"
+        },
+        {
+          "label": "Bekreft etikett",
+          "default": "Bekreft"
+        }
+      ]
+    }
+  ]
+}
