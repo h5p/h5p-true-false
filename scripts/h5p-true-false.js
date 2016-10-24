@@ -48,6 +48,7 @@ H5P.TrueFalse = (function ($, Question) {
         falseText: 'False',
         score: 'You got @score of @total points',
         checkAnswer: 'Check',
+        showSolutionButton: 'Show solution',
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
         correctAnswerMessage: 'Correct answer'
