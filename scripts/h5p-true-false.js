@@ -72,6 +72,17 @@ H5P.TrueFalse = (function ($, Question) {
 
     // The radio group
     var answerGroup = new H5P.TrueFalse.AnswerGroup(domId, params.correct, params.l10n);
+    if (contentData.previousState !== undefined && contentData.previousState.answer !== undefined) {
+      answerGroup.check(contentData.previousState.answer);
+    }
+    answerGroup.on('selected', function () {
+      self.triggerXAPI('interacted');
+
+      if (params.behaviour.autoCheck) {
+        checkAnswer();
+      }
+    });
+
 
     /**
      * Create the answers
@@ -81,18 +92,6 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {H5P.jQuery}
      */
     var createAnswers = function () {
-      if (contentData.previousState !== undefined && contentData.previousState.answer !== undefined) {
-        answerGroup.check(contentData.previousState.answer);
-      }
-
-      answerGroup.on('selected', function () {
-        self.triggerXAPI('interacted');
-
-        if (params.behaviour.autoCheck) {
-          checkAnswer();
-        }
-      });
-
       return answerGroup.getDomElement();
     };
 
