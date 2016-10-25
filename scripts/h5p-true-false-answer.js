@@ -81,6 +81,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      */
     self.uncheck = function () {
       if (enabled) {
+        $answer.blur();
         checked = false;
         $answer.attr('aria-checked', checked);
       }
@@ -108,8 +109,8 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       if (enabled) {
         checked = true;
         $answer.attr('aria-checked', checked);
-        $answer.focus();
         self.trigger('checked');
+        $answer.focus();
       }
       return self;
     };
