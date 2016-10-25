@@ -13,7 +13,8 @@ H5P.TrueFalse = (function ($, Question) {
     ONGOING: 1,
     FINISHED_WRONG: 2,
     FINISHED_CORRECT: 3,
-    SOLUTION: 4
+    INTERNAL_SOLUTION: 4,
+    EXTERNAL_SOLUTION: 5
   });
 
   /**
@@ -105,7 +106,7 @@ H5P.TrueFalse = (function ($, Question) {
       // Show solution button
       if (params.behaviour.enableSolutionsButton === true) {
         self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
-          self.showSolutions();
+          self.showSolutions(true);
         }, false);
       }
 
@@ -235,7 +236,7 @@ H5P.TrueFalse = (function ($, Question) {
     var toggleButtonState = function (state) {
       toggleButtonVisibility(Button.SHOW_SOLUTION, state === State.FINISHED_WRONG);
       toggleButtonVisibility(Button.CHECK, state === State.ONGOING);
-      toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG || state === State.SOLUTION);
+      toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG || state === State.INTERNAL_SOLUTION);
     };
 
     /**
@@ -373,9 +374,10 @@ H5P.TrueFalse = (function ($, Question) {
      * @method showSolutions
      * @public
      */
-    self.showSolutions = function () {
+    self.showSolutions = function (internal) {
+      checkAnswer();
       answerGroup.showSolution();
-      toggleButtonState(State.SOLUTION);
+      toggleButtonState(internal ? State.INTERNAL_SOLUTION : State.EXTERNAL_SOLUTION);
     };
 
     /**
