@@ -6,4 +6,5 @@ README.md
 .gitmodules
 .git
 .gitignore
+.travis.yml
 node_modules
