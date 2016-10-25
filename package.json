@@ -1,0 +1,27 @@
+{
+  "name": "h5p-true-false",
+  "version": "1.0.0",
+  "description": "H5P True False",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h5p/h5p-true-false.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h5p/h5p-true-false/issues"
+  },
+  "homepage": "https://github.com/h5p/h5p-true-false#readme",
+  "devDependencies": {
+    "h5p-view": "^1.0.2",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "jasmine-core": "^2.5.2"
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "test/dependencies/h5p-question"]
+	path = test/dependencies/h5p-question
+	url = https://github.com/h5p/h5p-question.git
