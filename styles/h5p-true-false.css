@@ -6,12 +6,12 @@
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 0.3em;
-  border: 0.3em solid transparent;
+  border-radius: 4px;
+  border: 2px solid #ddd;
   margin: 0 1em 1em 0;
-  padding: .3em 3.5em .3em 0em;
-  background: #ddd;
-  box-shadow: 0 0.1em 0 rgba(0,0,0,0.3);
+  padding: .5em 3.5em .5em .3em;
+  box-shadow: 0 1px 0 0 #ccc;
+  outline: none;
 }
 .aria-label {
   width: 0;
@@ -19,27 +19,27 @@
   overflow: hidden;
   display: block;
 }
+.h5p-true-false-answer:hover,
 .h5p-true-false-answer:focus {
-  outline: 1px solid rgb(77, 144, 254);
-  outline-offset: -1px;
-}
-.h5p-true-false-answer:hover {
-  background: #edd6e9;
+  border-color: #8cb9f0;
 }
 .h5p-true-false-answer:before {
   margin: 0 .5em;
   font-family: 'H5PFontIcons';
+  font-size: 0.8em;
   content: '\e60b';
 }
 .h5p-true-false-answer[aria-checked=true] {
-  color: #1a4473;
-  background: #e6eef8;
+  background: #d3ebfb;
+  border-color: #6b9fde;
+  font-weight: bold;
 }
 .h5p-true-false-answer[aria-checked=true]::before {
   content: '\e60d';
 }
 .h5p-true-false-answer:after {
   font-family: 'H5PFontAwesome4';
+  font-weight: normal;
   content: ' ';
   width: 2.5em;
   position: absolute;
@@ -47,33 +47,31 @@
   top: 0;
   height: 100%;
   text-align: center;
-  line-height: 2.2em;
+  line-height: 2.5em;
 }
 .h5p-true-false-answer:active {
-  outline: none;
-  position: relative;
-  top: 0.1em;
-  box-shadow: none;
+  border-color: #8cb9f0;
+  transform: scale(0.95);
 }
 .h5p-true-false-answer.correct {
   background: #fff;
-  border-color: #dce5e0;
+  border-color: #47b47d;
   box-shadow: none;
 }
 .h5p-true-false-answer.correct:after {
-  background: #dce5e0;
+  background: #47b47d;
   content: '\f00c';
-  color: #245B3F;
+  color: #fff;
 }
 .h5p-true-false-answer.wrong {
   background: #fff;
-  border-color: #f4dee0;
+  border-color: #dd2e2e;
   box-shadow: none;
 }
 .h5p-true-false-answer.wrong:after {
-  background: #f4dee0;
+  background: #dd2e2e;
   content: '\f00d';
-  color: #B61B19;
+  color: #fff;
 }
 .h5p-true-false-answer[aria-disabled=true] {
   box-shadow: none;
