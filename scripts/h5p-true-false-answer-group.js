@@ -69,6 +69,16 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     $answers.append(falseAnswer.getDomElement());
 
     /**
+     * Update dimensions
+     *
+     * @method setDimensions
+     */
+    self.setDimensions = function () {
+      trueAnswer.setWidth();
+      falseAnswer.setWidth();
+    };
+
+    /**
      * Get hold of the DOM element representing this thingy
      * @method getDomElement
      * @return {jQuery}

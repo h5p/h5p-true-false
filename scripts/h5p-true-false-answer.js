@@ -62,6 +62,19 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
     var $ariaLabel = $answer.find('.aria-label');
 
     /**
+     * Set the width of the answer
+     *
+     * @public
+     * @method setWidth
+     */
+    self.setWidth = function () {
+      var fontSize = parseFloat($answer.css('font-size'));
+      $answer.attr('aria-checked', true)
+             .css('width', ($answer.outerWidth() / fontSize) + 'em')
+             .attr('aria-checked', checked);
+    };
+
+    /**
      * Return the dom element representing the alternative
      *
      * @public
