@@ -80,3 +80,7 @@
   box-shadow: none;
   pointer-events: none;
 }
+/* When  */
+.h5p-transparent > div > .h5p-question.h5p-true-false > * {
+  margin-left: 3px;
+}
