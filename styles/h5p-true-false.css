@@ -35,7 +35,7 @@
 .h5p-true-false-answer[aria-checked=true] {
   background: #d3ebfb;
   border-color: #6b9fde;
-  font-weight: bold;
+  color: #000;
 }
 .h5p-true-false-answer[aria-checked=true]::before {
   content: '\e60d';

@@ -307,10 +307,6 @@ H5P.TrueFalse = (function ($, Question) {
 
       // ... and buttons
       registerButtons();
-
-      self.once('domChanged', function () {
-        answerGroup.setDimensions();
-      });
     };
 
     /**
