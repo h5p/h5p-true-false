@@ -12,6 +12,7 @@
   padding: .5em 3.5em .5em .3em;
   box-shadow: 0 1px 0 0 #ccc;
   outline: none;
+  background: #fff;
 }
 .aria-label {
   width: 0;
@@ -19,9 +20,11 @@
   overflow: hidden;
   display: block;
 }
-.h5p-true-false-answer:hover,
-.h5p-true-false-answer:focus {
+.h5p-true-false-answer:hover {
   border-color: #8cb9f0;
+}
+.h5p-true-false-answer:focus {
+  box-shadow: 0px 0px 5px 2px rgba(140,185,240,1);
 }
 .h5p-true-false-answer:before {
   margin: 0 .5em;
@@ -32,7 +35,7 @@
 .h5p-true-false-answer[aria-checked=true] {
   background: #d3ebfb;
   border-color: #6b9fde;
-  font-weight: bold;
+  color: #000;
 }
 .h5p-true-false-answer[aria-checked=true]::before {
   content: '\e60d';
@@ -76,4 +79,8 @@
 .h5p-true-false-answer[aria-disabled=true] {
   box-shadow: none;
   pointer-events: none;
+}
+/* When  */
+.h5p-transparent > div > .h5p-question.h5p-true-false > * {
+  margin-left: 3px;
 }

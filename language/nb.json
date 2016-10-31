@@ -24,7 +24,7 @@
       ]
     },
     {
-      "label": "Oversettelser for Rett/Galt spørsmål",
+      "label": "Oversettelser for Rett/Galt-spørsmål",
       "fields": [
         {
           "label": "Etikett for \"Rett\"-knapp",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "label": "Innstillinger for oppgave-oppførsel",
+      "label": "Innstillinger for oppgaveoppførsel",
       "description": "Disse instillingene lar deg bestemme hvordan oppgavetypen skal oppføre seg.",
       "fields": [
         {
@@ -75,10 +75,10 @@
           "label": "Slå av bildezooming"
         },
         {
-          "label": "Slå på bruker-bekreftelse før \"Fasit\""
+          "label": "Slå på brukerbekreftelse før \"Fasit\""
         },
         {
-          "label": "Slå på bruker-bekreftelse før \"Prøv igjen\""
+          "label": "Slå på brukerbekreftelse før \"Prøv igjen\""
         },
         {
           "label": "Umiddelbar tilbakemelding på avgitt svar",
@@ -95,43 +95,43 @@
       ]
     },
     {
-      "label": "Bruker-bekreftelse før fasit-visning",
+      "label": "Brukerbekreftelse før fasitvisning",
       "fields": [
         {
           "label": "Tittel",
-          "default": "Ferdig ?"
+          "default": "Ferdig?"
         },
         {
           "label": "Tekst",
-          "default": "Er du sikker på at du er ferdig ?"
+          "default": "Er du sikker på at du er ferdig?"
         },
         {
-          "label": "Avbryt etikett",
+          "label": "Etikett for \"Avbryt\"-knapp",
           "default": "Avbryt"
         },
         {
-          "label": "Bekreft etikett",
+          "label": "Etikett for \"Bekreft\"-knapp",
           "default": "Bekreft"
         }
       ]
     },
     {
-      "label": "Prøv igjen bruker-bekreftelse",
+      "label": "Brukerbekreftelse for Prøv igjen",
       "fields": [
         {
           "label": "Tittel",
-          "default": "Prøv igjen ?"
+          "default": "Prøv igjen?"
         },
         {
           "label": "Tekst",
           "default": "Er du sikker på at du vil prøve igjen?"
         },
         {
-          "label": "Avbryt etikett",
-          "default": "Avbrytt"
+          "label": "Etikett for \"Avbryt\"-knapp",
+          "default": "Avbryt"
         },
         {
-          "label": "Bekreft etikett",
+          "label": "Etikett for \"Bekreft\"-knapp",
           "default": "Bekreft"
         }
       ]
