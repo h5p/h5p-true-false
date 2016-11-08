@@ -61,6 +61,15 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
 
     var $ariaLabel = $answer.find('.aria-label');
 
+    // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
+    // Doing this in a timeout solves this
+    // Might be removed when Chrome 56 is out
+    var chromeBugFixer = function (callback) {
+      setTimeout(function () {
+        callback();
+      }, 0);
+    };
+
     /**
      * Return the dom element representing the alternative
      *
@@ -83,7 +92,9 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
       if (enabled) {
         $answer.blur();
         checked = false;
-        $answer.attr('aria-checked', checked);
+        chromeBugFixer(function () {
+          $answer.attr('aria-checked', checked);
+        });
       }
       return self;
     };
@@ -108,7 +119,9 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
     self.check = function () {
       if (enabled) {
         checked = true;
-        $answer.attr('aria-checked', checked);
+        chromeBugFixer(function () {
+          $answer.attr('aria-checked', checked);
+        });
         self.trigger('checked');
         $answer.focus();
       }
@@ -179,11 +192,9 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.markWrong = function () {
-      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
-      // Doing this in a timeout solves this
-      setTimeout(function () {
+      chromeBugFixer(function () {
         $answer.addClass('wrong');
-      }, 0);
+      });
       $ariaLabel.html('.' + wrongMessage);
 
       return self;
@@ -196,22 +207,18 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
      * @return {H5P.TrueFalse.Answer}
      */
     self.markCorrect = function () {
-      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
-      // Doing this in a timeout solves this
-      setTimeout(function () {
+      chromeBugFixer(function () {
         $answer.addClass('correct');
-      }, 0);
+      });
       $ariaLabel.html('.' + correctMessage);
 
       return self;
     };
 
     self.unmark = function () {
-      // A bug in Chrome 54 makes the :after icons (V and X) not beeing rendered.
-      // Doing this in a timeout solves this
-      setTimeout(function () {
+      chromeBugFixer(function () {
         $answer.removeClass('wrong correct');
-      }, 0);
+      });
 
       return self;
     };
