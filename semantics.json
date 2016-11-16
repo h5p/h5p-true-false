@@ -155,6 +155,7 @@
         "label": "Feedback on correct answer",
         "description": "This will override the default feedback text. Variables available: @score and @total",
         "type": "text",
+        "maxLength": 2048,
         "optional": true
       },
       {
@@ -162,6 +163,7 @@
         "label": "Feedback on wrong answer",
         "description": "This will override the default feedback text. Variables available: @score and @total",
         "type": "text",
+        "maxLength": 2048,
         "optional": true
       }
     ]
