@@ -392,6 +392,26 @@ H5P.TrueFalse = (function ($, Question) {
       self.setFeedback();
       toggleButtonState(State.ONGOING);
     };
+
+    /**
+     * Gets xAPI data necessary to generate a report
+     *
+     * @method getXAPIData
+     * @public
+     * @returns {object} object containing data based on the xAPI specfication 
+     */
+    self.getXAPIData = function(){
+
+      var data = {
+        interactionType: "true-false",
+        description : $('<div>' + params.question + '</div>').text(), 
+        correctResponsesPattern: getCorrectAnswer(), 
+        response: answerGroup.isCorrect() ? getCorrectAnswer() : getWrongAnswer(), 
+       };
+    
+       return data;
+    }
+
   }
 
   // Inheritance
