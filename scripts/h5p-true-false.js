@@ -394,25 +394,73 @@ H5P.TrueFalse = (function ($, Question) {
     };
 
     /**
-     * Gets xAPI data necessary to generate a report
+     * Get xAPI data.
+     * Contract used by report rendering engine.
      *
-     * @method getXAPIData
-     * @public
-     * @returns {object} object containing data based on the xAPI specfication 
+     * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
      */
     self.getXAPIData = function(){
+      var xAPIEvent = this.createXAPIEventTemplate('answered');
+      this.addQuestionToXAPI(xAPIEvent);
+      this.addResponseToXAPI(xAPIEvent);
+      return {
+        statement: xAPIEvent.data.statement
+      }
+    };
 
-      var data = {
-        interactionType: "true-false",
-        description : $('<div>' + params.question + '</div>').text(), 
-        correctResponsesPattern: getCorrectAnswer(), 
-        response: answerGroup.isCorrect() ? getCorrectAnswer() : getWrongAnswer(), 
-       };
+    /**
+     * Add the question itselt to the definition part of an xAPIEvent
+     */
+    self.addQuestionToXAPI = function(xAPIEvent) {
+      var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
+      $.extend(definition, this.getxAPIDefinition());
+    };
+      
+    /**
+     * Generate xAPI object definition used in xAPI statements.
+     * @return {Object}
+     */
+    self.getxAPIDefinition = function () {
+      var definition = {};
+
+      definition.interactionType = 'true-false';
+      definition.type = 'http://adlnet.gov/expapi/activities/cmi.interaction';
+      definition.description = {
+        'en-US': $('<div>' + params.question + '</div>').text()
+      };
+      definition.correctResponsesPattern = getCorrectAnswer(); 
+
+      return definition;
+    };
+
+    /**
+     * Add the response part to an xAPI event
+     *
+     * @param {H5P.XAPIEvent} xAPIEvent
+     *  The xAPI event we will add a response to
+     */
+    self.addResponseToXAPI = function (xAPIEvent) {
+
+      var isCorrect = answerGroup.isCorrect();
+      var rawUserScore = isCorrect ? MAX_SCORE : 0;
+
+      xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
+
+      var score = {
+        mini:0,
+        raw:rawUserScore,
+        max:MAX_SCORE,
+        scaled:isCorrect ? 100 : 0
+      };
+
+      var result = {
+        response:answerGroup.isCorrect ? getCorrectAnswer() : getWrongAnswer(),
+        score:score 
+      };
     
-       return data;
-    }
-
-  }
+      xAPIEvent.data.statement.result = result;  
+    };
+   }
 
   // Inheritance
   TrueFalse.prototype = Object.create(Question.prototype);
