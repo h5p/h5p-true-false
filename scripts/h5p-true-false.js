@@ -449,7 +449,7 @@ H5P.TrueFalse = (function ($, Question) {
       xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
 
       var score = {
-        mini: 0,
+        min: 0,
         raw: rawUserScore,
         max: MAX_SCORE,
         scaled: isCorrect ? 100 : 0
