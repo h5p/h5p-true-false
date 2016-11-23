@@ -409,7 +409,7 @@ H5P.TrueFalse = (function ($, Question) {
     };
 
     /**
-     * Add the question itselt to the definition part of an xAPIEvent
+     * Add the question itself to the definition part of an xAPIEvent
      */
     self.addQuestionToXAPI = function(xAPIEvent) {
       var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
