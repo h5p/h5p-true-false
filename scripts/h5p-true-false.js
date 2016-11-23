@@ -428,7 +428,10 @@ H5P.TrueFalse = (function ($, Question) {
       definition.description = {
         'en-US': $('<div>' + params.question + '</div>').text()
       };
-      definition.correctResponsesPattern = getCorrectAnswer(); 
+
+      var correctResponse = [];
+      correctResponse.push(getCorrectAnswer());
+      definition.correctResponsesPattern = correctResponse; 
 
       return definition;
     };
@@ -440,7 +443,6 @@ H5P.TrueFalse = (function ($, Question) {
      *  The xAPI event we will add a response to
      */
     self.addResponseToXAPI = function (xAPIEvent) {
-
       var isCorrect = answerGroup.isCorrect();
       var rawUserScore = isCorrect ? MAX_SCORE : 0;
 
