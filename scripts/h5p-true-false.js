@@ -449,15 +449,20 @@ H5P.TrueFalse = (function ($, Question) {
       xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
 
       var score = {
-        mini:0,
-        raw:rawUserScore,
-        max:MAX_SCORE,
-        scaled:isCorrect ? 100 : 0
+        mini: 0,
+        raw: rawUserScore,
+        max: MAX_SCORE,
+        scaled: isCorrect ? 100 : 0
       };
+      
+      var currentResponse = ''; 
+      if(self.getCurrentState().answer !== undefined) {
+        currentResponse = answerGroup.isCorrect ? getCorrectAnswer() : getWrongAnswer()
+      } 
 
       var result = {
-        response:answerGroup.isCorrect ? getCorrectAnswer() : getWrongAnswer(),
-        score:score 
+        response: currentResponse, 
+        score: score 
       };
     
       xAPIEvent.data.statement.result = result;  
