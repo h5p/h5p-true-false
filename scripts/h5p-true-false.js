@@ -415,23 +415,19 @@ H5P.TrueFalse = (function ($, Question) {
       var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
       $.extend(definition, this.getxAPIDefinition());
     };
-      
+
     /**
      * Generate xAPI object definition used in xAPI statements.
      * @return {Object}
      */
     self.getxAPIDefinition = function () {
       var definition = {};
-
       definition.interactionType = 'true-false';
       definition.type = 'http://adlnet.gov/expapi/activities/cmi.interaction';
       definition.description = {
         'en-US': $('<div>' + params.question + '</div>').text()
       };
-
-      var correctResponse = [];
-      correctResponse.push(getCorrectAnswer());
-      definition.correctResponsesPattern = correctResponse; 
+      definition.correctResponsesPattern = [getCorrectAnswer()];
 
       return definition;
     };
@@ -445,27 +441,14 @@ H5P.TrueFalse = (function ($, Question) {
     self.addResponseToXAPI = function (xAPIEvent) {
       var isCorrect = answerGroup.isCorrect();
       var rawUserScore = isCorrect ? MAX_SCORE : 0;
+      var currentResponse = '';
 
       xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
 
-      var score = {
-        min: 0,
-        raw: rawUserScore,
-        max: MAX_SCORE,
-        scaled: isCorrect ? 100 : 0
-      };
-      
-      var currentResponse = ''; 
       if(self.getCurrentState().answer !== undefined) {
-        currentResponse = answerGroup.isCorrect ? getCorrectAnswer() : getWrongAnswer()
-      } 
-
-      var result = {
-        response: currentResponse, 
-        score: score 
-      };
-    
-      xAPIEvent.data.statement.result = result;  
+        currentResponse += answerGroup.isCorrect() ? getCorrectAnswer() : getWrongAnswer();
+      }
+      xAPIEvent.data.statement.result.response = currentResponse;
     };
    }
 
