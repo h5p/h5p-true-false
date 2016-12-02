@@ -392,7 +392,65 @@ H5P.TrueFalse = (function ($, Question) {
       self.setFeedback();
       toggleButtonState(State.ONGOING);
     };
-  }
+
+    /**
+     * Get xAPI data.
+     * Contract used by report rendering engine.
+     *
+     * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
+     */
+    self.getXAPIData = function(){
+      var xAPIEvent = this.createXAPIEventTemplate('answered');
+      this.addQuestionToXAPI(xAPIEvent);
+      this.addResponseToXAPI(xAPIEvent);
+      return {
+        statement: xAPIEvent.data.statement
+      }
+    };
+
+    /**
+     * Add the question itself to the definition part of an xAPIEvent
+     */
+    self.addQuestionToXAPI = function(xAPIEvent) {
+      var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
+      $.extend(definition, this.getxAPIDefinition());
+    };
+
+    /**
+     * Generate xAPI object definition used in xAPI statements.
+     * @return {Object}
+     */
+    self.getxAPIDefinition = function () {
+      var definition = {};
+      definition.interactionType = 'true-false';
+      definition.type = 'http://adlnet.gov/expapi/activities/cmi.interaction';
+      definition.description = {
+        'en-US': $('<div>' + params.question + '</div>').text()
+      };
+      definition.correctResponsesPattern = [getCorrectAnswer()];
+
+      return definition;
+    };
+
+    /**
+     * Add the response part to an xAPI event
+     *
+     * @param {H5P.XAPIEvent} xAPIEvent
+     *  The xAPI event we will add a response to
+     */
+    self.addResponseToXAPI = function (xAPIEvent) {
+      var isCorrect = answerGroup.isCorrect();
+      var rawUserScore = isCorrect ? MAX_SCORE : 0;
+      var currentResponse = '';
+
+      xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
+
+      if(self.getCurrentState().answer !== undefined) {
+        currentResponse += answerGroup.isCorrect() ? getCorrectAnswer() : getWrongAnswer();
+      }
+      xAPIEvent.data.statement.result.response = currentResponse;
+    };
+   }
 
   // Inheritance
   TrueFalse.prototype = Object.create(Question.prototype);
