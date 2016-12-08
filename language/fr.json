@@ -66,23 +66,29 @@
       "description": "Ces options vous permettent de contrôler le déroulement de vos activités.",
       "fields": [
         {
-          "label": "Activer le bouton \"Recommencer\""
+          "label": "Activer le bouton \"Recommencer\"",
+          "default": true
         },
         {
-          "label": "Activer le bouton \"Voir la solution\""
+          "label": "Activer le bouton \"Voir la solution\"",
+          "default": true
         },
         {
-          "label": "Désactiver la possibilité d'agrandir l'image de la question."
+          "label": "Désactiver la possibilité d'agrandir l'image de la question.",
+          "default": false
         },
         {
-          "label": "Afficher la fenêtre de confirmation pour \"Vérifier\""
+          "label": "Afficher la fenêtre de confirmation pour \"Vérifier\"",
+          "default": false
         },
         {
-          "label": "Afficher la fenêtre de confirmation pour \"Recommencer\""
+          "label": "Afficher la fenêtre de confirmation pour \"Recommencer\"",
+          "default": false
         },
         {
           "label": "Vérifier automatiquement la réponse cochée",
-          "description": "Note: cette option peut impacter l'ergonomie."
+          "description": "Note: cette option peut impacter l'ergonomie.",
+          "default": false
         },
         {
           "label": "Commentaire pour une réponse correcte",
