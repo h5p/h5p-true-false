@@ -67,29 +67,23 @@
       "description": "Diese Optionen legen fest, wie die Aufgabe auf Eingaben reagiert.",
       "fields": [
         {
-          "label": "\"Wiederholen\"-Button anzeigen",
-          "default": true
+          "label": "\"Wiederholen\"-Button anzeigen"
         },
         {
-          "label": "\"Lösung zeigen\"-Button anzeigen",
-          "default": true
+          "label": "\"Lösung zeigen\"-Button anzeigen"
         },
         {
-          "label": "Bilderzoom für Bilder zu Fragen deaktivieren.",
-          "default": false
+          "label": "Bilderzoom für Bilder zu Fragen deaktivieren."
         },
         {
-          "label": "Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen",
-          "default": false
+          "label": "Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
         },
         {
-          "label": "Bestätigungsdialog beim Klicken auf \"Wiederholen\" anzeigen",
-          "default": false
+          "label": "Bestätigungsdialog beim Klicken auf \"Wiederholen\" anzeigen"
         },
         {
           "label": "Antwort automatisch überprüfen",
-          "description": "Wenn diese Option gewählt wird, leidet die Barrierefreiheit.",
-          "default": false
+          "description": "Wenn diese Option gewählt wird, leidet die Barrierefreiheit."
         },
         {
           "label": "Rückmeldung bei richtiger Antwort",
