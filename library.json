@@ -4,7 +4,7 @@
   "machineName": "H5P.TrueFalse",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 3,
+  "patchVersion": 4,
   "runnable": 1,
   "license": "MIT",
   "author": "Joubel AS (fnoks)",
@@ -18,9 +18,15 @@
     }
   ],
   "preloadedJs": [
-    {"path": "scripts/h5p-true-false.js"},
-    {"path": "scripts/h5p-true-false-answer-group.js"},
-    {"path": "scripts/h5p-true-false-answer.js"}
+    {
+      "path": "scripts/h5p-true-false.js"
+    },
+    {
+      "path": "scripts/h5p-true-false-answer-group.js"
+    },
+    {
+      "path": "scripts/h5p-true-false-answer.js"
+    }
   ],
   "preloadedDependencies": [
     {
