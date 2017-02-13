@@ -1,0 +1,140 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Optionele media, die boven de vragen worden getoond"
+        }
+      ]
+    },
+    {
+      "label": "Vraag"
+    },
+    {
+      "label": "Juiste antwoord",
+      "options": [
+        {
+          "label": "Waar"
+        },
+        {
+          "label": "Niet waar"
+        }
+      ]
+    },
+    {
+      "label": "Vertalingen van de gebruikersinterface voor Waar/ Niet waar-Vragen",
+      "fields": [
+        {
+          "label": "Onderschrift voor de \"Waar\"-Button",
+          "default": "Waar"
+        },
+        {
+          "label": "Onderschrift für den \"Niet waar\"-Button",
+          "default": "Niet Waar"
+        },
+        {
+          "label": "Feedback tekst",
+          "default": "Je hebt @score van @total punten",
+          "description": "Feedbacktekst, beschikbare variabelen: @score en @total. Voorbeeld: 'Je hebt @score van @total mogelijke punten.'"
+        },
+        {
+          "label": "Beschrijving voor de \"Controleer\"-knop",
+          "default": "Nakijken"
+        },
+        {
+          "label": "Beschrijving voor de \"Oplossing tonen\"-knop",
+          "default": "Oplossing tonen"
+        },
+        {
+          "label": "Beschrijving voor de \"Opnieuw proberen\"-knop",
+          "default": "Opnieuw proberen"
+        },
+        {
+          "label": "Onjuist antwoord",
+          "default": "Incorrect"
+        },
+        {
+          "label": "Juist antwoord",
+          "default": "Correct"
+        }
+      ]
+    },
+    {
+      "label": "Gedragsinstellingen",
+      "description": "Deze opties bepalen hoe de taak op de input reageert.",
+      "fields": [
+        {
+          "label": "\"Opnieuw proberen\"-knop tonen"
+        },
+        {
+          "label": "\"Oplossing tonen\"-knop laten zien"
+        },
+        {
+          "label": "Deactiveer het zoomen voor afbeeldingsvragen."
+        },
+        {
+          "label": "Toon de bevestigingsdialoog door te drukken op \"Controleer\""
+        },
+        {
+          "label": "Toon de bevestigningsdialoog door te drukken op \"Opnieuw proberen\""
+        },
+        {
+          "label": "Het antwoord automatisch controleren",
+          "description": "Als deze optie gekozen wordt, dan zal dit de toegankelijkheid verminderen."
+        },
+        {
+          "label": "Feedback bij het juiste antwoord",
+          "description": "Deze tekst overschrijft de standaard feedback tekst. Beschikbare variabelen zijn: @score en @total"
+        },
+        {
+          "label": "Feedback bij het onjuiste antwoord",
+          "description": "Deze tekst overschrijft de standaard feedback tekst. Beschikbare variabelen zijn: @score en @total"
+        }
+      ]
+    },
+    {
+      "label": "Bevestigingsdialoog bij het afronden",
+      "fields": [
+        {
+          "label": "Koptekst",
+          "default": "Beëindigen?"
+        },
+        {
+          "label": "Bodytest",
+          "default": "Ben je er zeker van dat je wilt stoppen?"
+        },
+        {
+          "label": "Beschrijving van de \"Annuleer\"-knop",
+          "default": "Annuleren"
+        },
+        {
+          "label": "Beschrijving van de \"Beëindig\"-knop",
+          "default": "Beëindigen"
+        }
+      ]
+    },
+    {
+      "label": "Bevestigingsdialoog bij het herhalen",
+      "fields": [
+        {
+          "label": "Koptekst",
+          "default": "Herhalen?"
+        },
+        {
+          "label": "Bodytekst",
+          "default": "Ben je er zeker van dat je wilt herhalen?"
+        },
+        {
+          "label": "Beschrijving van de \"Annuleer\"-knop",
+          "default": "Annuleren"
+        },
+        {
+          "label": "Beschrijving van de \"Bevestig\"-knop",
+          "default": "Bevestigen"
+        }
+      ]
+    }
+  ]
+}
