@@ -1,0 +1,146 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Valinnainen mediatiedosto, joka näkyy kysymyksen yläpuolella."
+        }
+      ]
+    },
+    {
+      "label": "Väittämä"
+    },
+    {
+      "label": "Oikea vastaus",
+      "options": [
+        {
+          "label": "Oikein"
+        },
+        {
+          "label": "Väärin"
+        }
+      ]
+    },
+    {
+      "label": "Käyttöliittymätekstien käännökset Oikein\/Väärin kysymyksille",
+      "fields": [
+        {
+          "label": "Nimike painikkeelle Oikein",
+          "default": "Oikein"
+        },
+        {
+          "label": "Nimike painikkeelle Väärin",
+          "default": "Väärin"
+        },
+        {
+          "label": "Palauteteksti",
+          "default": "Sait @score\/@total pistettä",
+          "description": "Palauteteksti, käytettävissä olevat muuttujat: @score ja @total. Esimerkki: 'Sait @score\/@total pistettä'"
+        },
+        {
+          "label": "Nimike painikkeelle \"Tarkista\"",
+          "default": "Tarkista"
+        },
+        {
+          "label": "Nimike painikkeelle \"Katso vastaus\"",
+          "default": "Katso vastaus"
+        },
+        {
+          "label": "Nimike painikkeelle \"Yritä uudelleen\"",
+          "default": "Yritä uudelleen"
+        },
+        {
+          "label": "Väärä vastaus",
+          "default": "Väärä vastaus"
+        },
+        {
+          "label": "Oikea vastaus",
+          "default": "Oikea vastaus"
+        }
+      ]
+    },
+    {
+      "label": "Yleisasetukset.",
+      "description": "Näillä valinnoilla voit hallita tehtävän käyttäytymistä.",
+      "fields": [
+        {
+          "label": "Salli painike \"Yritä uudelleen\"",
+          "default": true
+        },
+        {
+          "label": "Salli painike \"Katso vastaus\"",
+          "default": true
+        },
+        {
+          "label": "Älä salli kuvan suurentamista kysymykseen liitetylle kuvalle.",
+          "default": false
+        },
+        {
+          "label": "Näytä varmistusdialogi kun klikataan \"Tarkista\"",
+          "default": false
+        },
+        {
+          "label": "Näytä varmistusdialogi kun klikataan \"Yritä uudelleen\"",
+          "default": false
+        },
+        {
+          "label": "Tarkista automaattisesti vastaukset",
+          "description": "Tämä saattaa heikentää esteettömyyttä, varmista mitä olet tekemässä.",
+          "default": false
+        },
+        {
+          "label": "Palaute oikealle vastaukselle",
+          "description": "Tämä korvaa oletuksen palautetekstille. Käytettävissä olevat muuttujat: @score ja @total"
+        },
+        {
+          "label": "Palaute väärälle vastaukselle",
+          "description": "Tämä korvaa oletuksen palautetekstille. Käytettävissä olevat muuttujat: @score ja @total"
+        }
+      ]
+    },
+    {
+      "label": "Varmistusikkuna valinnalle \"Tarkista\"",
+      "fields": [
+        {
+        "label": "Otsikkoteksti",
+        "default": "Valmis?"
+        },
+        {
+        "label": "Leipäteksti",
+        "default": "Oletko varma, että olet valmis?"
+        },
+        {
+        "label": "Teksti painikkeelle Ei",
+        "default": "Ei"
+        },
+        {
+        "label": "Teksti painikkeelle Kyllä",
+        "default": "Kyllä"
+        }
+      ]
+    },
+    {
+      "label": "Varmistusdialogi valinnalle \"Yritä uudelleen\"",
+      "fields": [
+        {
+          "label": "Otsikkoteksti",
+          "default": "Yritä uudelleen?"
+        },
+        {
+          "label": "Leipäteksti",
+          "default": "Oletko varma, että haluat aloittaa uuden yrityksen?"
+        },
+        {
+          "label": "Teksti painikkeelle Ei",
+          "default": "Ei"
+        },
+        {
+          "label": "Teksti painikkeelle Kyllä",
+          "default": "Kyllä"
+        }
+      ]
+    }
+  ]
+}
