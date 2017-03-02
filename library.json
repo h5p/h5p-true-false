@@ -7,7 +7,7 @@
   "patchVersion": 1,
   "runnable": 1,
   "license": "MIT",
-  "author": "Joubel AS (fnoks)",
+  "author": "Joubel",
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 9
