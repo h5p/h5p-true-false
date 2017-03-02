@@ -81,6 +81,7 @@ H5P.TrueFalse = (function ($, Question) {
 
       if (params.behaviour.autoCheck) {
         checkAnswer();
+        triggerXAPIAnswered();
       }
     });
 
@@ -114,6 +115,7 @@ H5P.TrueFalse = (function ($, Question) {
       if (!params.behaviour.autoCheck) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
           checkAnswer();
+          triggerXAPIAnswered();
         }, true, {}, {
           confirmationDialog: {
             enable: params.behaviour.confirmCheckDialog,
@@ -265,7 +267,6 @@ H5P.TrueFalse = (function ($, Question) {
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
       self.setFeedback(scoreText, score, MAX_SCORE);
       answerGroup.reveal();
-      triggerXAPIAnswered();
     };
 
     /**
