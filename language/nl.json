@@ -21,8 +21,7 @@
         {
           "label":"Niet waar"
         }
-      ],
-      "default":"true"
+      ]
     },
     {
       "label":"Vertalingen van de gebruikersinterface voor Waar/ Niet waar-Vragen",
