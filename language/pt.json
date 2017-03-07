@@ -1,42 +1,42 @@
 {
   "semantics":[
     {
-      "label":"Mídia",
+      "label":"Media",
       "fields":[
         {
-          "label":"Tipo",
-          "description":"Mídia opcional para exibir acima da pergunta."
+          "label":"Type",
+          "description":"Optional media to display above the question."
         }
       ]
     },
     {
-      "label":"Pergunta"
+      "label":"Question"
     },
     {
-      "label":"Resposta correta",
+      "label":"Correct answer",
       "options":[
         {
-          "label":"Verdadeiro"
+          "label":"True"
         },
         {
-          "label":"Falso"
+          "label":"False"
         }
       ]
     },
     {
-      "label":"Traduções da interface de usuário para questões de verdadeiro/falso",
+      "label":"User interface translations for True/False Questions",
       "fields":[
         {
-          "label":"Rótulo para o botão de verdadeiro",
-          "default":"Verdadeiro"
+          "label":"Label for true button",
+          "default":"True"
         },
         {
-          "label":"Rótulo para o botão de falso",
-          "default":"Falso"
+          "label":"Label for false button",
+          "default":"False"
         },
         {
-          "label":"Texto de feedback",
-          "default":"Você conseguiu @score de @total pontos",
+          "label":"Feedback text",
+          "default":"You got @score of @total points",
           "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
         },
         {
