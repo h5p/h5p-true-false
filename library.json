@@ -4,10 +4,10 @@
   "machineName": "H5P.TrueFalse",
   "majorVersion": 1,
   "minorVersion": 1,
-  "patchVersion": 1,
+  "patchVersion": 2,
   "runnable": 1,
   "license": "MIT",
-  "author": "Joubel AS (fnoks)",
+  "author": "Joubel",
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 9
