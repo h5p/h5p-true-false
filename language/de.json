@@ -1,138 +1,139 @@
 {
-  "semantics": [
+  "semantics":[
     {
-      "label": "Medien",
-      "fields": [
+      "label":"Medien",
+      "fields":[
         {
-          "label": "Typ",
-          "description": "Optionale Medien, die über der Frage dargestelle werden"
+          "label":"Typ",
+          "description":"Optionale Medien, die über der Frage dargestelle werden"
         }
       ]
     },
     {
-      "label": "Frage"
+      "label":"Frage"
     },
     {
-      "label": "Richtige Antwort",
-      "options": [
+      "label":"Richtige Antwort",
+      "options":[
         {
-          "label": "Wahr"
+          "label":"Wahr"
         },
         {
-          "label": "Falsch"
+          "label":"Falsch"
+        }
+      ],
+      "default":"true"
+    },
+    {
+      "label":"Übersetzungen der Nutzerschnittstelle für True/False-Questions",
+      "fields":[
+        {
+          "label":"Beschriftung für den \"Wahr\"-Button",
+          "default":"Wahr"
+        },
+        {
+          "label":"Beschriftung für den \"Falsch\"-Button",
+          "default":"Falsch"
+        },
+        {
+          "label":"Rückmeldungstext",
+          "default":"Du hast @score von @total Punkten",
+          "description":"Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten.'"
+        },
+        {
+          "label":"Beschriftung für den \"Überprüfen\"-Knopf",
+          "default":"Überprüfen"
+        },
+        {
+          "label":"Beschriftung für den \"Lösung zeigen\"-Knopf",
+          "default":"Lösung zeigen"
+        },
+        {
+          "label":"Beschriftung für den \"Wiederholen\"-Button",
+          "default":"Wiederholen"
+        },
+        {
+          "label":"Falsche Antwort",
+          "default":"Falsche Antwort"
+        },
+        {
+          "label":"Richtige Antwort",
+          "default":"Richtige Antwort"
         }
       ]
     },
     {
-      "label": "Übersetzungen der Nutzerschnittstelle für True/False-Questions",
-      "fields": [
+      "label":"Verhaltenseinstellungen",
+      "description":"Diese Optionen legen fest, wie die Aufgabe auf Eingaben reagiert.",
+      "fields":[
         {
-          "label": "Beschriftung für den \"Wahr\"-Button",
-          "default": "Wahr"
+          "label":"\"Wiederholen\"-Button anzeigen"
         },
         {
-          "label": "Beschriftung für den \"Falsch\"-Button",
-          "default": "Falsch"
+          "label":"\"Lösung zeigen\"-Button anzeigen"
         },
         {
-          "label": "Rückmeldungstext",
-          "default": "Du hast @score von @total Punkten",
-          "description": "Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten.'"
+          "label":"Bilderzoom für Bilder zu Fragen deaktivieren."
         },
         {
-          "label": "Beschriftung für den \"Überprüfen\"-Knopf",
-          "default": "Überprüfen"
+          "label":"Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
         },
         {
-          "label": "Beschriftung für den \"Lösung zeigen\"-Knopf",
-          "default": "Lösung zeigen"
+          "label":"Bestätigungsdialog beim Klicken auf \"Wiederholen\" anzeigen"
         },
         {
-          "label": "Beschriftung für den \"Wiederholen\"-Button",
-          "default": "Wiederholen"
+          "label":"Antwort automatisch überprüfen",
+          "description":"Wenn diese Option gewählt wird, leidet die Barrierefreiheit."
         },
         {
-          "label": "Falsche Antwort",
-          "default": "Falsche Antwort"
+          "label":"Rückmeldung bei richtiger Antwort",
+          "description":"Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
         },
         {
-          "label": "Richtige Antwort",
-          "default": "Richtige Antwort"
+          "label":"Rückmeldung bei falscher Antwort",
+          "description":"Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
         }
       ]
     },
     {
-      "label": "Verhaltenseinstellungen",
-      "description": "Diese Optionen legen fest, wie die Aufgabe auf Eingaben reagiert.",
-      "fields": [
+      "label":"Bestätigungsdialog beim Prüfen",
+      "fields":[
         {
-          "label": "\"Wiederholen\"-Button anzeigen"
+          "label":"Headertext",
+          "default":"Beenden?"
         },
         {
-          "label": "\"Lösung zeigen\"-Button anzeigen"
+          "label":"Bodytext",
+          "default":"Ganz sicher beenden?"
         },
         {
-          "label": "Bilderzoom für Bilder zu Fragen deaktivieren."
+          "label":"Beschriftung des \"Abbrechen\"-Buttons",
+          "default":"Abbrechen"
         },
         {
-          "label": "Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
-        },
-        {
-          "label": "Bestätigungsdialog beim Klicken auf \"Wiederholen\" anzeigen"
-        },
-        {
-          "label": "Antwort automatisch überprüfen",
-          "description": "Wenn diese Option gewählt wird, leidet die Barrierefreiheit."
-        },
-        {
-          "label": "Rückmeldung bei richtiger Antwort",
-          "description": "Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
-        },
-        {
-          "label": "Rückmeldung bei falscher Antwort",
-          "description": "Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
+          "label":"Beschriftung des \"Beenden\"-Buttons",
+          "default":"Beenden"
         }
       ]
     },
     {
-      "label": "Bestätigungsdialog beim Prüfen",
-      "fields": [
+      "label":"Bestätigungsdialog beim Wiederholen",
+      "fields":[
         {
-          "label": "Headertext",
-          "default": "Beenden?"
+          "label":"Header-Text",
+          "default":"Wiederholen?"
         },
         {
-          "label": "Bodytext",
-          "default": "Ganz sicher beenden?"
+          "label":"Body-Text",
+          "default":"Ganz sicher wiederholen?"
         },
         {
-          "label": "Beschriftung des \"Abbrechen\"-Buttons",
-          "default": "Abbrechen"
+          "label":"Beschriftung des \"Abbrechen\"-Buttons",
+          "default":"Abbrechen"
         },
         {
-          "label": "Beschriftung des \"Beenden\"-Buttons",
-          "default": "Beenden"
-        }
-      ]
-    },
-    {
-      "label": "Bestätigungsdialog beim Wiederholen",
-      "fields": [
-        {
-          "label": "Header-Text",
-          "default": "Wiederholen?"
-        },
-        {
-          "label": "Body-Text",
-          "default": "Ganz sicher wiederholen?"
-        },
-        {
-          "label": "Beschriftung des \"Abbrechen\"-Buttons",
-          "default": "Abbrechen"
-        },
-        {
-          "label": "Beschriftung des \"Bestätigen\"-Buttons",
-          "default": "Bestätigen"
+          "label":"Beschriftung des \"Bestätigen\"-Buttons",
+          "default":"Bestätigen"
         }
       ]
     }
