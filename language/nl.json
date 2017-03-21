@@ -27,11 +27,11 @@
       "label":"Vertalingen van de gebruikersinterface voor Waar/ Niet waar-Vragen",
       "fields":[
         {
-          "label":"Onderschrift voor de \"Waar\"-Button",
+          "label":"Onderschrift voor de \"Waar\"-knop",
           "default":"Waar"
         },
         {
-          "label":"Onderschrift für den \"Niet waar\"-Button",
+          "label":"Onderschrift voor de \"Niet waar\"-knop",
           "default":"Niet Waar"
         },
         {
@@ -40,24 +40,24 @@
           "description":"Feedbacktekst, beschikbare variabelen: @score en @total. Voorbeeld: 'Je hebt @score van @total mogelijke punten.'"
         },
         {
-          "label":"Beschrijving voor de \"Controleer\"-knop",
-          "default":"Nakijken"
+          "label":"Tekst voor de \"Controleer\"-knop",
+          "default":"Controleer"
         },
         {
-          "label":"Beschrijving voor de \"Oplossing tonen\"-knop",
-          "default":"Oplossing tonen"
+          "label":"Tekst voor de \"Toon oplossing\"-knop",
+          "default":"Toon oplossing"
         },
         {
-          "label":"Beschrijving voor de \"Opnieuw proberen\"-knop",
+          "label":"Tekst voor de \"Opnieuw proberen\"-knop",
           "default":"Opnieuw proberen"
         },
         {
           "label":"Onjuist antwoord",
-          "default":"Incorrect"
+          "default":"Onjuist antwoord"
         },
         {
           "label":"Juist antwoord",
-          "default":"Correct"
+          "default":"Juist antwoord"
         }
       ]
     },
@@ -66,23 +66,23 @@
       "description":"Deze opties bepalen hoe de taak op de input reageert.",
       "fields":[
         {
-          "label":"\"Opnieuw proberen\"-knop tonen"
+          "label":"\"Opnieuw proberen\"-knop inschakelen"
         },
         {
-          "label":"\"Oplossing tonen\"-knop laten zien"
+          "label":"\"Toon oplossing\"-knop inschakelen"
         },
         {
           "label":"Deactiveer het zoomen voor afbeeldingsvragen."
         },
         {
-          "label":"Toon de bevestigingsdialoog door te drukken op \"Controleer\""
+          "label":"Toon de bevestigingsdialoog bij \"Controleer\""
         },
         {
-          "label":"Toon de bevestigningsdialoog door te drukken op \"Opnieuw proberen\""
+          "label":"Toon de bevestigingsdialoog bij \"Opnieuw proberen\""
         },
         {
           "label":"Het antwoord automatisch controleren",
-          "description":"Als deze optie gekozen wordt, dan zal dit de toegankelijkheid verminderen."
+          "description":"Als deze optie ingeschakeld wordt, dan zal dit de toegankelijkheid verminderen"
         },
         {
           "label":"Feedback bij het juiste antwoord",
@@ -102,36 +102,36 @@
           "default":"Beëindigen?"
         },
         {
-          "label":"Bodytest",
+          "label":"Bodytekst",
           "default":"Ben je er zeker van dat je wilt stoppen?"
         },
         {
-          "label":"Beschrijving van de \"Annuleer\"-knop",
+          "label":"Tekst van de \"Annuleer\"-knop",
           "default":"Annuleren"
         },
         {
-          "label":"Beschrijving van de \"Beëindig\"-knop",
+          "label":"Tekst bij de \"Bevestigen\"-knop",
           "default":"Beëindigen"
         }
       ]
     },
     {
-      "label":"Bevestigingsdialoog bij het herhalen",
+      "label":"Bevestigingsdialoog bij Opnieuw proberen",
       "fields":[
         {
           "label":"Koptekst",
-          "default":"Herhalen?"
+          "default":"Opnieuw proberen?"
         },
         {
           "label":"Bodytekst",
-          "default":"Ben je er zeker van dat je wilt herhalen?"
+          "default":"Ben je er zeker van dat je opnieuw wilt proberen?"
         },
         {
-          "label":"Beschrijving van de \"Annuleer\"-knop",
+          "label":"Tekst van de \"Annuleer\"-knop",
           "default":"Annuleren"
         },
         {
-          "label":"Beschrijving van de \"Bevestig\"-knop",
+          "label":"Tekst van de \"Bevestig\"-knop",
           "default":"Bevestigen"
         }
       ]
