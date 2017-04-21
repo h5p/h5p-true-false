@@ -37,7 +37,7 @@
         {
           "label":"Rückmeldungstext",
           "default":"Du hast @score von @total Punkten",
-          "description":"Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten.'"
+          "description":"Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten erreicht.'"
         },
         {
           "label":"Beschriftung für den \"Überprüfen\"-Knopf",
@@ -45,7 +45,7 @@
         },
         {
           "label":"Beschriftung für den \"Lösung zeigen\"-Knopf",
-          "default":"Lösung zeigen"
+          "default":"Lösung anzeigen"
         },
         {
           "label":"Beschriftung für den \"Wiederholen\"-Button",
