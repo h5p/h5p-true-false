@@ -5,7 +5,7 @@
       "fields":[
         {
           "label":"Typ",
-          "description":"Optionale Medien, die über der Frage dargestelle werden"
+          "description":"Optionale Medien, die über der Frage dargestellt werden"
         }
       ]
     },
@@ -36,7 +36,7 @@
         },
         {
           "label":"Rückmeldungstext",
-          "default":"Du hast @score von @total Punkten",
+          "default":"Du hast @score von @total Punkten erreicht.",
           "description":"Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten erreicht.'"
         },
         {
