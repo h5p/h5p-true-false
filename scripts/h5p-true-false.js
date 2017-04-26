@@ -45,8 +45,6 @@ H5P.TrueFalse = (function ($, Question) {
       question: 'No question text provided',
       correct: 'true',
       l10n: {
-        trueText: 'True',
-        falseText: 'False',
         score: 'You got @score of @total points',
         checkAnswer: 'Check',
         showSolutionButton: 'Show solution',
@@ -183,7 +181,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getCorrectAnswer = function () {
-      return (params.correct === 'true' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'true' ? 'true' : 'false');
     };
 
     /**
@@ -194,7 +192,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getWrongAnswer = function () {
-      return (params.correct === 'false' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'false' ? 'true' : 'false');
     };
 
     /**
