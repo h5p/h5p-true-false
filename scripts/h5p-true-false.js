@@ -61,8 +61,7 @@ H5P.TrueFalse = (function ($, Question) {
         confirmCheckDialog: false,
         confirmRetryDialog: false,
         autoCheck: false
-      },
-      overrideSettings: {}
+      }
     }, options);
 
     // Counter used to create unique id for this question
@@ -120,8 +119,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmCheckDialog,
             l10n: params.confirmCheck,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: self.$content
           }
         });
       }
@@ -134,8 +133,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmRetryDialog,
             l10n: params.confirmRetry,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: self.$content
           }
         });
       }
@@ -304,7 +303,8 @@ H5P.TrueFalse = (function ($, Question) {
       self.setIntroduction('<div id="' + domId + '">' + params.question + '</div>');
 
       // Register task content area
-      self.setContent(createAnswers());
+      self.$content = createAnswers();
+      self.setContent(self.$content);
 
       // ... and buttons
       registerButtons();
