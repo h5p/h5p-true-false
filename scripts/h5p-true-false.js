@@ -103,6 +103,9 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var registerButtons = function () {
+      // Parent element of confirmation dialog
+      var $container = $('.h5p-container') || $(document.body);
+
       // Show solution button
       if (params.behaviour.enableSolutionsButton === true) {
         self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
@@ -120,7 +123,7 @@ H5P.TrueFalse = (function ($, Question) {
             enable: params.behaviour.confirmCheckDialog,
             l10n: params.confirmCheck,
             instance: self,
-            $parentElement: self.$content
+            $parentElement: $container
           }
         });
       }
@@ -134,7 +137,7 @@ H5P.TrueFalse = (function ($, Question) {
             enable: params.behaviour.confirmRetryDialog,
             l10n: params.confirmRetry,
             instance: self,
-            $parentElement: self.$content
+            $parentElement: $container
           }
         });
       }
