@@ -16,89 +16,89 @@
       "label":"正解",
       "options":[
         {
-          "label":"真"
+          "label":"○"
         },
         {
-          "label":"偽"
+          "label":"×"
         }
       ]
     },
     {
-      "label":"User interface translations for True/False Questions",
+      "label":"○/×問題のためのユーザインタフェイスの翻訳",
       "fields":[
         {
-          "label":"Label for true button",
-          "default":"True"
+          "label":"○ボタンのラベル",
+          "default":"○"
         },
         {
-          "label":"Label for false button",
-          "default":"False"
+          "label":"×ボタンのラベル",
+          "default":"×"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label":"フィードバックテキスト",
+          "default":"@total 点中 @score 点獲得",
+          "description":"フィードバック テキスト、利用可能な変数: @score と @total 。 例: ' @total 点中 @score 点獲得。 '"
         },
         {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
+          "label":"\"チェック\"ボタンのテキスト",
+          "default":"チェック"
         },
         {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "label":"\"正解を表示\"ボタンのテキスト",
+          "default":"正解を表示"
         },
         {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "label":"\"リトライ\"ボタンのテキスト",
+          "default":"リトライ"
         },
         {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
+          "label":"まちがえた答え:",
+          "default":"まちがえた答え:"
         },
         {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label":"正解",
+          "default":"正解!"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"動作設定",
+      "description":"これらのオプションでタスクがどのように動作するかを制御できます。",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"\"リトライ\"ボタンを有効化"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"\"正解を表示\"ボタンを有効化"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"問題画像のズーム機能を無効化"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"\"チェック\"の確認ダイアログを表示"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"\"リトライ\"の確認ダイアログを表示"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label":"自動的に答えをチェック",
+          "description":"このオプションを有効にするとアクセシビリティが損なわれることに注意"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"正解に対するフィードバック",
+          "description":"これはフィードバックの既定のテキストを上書きします。利用可能な変数: @score と @total"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"不正解に対するフィードバック",
+          "description":"これはフィードバックの既定のテキストを上書きします。利用可能な変数: @score と @total"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"チェック確認ダイアログ",
       "fields":[
         {
-          "label":"Header text",
+          "label":"ヘッダーテキスト",
           "default":"Finish ?"
         },
         {
