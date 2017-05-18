@@ -1,25 +1,25 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"メディア",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"タイプ",
+          "description":"上記の質問を表示するオプションのメディア。"
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"質問"
     },
     {
-      "label":"Correct answer",
+      "label":"正解",
       "options":[
         {
-          "label":"True"
+          "label":"真"
         },
         {
-          "label":"False"
+          "label":"偽"
         }
       ]
     },
