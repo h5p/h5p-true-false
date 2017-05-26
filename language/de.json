@@ -98,7 +98,7 @@
       "label":"Bestätigungsdialog beim Prüfen",
       "fields":[
         {
-          "label":"Headertext",
+          "label":"Titel-Text",
           "default":"Beenden?"
         },
         {
