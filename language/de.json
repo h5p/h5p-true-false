@@ -24,7 +24,7 @@
       ]
     },
     {
-      "label":"Übersetzungen der Nutzerschnittstelle für True/False-Questions",
+      "label":"Übersetzungen der Nutzerschnittstelle für richtig/falsch-Fragen",
       "fields":[
         {
           "label":"Beschriftung für den \"Wahr\"-Button",
@@ -72,7 +72,7 @@
           "label":"\"Lösung zeigen\"-Button anzeigen"
         },
         {
-          "label":"Bilderzoom für Bilder zu Fragen deaktivieren."
+          "label":"Bilderzoom für Bilder-Fragen deaktivieren"
         },
         {
           "label":"Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
@@ -86,11 +86,11 @@
         },
         {
           "label":"Rückmeldung bei richtiger Antwort",
-          "description":"Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
+          "description":"Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Variablen: @score und @total"
         },
         {
           "label":"Rückmeldung bei falscher Antwort",
-          "description":"Dies überschreibt den vorgegebenen Rückmeldungstext. Verfügbare Variablen: @score und @total"
+          "description":"Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Variablen: @score und @total"
         }
       ]
     },
