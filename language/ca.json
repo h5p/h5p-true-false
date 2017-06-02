@@ -107,32 +107,32 @@
         },
         {
           "label":"Etiqueta del botó \"Cancel•lar\"",
-          "default":"Cancel"
+          "default":"Cancel·lar"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Etiqueta del botó \"Confirmar\"",
+          "default":"Acabar"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Diàleg de la confirmació \"Tornar-ho a provar\"",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Títol",
+          "default":"Vols tornar-ho a provar?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Cos de text",
+          "default":"N'estàs segur de voler-ho tornar a provar?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Etiqueta del botó \"Cancel•lar\"",
+          "default":"Cancel·lar"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Etiqueta del botó \"Confirmar\"",
+          "default":"Confirmar"
         }
       ]
     }
