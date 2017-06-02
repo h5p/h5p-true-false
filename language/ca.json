@@ -72,41 +72,41 @@
           "label":"Activa el botó \"Mostrar solució\""
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Desactivar el zoom per la imatge de la pregunta"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Mostra el diàleg de confirmació a \"Verificar\""
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Mostra el diàleg de confirmació de \"Tornar-ho a provar\""
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label":"Comprovar la resposta automàticament",
+          "description":"Tingues en compte que l'accessibilitat se'n ressentirà si esculls aquesta opció"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Text de retroalimentació per resposta correcta",
+          "description":"Això sobre escriurà el text per defecte. Variables disponibles: @score i @total"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Text de retroalimentació per resposta incorrecta",
+          "description":"Això sobre escriurà el text per defecte. Variables disponibles: @score i @total"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Comprovar diàleg de confirmació",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"Títol",
+          "default":"Ja has fet?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"Cos de text",
+          "default":"N'estàs segur de voler acabar?"
         },
         {
-          "label":"Cancel button label",
+          "label":"Etiqueta del botó \"Cancel•lar\"",
           "default":"Cancel"
         },
         {
