@@ -27,25 +27,25 @@
       "label":"Traduccions de la interfície d'usuari per preguntes Cert/Fals",
       "fields":[
         {
-          "label":"Label for true button",
-          "default":"True"
+          "label":"Etiqueta pel botó \"Cert\"",
+          "default":"Cert"
         },
         {
-          "label":"Label for false button",
-          "default":"False"
+          "label":"Etiqueta pel botó \"Fals\"",
+          "default":"Fals"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label":"Text de retroacció",
+          "default":"Has aconseguit @score de @total punts",
+          "description":"Text de retroacció, variables disponibles: @score i @total. Per exemple: 'Has aconseguit @score de @total punts'"
         },
         {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
+          "label":"Text pel botó \"Verificar\"",
+          "default":"Verificar"
         },
         {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "label":"Text pel botó \"Mostrar solució\"",
+          "default":"Mostrar solució"
         },
         {
           "label":"Text for \"Retry\" button",
