@@ -1,30 +1,30 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Recurs",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"Tipus",
+          "description":"Recursos opcionals per mostrar al damunt de la pregunta."
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Pregunta"
     },
     {
-      "label":"Correct answer",
+      "label":"Resposta correcta",
       "options":[
         {
-          "label":"True"
+          "label":"Cert"
         },
         {
-          "label":"False"
+          "label":"Fals"
         }
       ]
     },
     {
-      "label":"User interface translations for True/False Questions",
+      "label":"Traduccions de la interfície d'usuari per preguntes Cert/Fals",
       "fields":[
         {
           "label":"Label for true button",
