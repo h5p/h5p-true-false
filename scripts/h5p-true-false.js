@@ -70,6 +70,9 @@ H5P.TrueFalse = (function ($, Question) {
     // A unique ID is needed for aria label
     var domId = 'h5p-tfq' + H5P.TrueFalse.counter;
 
+    // saves the content id
+    this.contentId = id;
+
     // The radio group
     var answerGroup = new H5P.TrueFalse.AnswerGroup(domId, params.correct, params.l10n);
     if (contentData.previousState !== undefined && contentData.previousState.answer !== undefined) {
@@ -103,8 +106,21 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var registerButtons = function () {
-      // Parent element of confirmation dialog
-      var $container = $('.h5p-container') || $(document.body);
+      var $content = $('[data-content-id="' + self.contentId + '"].h5p-content');
+      var $containerParents = $content.parents('.h5p-container');
+
+      // select find container to attach dialogs to
+      var $container;
+      if($containerParents.length !== 0) {
+        // use parent highest up if any
+        $container = $containerParents.last();
+      }
+      else if($content.length !== 0){
+        $container = $content;
+      }
+      else  {
+        $container = $(document.body);
+      }
 
       // Show solution button
       if (params.behaviour.enableSolutionsButton === true) {
