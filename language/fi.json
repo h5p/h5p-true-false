@@ -21,8 +21,7 @@
         {
           "label":"False"
         }
-      ],
-      "default":"true"
+      ]
     },
     {
       "label":"User interface translations for True/False Questions",
@@ -103,7 +102,7 @@
           "default":"Finish ?"
         },
         {
-          "label":"Body text",
+          "label":"Leipäteksti",
           "default":"Are you sure you wish to finish ?"
         },
         {
@@ -124,7 +123,7 @@
           "default":"Retry ?"
         },
         {
-          "label":"Body text",
+          "label":"Leipäteksti",
           "default":"Are you sure you wish to retry ?"
         },
         {
