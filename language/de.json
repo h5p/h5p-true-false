@@ -1,139 +1,138 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Medien",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"Typ",
+          "description":"Optionale Medien, die über der Frage dargestellt werden"
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Frage"
     },
     {
-      "label":"Correct answer",
+      "label":"Richtige Antwort",
       "options":[
         {
-          "label":"True"
+          "label":"Wahr"
         },
         {
-          "label":"False"
-        }
-      ],
-      "default":"true"
-    },
-    {
-      "label":"User interface translations for True/False Questions",
-      "fields":[
-        {
-          "label":"Label for true button",
-          "default":"True"
-        },
-        {
-          "label":"Label for false button",
-          "default":"False"
-        },
-        {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
-        },
-        {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
-        },
-        {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
-        },
-        {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
-        },
-        {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
-        },
-        {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label":"Falsch"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"Übersetzungen der Nutzerschnittstelle für richtig/falsch-Fragen",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"Beschriftung für den \"Wahr\"-Button",
+          "default":"Wahr"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"Beschriftung für den \"Falsch\"-Button",
+          "default":"Falsch"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Rückmeldungstext",
+          "default":"Du hast @score von @total Punkten erreicht.",
+          "description":"Rückmeldungstext, verfügbare Variablen: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten erreicht.'"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Beschriftung für den \"Überprüfen\"-Knopf",
+          "default":"Überprüfen"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Beschriftung für den \"Lösung zeigen\"-Knopf",
+          "default":"Lösung anzeigen"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label":"Beschriftung für den \"Wiederholen\"-Button",
+          "default":"Wiederholen"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Falsche Antwort",
+          "default":"Falsche Antwort"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Richtige Antwort",
+          "default":"Richtige Antwort"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Verhaltenseinstellungen",
+      "description":"Diese Optionen legen fest, wie die Aufgabe auf Eingaben reagiert.",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"\"Wiederholen\"-Button anzeigen"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"\"Lösung zeigen\"-Button anzeigen"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Bilderzoom für Bilder-Fragen deaktivieren"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
+        },
+        {
+          "label":"Bestätigungsdialog beim Klicken auf \"Wiederholen\" anzeigen"
+        },
+        {
+          "label":"Antwort automatisch überprüfen",
+          "description":"Wenn diese Option gewählt wird, leidet die Barrierefreiheit."
+        },
+        {
+          "label":"Rückmeldung bei richtiger Antwort",
+          "description":"Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Variablen: @score und @total"
+        },
+        {
+          "label":"Rückmeldung bei falscher Antwort",
+          "description":"Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Variablen: @score und @total"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Bestätigungsdialog beim Prüfen",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Titel-Text",
+          "default":"Beenden?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Body-Text",
+          "default":"Ganz sicher beenden?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Beschriftung des \"Abbrechen\"-Buttons",
+          "default":"Abbrechen"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Beschriftung des \"Bestätigen\"-Buttons",
+          "default":"Beenden"
+        }
+      ]
+    },
+    {
+      "label":"Bestätigungsdialog beim Wiederholen",
+      "fields":[
+        {
+          "label":"Titel-Text",
+          "default":"Wiederholen?"
+        },
+        {
+          "label":"Body-Text",
+          "default":"Ganz sicher wiederholen?"
+        },
+        {
+          "label":"Beschriftung des \"Abbrechen\"-Buttons",
+          "default":"Abbrechen"
+        },
+        {
+          "label":"Beschriftung des \"Bestätigen\"-Buttons",
+          "default":"Bestätigen"
         }
       ]
     }
