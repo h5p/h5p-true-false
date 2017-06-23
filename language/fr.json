@@ -1,11 +1,11 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Image ou vidéo",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"Type de média",
+          "description":"Média optionnel à afficher au-dessus de la question."
         }
       ]
     },
@@ -13,127 +13,126 @@
       "label":"Question"
     },
     {
-      "label":"Correct answer",
+      "label":"Bonne réponse",
       "options":[
         {
-          "label":"True"
+          "label":"Vrai"
         },
         {
-          "label":"False"
-        }
-      ],
-      "default":"true"
-    },
-    {
-      "label":"User interface translations for True/False Questions",
-      "fields":[
-        {
-          "label":"Label for true button",
-          "default":"True"
-        },
-        {
-          "label":"Label for false button",
-          "default":"False"
-        },
-        {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
-        },
-        {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
-        },
-        {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
-        },
-        {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
-        },
-        {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
-        },
-        {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label":"Faux"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"Traduction de l'interface utilisateur pour les questions Vrai/Faux",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"Texte du bouton Vrai",
+          "default":"Vrai"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"Texte du bouton Faux",
+          "default":"Faux"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Texte de feedback",
+          "default":"Vous avez obtenu @score sur @total points",
+          "description":"Texte de feedback, les variables disponibles sont: @score et @total. Exemple: 'Vous avez obtenu @score sur @total points'"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Texte du bouton \"Vérifier\"",
+          "default":"Vérifier"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Texte du bouton \"Voir la solution\"",
+          "default":"Voir la solution"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label":"Texte du bouton \"Recommencer\"",
+          "default":"Recommencer"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Réponse incorrecte",
+          "default":"Réponse incorrecte"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Bonne réponse",
+          "default":"Bonne réponse"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Options générales.",
+      "description":"Ces options vous permettent de contrôler le déroulement de vos activités.",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"Activer le bouton \"Recommencer\""
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"Activer le bouton \"Voir la solution\""
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Désactiver la possibilité d'agrandir l'image de la question."
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Afficher la fenêtre de confirmation pour \"Vérifier\""
+        },
+        {
+          "label":"Afficher la fenêtre de confirmation pour \"Recommencer\""
+        },
+        {
+          "label":"Vérifier automatiquement la réponse cochée",
+          "description":"Note: cette option peut impacter l'ergonomie."
+        },
+        {
+          "label":"Commentaire pour une réponse correcte",
+          "description":"Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
+        },
+        {
+          "label":"Commentaire pour une mauvaise réponse",
+          "description":"Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Fenêtre de confirmation pour \"Vérifier\"",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Texte du titre",
+          "default":"Terminer ?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Texte du contenu",
+          "default":"Êtes-vous sûr de vouloir terminer ?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Texte du bouton d'annulation",
+          "default":"Annuler"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Texte du bouton de confirmation",
+          "default":"Confirmer"
+        }
+      ]
+    },
+    {
+      "label":"Fenêtre de confirmation pour \"Recommencer\"",
+      "fields":[
+        {
+          "label":"Texte du titre",
+          "default":"Recommencer ?"
+        },
+        {
+          "label":"Texte du contenu",
+          "default":"Êtes-vous sûr de vouloir recommencer ?"
+        },
+        {
+          "label":"Texte du bouton d'annulation",
+          "default":"Annuler"
+        },
+        {
+          "label":"Texte du bouton de confirmation",
+          "default":"Confirmer"
         }
       ]
     }
