@@ -104,20 +104,20 @@
       "label": "Fenêtre de confirmation pour \"Vérifier\"",
       "fields": [
         {
-        "label": "Texte du titre",
-        "default": "Terminer ?"
+          "label": "Texte du titre",
+          "default": "Terminer ?"
         },
         {
-        "label": "Texte du contenu",
-        "default": "Êtes-vous sûr de vouloir terminer ?"
+          "label": "Texte du contenu",
+          "default": "Êtes-vous sûr de vouloir terminer ?"
         },
         {
-        "label": "Texte du bouton d'annulation",
-        "default": "Annuler"
+          "label": "Texte du bouton d'annulation",
+          "default": "Annuler"
         },
         {
-        "label": "Texte du bouton de confirmation",
-        "default": "Confirmer"
+          "label": "Texte du bouton de confirmation",
+          "default": "Confirmer"
         }
       ]
     },

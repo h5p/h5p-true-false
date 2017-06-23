@@ -116,10 +116,10 @@
       ]
     },
     {
-    "label": "Dijalog za potvrdu kod Ponovi",
+      "label": "Dijalog za potvrdu kod Ponovi",
       "fields": [
         {
-      "label": "Tekst zaglavlja",
+          "label": "Tekst zaglavlja",
           "default": "Kraj ?"
         },
         {
