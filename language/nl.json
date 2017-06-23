@@ -5,135 +5,134 @@
       "fields":[
         {
           "label":"Type",
-          "description":"Optional media to display above the question."
+          "description":"Optionele media, die boven de vragen worden getoond"
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Vraag"
     },
     {
-      "label":"Correct answer",
+      "label":"Juist antwoord",
       "options":[
         {
-          "label":"True"
+          "label":"Waar"
         },
         {
-          "label":"False"
-        }
-      ],
-      "default":"true"
-    },
-    {
-      "label":"User interface translations for True/False Questions",
-      "fields":[
-        {
-          "label":"Label for true button",
-          "default":"True"
-        },
-        {
-          "label":"Label for false button",
-          "default":"False"
-        },
-        {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
-        },
-        {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
-        },
-        {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
-        },
-        {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
-        },
-        {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
-        },
-        {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label":"Niet Waar"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"Vertalingen van de gebruikersinterface voor Waar/ Niet waar-Vragen",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"Onderschrift voor de \"Waar\"-knop",
+          "default":"Waar"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"Onderschrift voor de \"Niet waar\"-knop",
+          "default":"Niet Waar"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Feedback tekst",
+          "default":"Je hebt @score van @total punten",
+          "description":"Feedbacktekst, beschikbare variabelen: @score en @total. Voorbeeld: 'Je hebt @score van @total mogelijke punten.'"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Tekst voor de \"Controleer\"-knop",
+          "default":"Controleer"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Tekst voor de \"Toon oplossing\"-knop",
+          "default":"Toon oplossing"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label":"Tekst voor de \"Opnieuw proberen\"-knop",
+          "default":"Opnieuw proberen"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Onjuist antwoord",
+          "default":"Onjuist antwoord"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label":"Juist antwoord",
+          "default":"Juist antwoord"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Gedragsinstellingen",
+      "description":"Deze opties bepalen hoe de taak op de input reageert.",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"\"Opnieuw proberen\"-knop inschakelen"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"\"Toon oplossing\"-knop inschakelen"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Deactiveer het zoomen voor afbeeldingsvragen."
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Toon de bevestigingsdialoog bij \"Controleer\""
+        },
+        {
+          "label":"Toon de bevestigingsdialoog bij \"Opnieuw proberen\""
+        },
+        {
+          "label":"Het antwoord automatisch controleren",
+          "description":"Als deze optie ingeschakeld wordt, dan zal dit de toegankelijkheid verminderen"
+        },
+        {
+          "label":"Feedback bij het juiste antwoord",
+          "description":"Deze tekst overschrijft de standaard feedback tekst. Beschikbare variabelen zijn: @score en @total"
+        },
+        {
+          "label":"Feedback bij het onjuiste antwoord",
+          "description":"Deze tekst overschrijft de standaard feedback tekst. Beschikbare variabelen zijn: @score en @total"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Bevestigingsdialoog bij het afronden",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Koptekst",
+          "default":"Beëindigen?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Bodytekst",
+          "default":"Ben je er zeker van dat je wilt stoppen?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Tekst van de \"Annuleer\"-knop",
+          "default":"Annuleren"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Tekst van de \"Bevestig\"-knop",
+          "default":"Beëindigen"
+        }
+      ]
+    },
+    {
+      "label":"Bevestigingsdialoog bij Opnieuw proberen",
+      "fields":[
+        {
+          "label":"Koptekst",
+          "default":"Opnieuw proberen?"
+        },
+        {
+          "label":"Bodytekst",
+          "default":"Ben je er zeker van dat je opnieuw wilt proberen?"
+        },
+        {
+          "label":"Tekst van de \"Annuleer\"-knop",
+          "default":"Annuleren"
+        },
+        {
+          "label":"Tekst van de \"Bevestig\"-knop",
+          "default":"Bevestigen"
         }
       ]
     }
