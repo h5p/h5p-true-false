@@ -21,7 +21,8 @@
         {
           "label":"False"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"User interface translations for True/False Questions",
@@ -49,7 +50,7 @@
         },
         {
           "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "default":"Försök på nytt"
         },
         {
           "label":"Wrong Answer",
@@ -107,7 +108,7 @@
         },
         {
           "label":"Cancel button label",
-          "default":"Cancel"
+          "default":"Avbryt"
         },
         {
           "label":"Confirm button label",
@@ -128,7 +129,7 @@
         },
         {
           "label":"Cancel button label",
-          "default":"Cancel"
+          "default":"Avbryt"
         },
         {
           "label":"Confirm button label",
