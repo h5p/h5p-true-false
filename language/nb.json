@@ -1,7 +1,7 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Multimedia",
       "fields":[
         {
           "label":"Type",
@@ -21,7 +21,8 @@
         {
           "label":"Galt"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"Oversettelser for Rett/Galt-spørsmål",
