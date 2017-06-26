@@ -21,7 +21,8 @@
         {
           "label":"Falso"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"Traduções da interface de usuário para questões de verdadeiro/falso",
