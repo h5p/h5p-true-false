@@ -1,19 +1,19 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Multimedia",
       "fields":[
         {
           "label":"Type",
-          "description":"Optional media to display above the question."
+          "description":"Eit valfritt multimediaelement som skal visast over spørsmålet."
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Spørsmål"
     },
     {
-      "label":"Correct answer",
+      "label":"Riktig svar",
       "options":[
         {
           "label":"True"
@@ -21,7 +21,8 @@
         {
           "label":"False"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"User interface translations for True/False Questions",
@@ -35,50 +36,50 @@
           "default":"False"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label":"Tilbakemelding",
+          "default":"@score av @total poeng",
+          "description":"Tekstleg tilbakemelding, tilgjengelege variablar: @score og @total. Eksempel: 'Du fikk @score av @total felt rett.'"
         },
         {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
+          "label":"Tekst for \"Sjekk\"-knapp",
+          "default":"Sjekk"
         },
         {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "label":"Tekst for \"Fasit\" knapp",
+          "default":"Fasit"
         },
         {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "label":"Tekst for \"Prøv igjen\"-knapp",
+          "default":"Prøv igjen"
         },
         {
           "label":"Wrong Answer",
-          "default":"Wrong answer"
+          "default":"Galt svar"
         },
         {
           "label":"Correct Answer",
-          "default":"Correct answer"
+          "default":"Riktig svar"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"Innstillinger for oppgave-oppførsel",
+      "description":"Disse instillingene lar deg bestemme hvordan oppgavetypen skal oppføre seg.",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"Aktiver \"Prøv igjen\""
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"Aktiver \"Fasit\" knapp"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Slå av bilete zooming."
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Slå på bruker-bekreftelse før \"Sjekk svar\""
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Slå på bruker-bekreftelse før \"Prøv igjen\""
         },
         {
           "label":"Automatically check answer",
@@ -95,44 +96,44 @@
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Fasit bruker-bekreftelse",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"Tittel",
+          "default":"Ferdig ?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"Tekst",
+          "default":"Er du sikker på at du er ferdig ?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Avbryt etikett",
+          "default":"Avbrytt"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Bekreft etikett",
+          "default":"Bekreft"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Prøv igjen bruker-bekreftelse",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Tittel",
+          "default":"Prøv igjen ?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Tekst",
+          "default":"Er du sikker på at du vil prøve igjen?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Avbryt etikett",
+          "default":"Avbrytt"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Bekreft etikett",
+          "default":"Bekreft"
         }
       ]
     }
