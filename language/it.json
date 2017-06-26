@@ -4,16 +4,16 @@
       "label":"Media",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"Tipo",
+          "description":"Media opzionale da mostrare sopra la domanda."
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Domanda"
     },
     {
-      "label":"Correct answer",
+      "label":"Risposta corretta",
       "options":[
         {
           "label":"True"
@@ -21,7 +21,8 @@
         {
           "label":"False"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"User interface translations for True/False Questions",
@@ -35,50 +36,50 @@
           "default":"False"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label":"Testo Feedback",
+          "default":"Feedback text",
+          "description":"Testo del Feedback (Riscontro), variabili consentite: @score e @total. Esempio: 'Hai ottenuto il punteggio @score su @total punti possibili.'"
         },
         {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
+          "label":"Testo per il pulsante \"Verifica\"",
+          "default":"Verifica"
         },
         {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "label":"Testo per il pulsante \"Mostra Soluzione\"",
+          "default":"Mostra la soluzione"
         },
         {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "label":"Testo per il pulsante \"Indietro\"",
+          "default":"Riprova"
         },
         {
           "label":"Wrong Answer",
-          "default":"Wrong answer"
+          "default":"Risposta sbagliata"
         },
         {
           "label":"Correct Answer",
-          "default":"Correct answer"
+          "default":"Risposta corretta"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"Impostazioni esecuzione",
+      "description":"Queste opzioni consentono di controllare l'andamento del compito.",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"Abilita pulsante \"Riprova\""
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"Abilita pulsante \"Mostra soluzione\""
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Disable image zooming for question image."
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label":"Mostra la finestra di dialogo di conferma su \"Verifica\""
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label":"Mostra la finestra di dialogo di conferma su \"Riprova\""
         },
         {
           "label":"Automatically check answer",
@@ -95,44 +96,44 @@
       ]
     },
     {
-      "label":"Check confirmation dialog",
+      "label":"Finestra di conferma per la verifica",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label":"Etichetta di intestazione",
+          "default":"Finito?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label":"Etichetta del corpo",
+          "default":"Sei sicuro di voler finire?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Etichetta del pulsante Annulla",
+          "default":"Annulla"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label":"Etichetta del pulsante di conferma",
+          "default":"Finito"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
+      "label":"Finestra di conferma per \"Riprova\"",
       "fields":[
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label":"Etichetta di intestazione",
+          "default":"Riprovare?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label":"Etichetta del corpo",
+          "default":"Sei sicuro di voler riprovare?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label":"Etichetta del pulsante Annulla",
+          "default":"Annulla"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label":"Etichetta del pulsante di conferma",
+          "default":"Conferma"
         }
       ]
     }
