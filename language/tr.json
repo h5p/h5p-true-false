@@ -21,7 +21,8 @@
         {
           "label":"Yanlış"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"Doğru/Yanlış soruları için kullanıcı arayüzü çevirileri",
