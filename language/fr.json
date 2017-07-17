@@ -21,7 +21,8 @@
         {
           "label":"Faux"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"Traduction de l'interface utilisateur pour les questions Vrai/Faux",
