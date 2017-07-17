@@ -21,7 +21,8 @@
         {
           "label":"Falsch"
         }
-      ]
+      ],
+      "default":"true"
     },
     {
       "label":"Übersetzungen der Nutzerschnittstelle für richtig/falsch-Fragen",
