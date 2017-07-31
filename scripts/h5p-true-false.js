@@ -409,7 +409,7 @@ H5P.TrueFalse = (function ($, Question) {
      */
     self.resetTask = function () {
       answerGroup.reset();
-      self.setFeedback();
+      self.removeFeedback();
       toggleButtonState(State.ONGOING);
     };
 
