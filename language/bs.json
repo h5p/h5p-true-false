@@ -1,0 +1,140 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Tip",
+          "description": "Opcionalni medij za prikaz iznad pitanja."
+        }
+      ]
+    },
+    {
+      "label": "Pitanje"
+    },
+    {
+      "label": "Tačan odgovor",
+      "options": [
+        {
+          "label": "Tačno"
+        },
+        {
+          "label": "Netačno"
+        }
+      ]
+    },
+    {
+      "label": "Prijevodi za korisnički interfejs kod pitanja Tačno/Netačno",
+      "fields": [
+        {
+          "label": "Oznaka za dugme Tačno",
+          "default": "Tačno"
+        },
+        {
+          "label": "Oznaka za dugme Netačno",
+          "default": "Netačno"
+        },
+        {
+          "label": "Feedback tekst",
+          "default": "Osvojeno @score od @total bodova",
+          "description": "Feedback kst, dostupne varijable: @score i @total. Example: 'Osvojeno @score od @total mogućih bodova'"
+        },
+        {
+          "label": "Tekst za dugme \"Provjeri\" ",
+          "default": "Provjeri"
+        },
+        {
+          "label": "Tekst za dugme \"Prikaži rješenje\" ",
+          "default": "Prikaži rješenje"
+        },
+        {
+          "label": "Tekst za dugme \"Ponovi\" ",
+          "default": "Ponovi"
+        },
+        {
+          "label": "Netačan odgovor",
+          "default": "Netačan odgovor"
+        },
+        {
+          "label": "Tačan odgovor",
+          "default": "Tačan odgovor"
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "description": "These options will let you control how the task behaves.",
+      "fields": [
+        {
+          "label": "Omogući dugme \"Ponovi\" "
+        },
+        {
+          "label": "Omogući dugme \"Prikaži rješenje\" "
+        },
+        {
+          "label": "Onemogući zumiranje slika za pitanja sa slikama"
+        },
+        {
+          "label": "Prikaži dijalog za potvrdu \"Provjeri\""
+        },
+        {
+          "label": "Prikaži dijalog za potvrdu \"Ponovi\""
+        },
+        {
+          "label": "Automatski provjeri odgovor",
+          "description": "Note that accessibility will suffer if enabling this option"
+        },
+        {
+          "label": "Feedback nakon tačnog odgovora",
+          "description": "This will override the default feedback text. Variables available: @score and @total"
+        },
+        {
+          "label": "Feedback nakon netačnog odgovora",
+          "description": "This will override the default feedback text. Variables available: @score and @total"
+        }
+      ]
+    },
+    {
+      "label": "Provjeri dijalog za potvrdu",
+      "fields": [
+        {
+          "label": "Tekst zaglavlja",
+          "default": "Kraj ?"
+        },
+        {
+          "label": "Tekst poruke",
+          "default": "Jeste li sigurni da želite završiti ?"
+        },
+        {
+          "label": "Tekst na dugmetu Otkaži",
+          "default": "Otkaži"
+        },
+        {
+          "label": "Tekst na dugmetu Završi",
+          "default": "Završi"
+        }
+      ]
+    },
+    {
+      "label": "Dijalog za potvrdu kod Ponovi",
+      "fields": [
+        {
+          "label": "Tekst zaglavlja",
+          "default": "Kraj ?"
+        },
+        {
+          "label": "Tekst poruke",
+          "default": "Jeste li sigurni da želite završiti ?"
+        },
+        {
+          "label": "Oznaka za dugme Otkaži",
+          "default": "Otkaži"
+        },
+        {
+          "label": "Oznaka za dugme Potvrdi",
+          "default": "Potvrdi"
+        }
+      ]
+    }
+  ]
+}
