@@ -1,0 +1,141 @@
+{
+  "semantics":[
+    {
+      "label":"Media",
+      "fields":[
+        {
+          "label":"Tipo",
+          "description":"Media opzionale da mostrare sopra la domanda."
+        }
+      ]
+    },
+    {
+      "label":"Domanda"
+    },
+    {
+      "label":"Risposta corretta",
+      "options":[
+        {
+          "label":"True"
+        },
+        {
+          "label":"False"
+        }
+      ],
+      "default":"true"
+    },
+    {
+      "label":"User interface translations for True/False Questions",
+      "fields":[
+        {
+          "label":"Label for true button",
+          "default":"True"
+        },
+        {
+          "label":"Label for false button",
+          "default":"False"
+        },
+        {
+          "label":"Testo Feedback",
+          "default":"Feedback text",
+          "description":"Testo del Feedback (Riscontro), variabili consentite: @score e @total. Esempio: 'Hai ottenuto il punteggio @score su @total punti possibili.'"
+        },
+        {
+          "label":"Testo per il pulsante \"Verifica\"",
+          "default":"Verifica"
+        },
+        {
+          "label":"Testo per il pulsante \"Mostra Soluzione\"",
+          "default":"Mostra la soluzione"
+        },
+        {
+          "label":"Testo per il pulsante \"Indietro\"",
+          "default":"Riprova"
+        },
+        {
+          "label":"Wrong Answer",
+          "default":"Risposta sbagliata"
+        },
+        {
+          "label":"Correct Answer",
+          "default":"Risposta corretta"
+        }
+      ]
+    },
+    {
+      "label":"Impostazioni esecuzione",
+      "description":"Queste opzioni consentono di controllare l'andamento del compito.",
+      "fields":[
+        {
+          "label":"Abilita pulsante \"Riprova\""
+        },
+        {
+          "label":"Abilita pulsante \"Mostra soluzione\""
+        },
+        {
+          "label":"Disable image zooming for question image."
+        },
+        {
+          "label":"Mostra la finestra di dialogo di conferma su \"Verifica\""
+        },
+        {
+          "label":"Mostra la finestra di dialogo di conferma su \"Riprova\""
+        },
+        {
+          "label":"Automatically check answer",
+          "description":"Note that accessibility will suffer if enabling this option"
+        },
+        {
+          "label":"Feedback on correct answer",
+          "description":"This will override the default feedback text. Variables available: @score and @total"
+        },
+        {
+          "label":"Feedback on wrong answer",
+          "description":"This will override the default feedback text. Variables available: @score and @total"
+        }
+      ]
+    },
+    {
+      "label":"Finestra di conferma per la verifica",
+      "fields":[
+        {
+          "label":"Etichetta di intestazione",
+          "default":"Finito?"
+        },
+        {
+          "label":"Etichetta del corpo",
+          "default":"Sei sicuro di voler finire?"
+        },
+        {
+          "label":"Etichetta del pulsante Annulla",
+          "default":"Annulla"
+        },
+        {
+          "label":"Etichetta del pulsante di conferma",
+          "default":"Finito"
+        }
+      ]
+    },
+    {
+      "label":"Finestra di conferma per \"Riprova\"",
+      "fields":[
+        {
+          "label":"Etichetta di intestazione",
+          "default":"Riprovare?"
+        },
+        {
+          "label":"Etichetta del corpo",
+          "default":"Sei sicuro di voler riprovare?"
+        },
+        {
+          "label":"Etichetta del pulsante Annulla",
+          "default":"Annulla"
+        },
+        {
+          "label":"Etichetta del pulsante di conferma",
+          "default":"Conferma"
+        }
+      ]
+    }
+  ]
+}
