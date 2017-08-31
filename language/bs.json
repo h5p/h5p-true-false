@@ -1,138 +1,139 @@
 {
-  "semantics": [
+  "semantics":[
     {
-      "label": "Media",
-      "fields": [
+      "label":"Media",
+      "fields":[
         {
-          "label": "Tip",
-          "description": "Opcionalni medij za prikaz iznad pitanja."
+          "label":"Type",
+          "description":"Optional media to display above the question."
         }
       ]
     },
     {
-      "label": "Pitanje"
+      "label":"Question"
     },
     {
-      "label": "Tačan odgovor",
-      "options": [
+      "label":"Correct answer",
+      "options":[
         {
-          "label": "Tačno"
+          "label":"True"
         },
         {
-          "label": "Netačno"
+          "label":"False"
+        }
+      ],
+      "default":"true"
+    },
+    {
+      "label":"User interface translations for True/False Questions",
+      "fields":[
+        {
+          "label":"Label for true button",
+          "default":"True"
+        },
+        {
+          "label":"Label for false button",
+          "default":"False"
+        },
+        {
+          "label":"Feedback text",
+          "default":"You got @score of @total points",
+          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+        },
+        {
+          "label":"Text for \"Check\" button",
+          "default":"Check"
+        },
+        {
+          "label":"Text for \"Show solution\" button",
+          "default":"Show solution"
+        },
+        {
+          "label":"Text for \"Retry\" button",
+          "default":"Retry"
+        },
+        {
+          "label":"Wrong Answer",
+          "default":"Wrong answer"
+        },
+        {
+          "label":"Correct Answer",
+          "default":"Correct answer"
         }
       ]
     },
     {
-      "label": "Prijevodi za korisnički interfejs kod pitanja Tačno/Netačno",
-      "fields": [
+      "label":"Behavioural settings",
+      "description":"These options will let you control how the task behaves.",
+      "fields":[
         {
-          "label": "Oznaka za dugme Tačno",
-          "default": "Tačno"
+          "label":"Enable \"Retry\" button"
         },
         {
-          "label": "Oznaka za dugme Netačno",
-          "default": "Netačno"
+          "label":"Enable \"Show Solution\" button"
         },
         {
-          "label": "Feedback tekst",
-          "default": "Osvojeno @score od @total bodova",
-          "description": "Feedback kst, dostupne varijable: @score i @total. Example: 'Osvojeno @score od @total mogućih bodova'"
+          "label":"Disable image zooming for question image"
         },
         {
-          "label": "Tekst za dugme \"Provjeri\" ",
-          "default": "Provjeri"
+          "label":"Show confirmation dialog on \"Check\""
         },
         {
-          "label": "Tekst za dugme \"Prikaži rješenje\" ",
-          "default": "Prikaži rješenje"
+          "label":"Show confirmation dialog on \"Retry\""
         },
         {
-          "label": "Tekst za dugme \"Ponovi\" ",
-          "default": "Ponovi"
+          "label":"Automatically check answer",
+          "description":"Note that accessibility will suffer if enabling this option"
         },
         {
-          "label": "Netačan odgovor",
-          "default": "Netačan odgovor"
+          "label":"Feedback on correct answer",
+          "description":"This will override the default feedback text. Variables available: @score and @total"
         },
         {
-          "label": "Tačan odgovor",
-          "default": "Tačan odgovor"
+          "label":"Feedback on wrong answer",
+          "description":"This will override the default feedback text. Variables available: @score and @total"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
-      "fields": [
+      "label":"Check confirmation dialog",
+      "fields":[
         {
-          "label": "Omogući dugme \"Ponovi\" "
+          "label":"Header text",
+          "default":"Finish ?"
         },
         {
-          "label": "Omogući dugme \"Prikaži rješenje\" "
+          "label":"Body text",
+          "default":"Are you sure you wish to finish ?"
         },
         {
-          "label": "Onemogući zumiranje slika za pitanja sa slikama"
+          "label":"Cancel button label",
+          "default":"Cancel"
         },
         {
-          "label": "Prikaži dijalog za potvrdu \"Provjeri\""
-        },
-        {
-          "label": "Prikaži dijalog za potvrdu \"Ponovi\""
-        },
-        {
-          "label": "Automatski provjeri odgovor",
-          "description": "Note that accessibility will suffer if enabling this option"
-        },
-        {
-          "label": "Feedback nakon tačnog odgovora",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
-        },
-        {
-          "label": "Feedback nakon netačnog odgovora",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label":"Confirm button label",
+          "default":"Finish"
         }
       ]
     },
     {
-      "label": "Provjeri dijalog za potvrdu",
-      "fields": [
+      "label":"Retry confirmation dialog",
+      "fields":[
         {
-          "label": "Tekst zaglavlja",
-          "default": "Kraj ?"
+          "label":"Header text",
+          "default":"Retry ?"
         },
         {
-          "label": "Tekst poruke",
-          "default": "Jeste li sigurni da želite završiti ?"
+          "label":"Body text",
+          "default":"Are you sure you wish to retry ?"
         },
         {
-          "label": "Tekst na dugmetu Otkaži",
-          "default": "Otkaži"
+          "label":"Cancel button label",
+          "default":"Cancel"
         },
         {
-          "label": "Tekst na dugmetu Završi",
-          "default": "Završi"
-        }
-      ]
-    },
-    {
-      "label": "Dijalog za potvrdu kod Ponovi",
-      "fields": [
-        {
-          "label": "Tekst zaglavlja",
-          "default": "Kraj ?"
-        },
-        {
-          "label": "Tekst poruke",
-          "default": "Jeste li sigurni da želite završiti ?"
-        },
-        {
-          "label": "Oznaka za dugme Otkaži",
-          "default": "Otkaži"
-        },
-        {
-          "label": "Oznaka za dugme Potvrdi",
-          "default": "Potvrdi"
+          "label":"Confirm button label",
+          "default":"Confirm"
         }
       ]
     }
