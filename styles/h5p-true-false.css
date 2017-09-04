@@ -19,6 +19,7 @@
   height: 0;
   overflow: hidden;
   display: block;
+  position: absolute;
 }
 .h5p-true-false-answer:hover {
   border-color: #8cb9f0;
