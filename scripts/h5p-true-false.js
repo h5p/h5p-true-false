@@ -61,8 +61,7 @@ H5P.TrueFalse = (function ($, Question) {
         confirmCheckDialog: false,
         confirmRetryDialog: false,
         autoCheck: false
-      },
-      overrideSettings: {}
+      }
     }, options);
 
     // Counter used to create unique id for this question
@@ -70,6 +69,9 @@ H5P.TrueFalse = (function ($, Question) {
 
     // A unique ID is needed for aria label
     var domId = 'h5p-tfq' + H5P.TrueFalse.counter;
+
+    // saves the content id
+    this.contentId = id;
 
     // The radio group
     var answerGroup = new H5P.TrueFalse.AnswerGroup(domId, params.correct, params.l10n);
@@ -104,6 +106,22 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var registerButtons = function () {
+      var $content = $('[data-content-id="' + self.contentId + '"].h5p-content');
+      var $containerParents = $content.parents('.h5p-container');
+
+      // select find container to attach dialogs to
+      var $container;
+      if($containerParents.length !== 0) {
+        // use parent highest up if any
+        $container = $containerParents.last();
+      }
+      else if($content.length !== 0){
+        $container = $content;
+      }
+      else  {
+        $container = $(document.body);
+      }
+
       // Show solution button
       if (params.behaviour.enableSolutionsButton === true) {
         self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
@@ -120,8 +138,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmCheckDialog,
             l10n: params.confirmCheck,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: $container
           }
         });
       }
@@ -134,8 +152,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmRetryDialog,
             l10n: params.confirmRetry,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: $container
           }
         });
       }
@@ -183,7 +201,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getCorrectAnswer = function () {
-      return (params.correct === 'true' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'true' ? 'true' : 'false');
     };
 
     /**
@@ -194,7 +212,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getWrongAnswer = function () {
-      return (params.correct === 'false' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'false' ? 'true' : 'false');
     };
 
     /**
@@ -304,7 +322,8 @@ H5P.TrueFalse = (function ($, Question) {
       self.setIntroduction('<div id="' + domId + '">' + params.question + '</div>');
 
       // Register task content area
-      self.setContent(createAnswers());
+      self.$content = createAnswers();
+      self.setContent(self.$content);
 
       // ... and buttons
       registerButtons();
@@ -390,7 +409,7 @@ H5P.TrueFalse = (function ($, Question) {
      */
     self.resetTask = function () {
       answerGroup.reset();
-      self.setFeedback();
+      self.removeFeedback();
       toggleButtonState(State.ONGOING);
     };
 
