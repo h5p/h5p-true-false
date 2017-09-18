@@ -103,7 +103,7 @@
           "default":"Finish ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"Body text",
           "default":"Are you sure you wish to finish ?"
         },
         {
@@ -124,7 +124,7 @@
           "default":"Retry ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"Body text",
           "default":"Are you sure you wish to retry ?"
         },
         {

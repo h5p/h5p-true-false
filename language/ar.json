@@ -1,7 +1,7 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"اعلام",
       "fields":[
         {
           "label":"Type",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "label":"Question"
+      "label":"السؤال"
     },
     {
       "label":"Correct answer",
@@ -36,21 +36,21 @@
           "default":"False"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label":"نص الملاحظات",
+          "default":"Feedback text",
+          "description":"ملاحظات النص، والمتغيرات المتاحة: النتيجة والمجموع. مثال: هل حصلت على درجة من مجموع النقاط الممكنة"
         },
         {
-          "label":"Text for \"Check\" button",
+          "label":"النص ل \"تحقق \" الزر",
           "default":"Check"
         },
         {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "label":"النص  \"مشاهدة الحل \" لزر",
+          "default":"مشاهدة الحل"
         },
         {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "label":"النص ل \"إعادة المحاولة \" الزر",
+          "default":"إعادة المحاولة"
         },
         {
           "label":"Wrong Answer",
@@ -63,17 +63,17 @@
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
+      "label":"إعدادت النشاط",
+      "description":"وهذه الخيارات تمكنك من التحكم في كيفية سلوك هذا النشاط",
       "fields":[
         {
-          "label":"Enable \"Retry\" button"
+          "label":"تمكين \"إعادة المحاولة \""
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label":"تمكين \"مشاهدة الحل \" الزر"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label":"Disable image zooming for question image."
         },
         {
           "label":"Show confirmation dialog on \"Check\""
@@ -103,7 +103,7 @@
           "default":"Finish ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"النص الأساسي",
           "default":"Are you sure you wish to finish ?"
         },
         {
@@ -124,7 +124,7 @@
           "default":"Retry ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"النص الأساسي",
           "default":"Are you sure you wish to retry ?"
         },
         {

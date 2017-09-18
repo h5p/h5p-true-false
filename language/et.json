@@ -1,19 +1,19 @@
 {
   "semantics":[
     {
-      "label":"Media",
+      "label":"Pilt või video",
       "fields":[
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label":"Tüüp",
+          "description":"Pilt või video, mida kuvatakse küsimuse juures (mittekohustuslik element)."
         }
       ]
     },
     {
-      "label":"Question"
+      "label":"Küsimus"
     },
     {
-      "label":"Correct answer",
+      "label":"Õige vastus",
       "options":[
         {
           "label":"True"
@@ -36,29 +36,29 @@
           "default":"False"
         },
         {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
+          "label":"Tagasiside tekst",
+          "default":"Said @score punkti @total võimalikust",
           "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
         },
         {
           "label":"Text for \"Check\" button",
-          "default":"Check"
+          "default":"Kontrolli"
         },
         {
           "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
+          "default":"Õige vastus"
         },
         {
           "label":"Text for \"Retry\" button",
-          "default":"Retry"
+          "default":"Proovi uuesti"
         },
         {
           "label":"Wrong Answer",
-          "default":"Wrong answer"
+          "default":"Vale vastus"
         },
         {
           "label":"Correct Answer",
-          "default":"Correct answer"
+          "default":"Õige vastus"
         }
       ]
     },
@@ -103,7 +103,7 @@
           "default":"Finish ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"Body text",
           "default":"Are you sure you wish to finish ?"
         },
         {
@@ -124,7 +124,7 @@
           "default":"Retry ?"
         },
         {
-          "label":"Leipäteksti",
+          "label":"Body text",
           "default":"Are you sure you wish to retry ?"
         },
         {
