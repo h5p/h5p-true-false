@@ -1,139 +1,142 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Media",
-      "fields":[
+      "label": "Media",
+      "fields": [
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label": "Type",
+          "description": "Optional media to display above the question."
         }
       ]
     },
     {
-      "label":"Question"
+      "label": "Question"
     },
     {
-      "label":"Correct answer",
-      "options":[
+      "label": "Correct answer",
+      "options": [
         {
-          "label":"True"
+          "label": "True"
         },
         {
-          "label":"False"
-        }
-      ],
-      "default":"true"
-    },
-    {
-      "label":"User interface translations for True/False Questions",
-      "fields":[
-        {
-          "label":"Label for true button",
-          "default":"True"
-        },
-        {
-          "label":"Label for false button",
-          "default":"False"
-        },
-        {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
-        },
-        {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
-        },
-        {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
-        },
-        {
-          "label":"Text for \"Retry\" button",
-          "default":"Försök på nytt"
-        },
-        {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
-        },
-        {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label": "False"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
-      "fields":[
+      "label": "User interface translations for True/False Questions",
+      "fields": [
         {
-          "label":"Enable \"Retry\" button"
+          "label": "Label for true button",
+          "default": "True"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label": "Label for false button",
+          "default": "False"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label": "Feedback text",
+          "default": "You got @score of @total points",
+          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label": "Text for \"Check\" button",
+          "default": "Check"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label": "Text for \"Show solution\" button",
+          "default": "Show solution"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label": "Text for \"Retry\" button",
+          "default": "Försök på nytt"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label": "Wrong Answer",
+          "default": "Wrong answer"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label": "Correct Answer",
+          "default": "Correct answer"
+        },
+        {
+          "label": "Textual representation of the score bar for those using a readspeaker",
+          "default": "You got :num out of :total points"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
-      "fields":[
+      "label": "Behavioural settings",
+      "description": "These options will let you control how the task behaves.",
+      "fields": [
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label": "Enable \"Retry\" button"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to finish ?"
+          "label": "Enable \"Show Solution\" button"
         },
         {
-          "label":"Cancel button label",
-          "default":"Avbryt"
+          "label": "Disable image zooming for question image"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label": "Show confirmation dialog on \"Check\""
+        },
+        {
+          "label": "Show confirmation dialog on \"Retry\""
+        },
+        {
+          "label": "Automatically check answer",
+          "description": "Note that accessibility will suffer if enabling this option"
+        },
+        {
+          "label": "Feedback on correct answer",
+          "description": "This will override the default feedback text. Variables available: @score and @total"
+        },
+        {
+          "label": "Feedback on wrong answer",
+          "description": "This will override the default feedback text. Variables available: @score and @total"
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
-      "fields":[
+      "label": "Check confirmation dialog",
+      "fields": [
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label": "Header text",
+          "default": "Finish ?"
         },
         {
-          "label":"Body text",
-          "default":"Are you sure you wish to retry ?"
+          "label": "Body text",
+          "default": "Are you sure you wish to finish ?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Avbryt"
+          "label": "Cancel button label",
+          "default": "Avbryt"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label": "Confirm button label",
+          "default": "Finish"
+        }
+      ]
+    },
+    {
+      "label": "Retry confirmation dialog",
+      "fields": [
+        {
+          "label": "Header text",
+          "default": "Retry ?"
+        },
+        {
+          "label": "Body text",
+          "default": "Are you sure you wish to retry ?"
+        },
+        {
+          "label": "Cancel button label",
+          "default": "Avbryt"
+        },
+        {
+          "label": "Confirm button label",
+          "default": "Confirm"
         }
       ]
     }
