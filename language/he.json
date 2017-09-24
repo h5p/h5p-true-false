@@ -1,142 +1,142 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "מדיה",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "סוג",
+          "description": "ניתן להוסיף תמונה אשר תוצג מעל השאלה."
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "שאלה"
     },
     {
-      "label": "Correct answer",
+      "label": "התשובה הנכונה",
       "options": [
         {
-          "label": "True"
+          "label": "נכון"
         },
         {
-          "label": "False"
+          "label": "לא־נכון"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
-      "fields": [
+      "label": "ממשק תרגום עבור שאלות נכון/לא־נכון",
+      "fields":[
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "תוית הכפתור נכון",
+          "default": "נכון"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "תוית הכפתור לא־נכון",
+          "default": "לא־נכון"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "משוב",
+          "default": "התקבלו @score מתוך @total נקודות",
+          "description": "הודעת משוב, משתנים זמינים: @score וגם @total. לדוגמה: 'התקבלו @score מתוך @total נקודות אפשריות'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "מלל הכפתור \"בדיקה\"",
+          "default": "בדיקה"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "מלל הכפתור \"הצגת הפתרון\"",
+          "default": "הצגת הפתרון"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "מלל הכפתור \"ניסיון חוזר\"",
+          "default": "ניסיון חוזר"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "תשובה שגויה",
+          "default": "תשובה שגויה"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "תשובה נכונה",
+          "default": "תשובה נכונה"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "תצוגה חזותית של סרגל ניקוד למי שמשתמש בתוכנת הקראה",
+          "default": "התקבלו :num מתו :total נקודות"		 
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
-      "fields": [
+      "label": "הגדרות התנהגות השאלה",
+      "description": "ההגרות הבאות יקבעו את אופי התנהגות השאלה.",
+      "fields":[
         {
-          "label": "Enable \"Retry\" button"
+          "label": "הצגת כפתור \"ניסיון חוזר\""
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "הצגת כפתור \"תצוגת פתרון\""
         },
         {
-          "label": "Disable image zooming for question image"
+          "label": "מניעת אפשרות להגדלת/הקטנת תצוגת תמונת השאלה"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "הצגת חלונית \"אישור\" בעת בחירת הכפתור \"בדיקה\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "הצגת חלונית \"אישור\" בעת בחירת הכפתור \"ניסיון חוזר\""
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "בדיקה אוטומטית של התשובה",
+          "description": "שימו לב! הפעלת אפשרות זו תבטל את יכולות הנגישות בזמן התצוגה"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "משוב עבור תשובה נכונה",
+          "description": "אפשרות זו תעקוף את משוב בררת המחדל. משתנים זמינים: @score וגם @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "משוב עבור תשובה שגויה",
+          "description": "אפשרות זו תעקוף את משוב בררת המחדל. משתנים זמינים: @score וגם @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
-      "fields": [
+      "label": "חלונית אישור עבור כפתור בדיקה",
+      "fields":[
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "הכותרת",
+          "default": "סיום ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "תוכן",
+          "default": "האם לסיים את הבדיקה ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "תוית כפתור ביטול",
+          "default": "ביטול"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "תוית כפתור אישור",
+          "default": "סיום"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
-      "fields": [
+      "label": "חלונית אישור עבור כפתור ניסיון־חוזר",
+      "fields":[
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "כותרת",
+          "default": "ניסיון חוזר ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "תוכן",
+          "default": "האם לבצע ניסיון חוזר ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "תוית כפתור ביטול",
+          "default": "לא"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "תוית כפתור אישור",
+          "default": "כן"
         }
       ]
     }
