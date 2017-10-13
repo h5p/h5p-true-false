@@ -76,6 +76,9 @@
           "label": "Salli painike \"Katso vastaus\""
         },
         {
+          "label": "Enable \"Check\" button"
+        },
+        {
           "label": "Älä salli kysymykseen liitetyn kuvan suurentamista"
         },
         {
