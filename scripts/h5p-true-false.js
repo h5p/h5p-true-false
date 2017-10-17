@@ -426,7 +426,7 @@ H5P.TrueFalse = (function ($, Question) {
       this.addResponseToXAPI(xAPIEvent);
       return {
         statement: xAPIEvent.data.statement
-      }
+      };
     };
 
     /**
