@@ -52,7 +52,8 @@ H5P.TrueFalse = (function ($, Question) {
         showSolutionButton: 'Show solution',
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
-        correctAnswerMessage: 'Correct answer'
+        correctAnswerMessage: 'Correct answer',
+        scoreBarLabel: 'You got :num out of :total points'
       },
       behaviour: {
         enableRetry: true,
@@ -283,7 +284,7 @@ H5P.TrueFalse = (function ($, Question) {
       }
       // Replace relevant variables:
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
-      self.setFeedback(scoreText, score, MAX_SCORE);
+      self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
     };
 
@@ -425,7 +426,7 @@ H5P.TrueFalse = (function ($, Question) {
       this.addResponseToXAPI(xAPIEvent);
       return {
         statement: xAPIEvent.data.statement
-      }
+      };
     };
 
     /**

@@ -1,139 +1,142 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Media",
-      "fields":[
+      "label": "Media",
+      "fields": [
         {
-          "label":"Type",
-          "description":"Optional media to display above the question."
+          "label": "Tyyppi",
+          "description": "Valinnainen kuva tai video, joka näkyy kysymyksen yläpuolella."
         }
       ]
     },
     {
-      "label":"Question"
+      "label": "Väittämä"
     },
     {
-      "label":"Correct answer",
-      "options":[
+      "label": "Oikea vastaus",
+      "options": [
         {
-          "label":"True"
+          "label": "Oikein"
         },
         {
-          "label":"False"
-        }
-      ],
-      "default":"true"
-    },
-    {
-      "label":"User interface translations for True/False Questions",
-      "fields":[
-        {
-          "label":"Label for true button",
-          "default":"True"
-        },
-        {
-          "label":"Label for false button",
-          "default":"False"
-        },
-        {
-          "label":"Feedback text",
-          "default":"You got @score of @total points",
-          "description":"Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
-        },
-        {
-          "label":"Text for \"Check\" button",
-          "default":"Check"
-        },
-        {
-          "label":"Text for \"Show solution\" button",
-          "default":"Show solution"
-        },
-        {
-          "label":"Text for \"Retry\" button",
-          "default":"Retry"
-        },
-        {
-          "label":"Wrong Answer",
-          "default":"Wrong answer"
-        },
-        {
-          "label":"Correct Answer",
-          "default":"Correct answer"
+          "label": "Väärin"
         }
       ]
     },
     {
-      "label":"Behavioural settings",
-      "description":"These options will let you control how the task behaves.",
-      "fields":[
+      "label": "Oikein/väärin-tehtävän toimintojen nimet",
+      "fields": [
         {
-          "label":"Enable \"Retry\" button"
+          "label": "Painikkeen Oikein nimi",
+          "default": "Oikein"
         },
         {
-          "label":"Enable \"Show Solution\" button"
+          "label": "Painikkeen Väärin nimi",
+          "default": "Väärin"
         },
         {
-          "label":"Disable image zooming for question image"
+          "label": "Palauteteksti",
+          "default": "Sait @score/@total pistettä",
+          "description": "Palauteteksti, käytettävissä on seuraavat muuttujat: @score ja @total. Esimerkki: 'Sait @score/@total pistettä'"
         },
         {
-          "label":"Show confirmation dialog on \"Check\""
+          "label": "Painikkeen \"Tarkista\" nimi",
+          "default": "Tarkista"
         },
         {
-          "label":"Show confirmation dialog on \"Retry\""
+          "label": "Painikkeen \"Katso vastaus\" nimi",
+          "default": "Katso vastaus"
         },
         {
-          "label":"Automatically check answer",
-          "description":"Note that accessibility will suffer if enabling this option"
+          "label": "Painikkeen \"Yritä uudelleen\" nimi",
+          "default": "Yritä uudelleen"
         },
         {
-          "label":"Feedback on correct answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label": "Väärä vastaus",
+          "default": "Väärä vastaus"
         },
         {
-          "label":"Feedback on wrong answer",
-          "description":"This will override the default feedback text. Variables available: @score and @total"
+          "label": "Oikea vastaus",
+          "default": "Oikea vastaus"
+        },
+        {
+          "label": "Textual representation of the score bar for those using a readspeaker",
+          "default": "You got :num out of :total points"
         }
       ]
     },
     {
-      "label":"Check confirmation dialog",
-      "fields":[
+      "label": "Yleisasetukset",
+      "description": "Näillä valinnoilla voit ohjailla tehtävän toimintoja.",
+      "fields": [
         {
-          "label":"Header text",
-          "default":"Finish ?"
+          "label": "Salli painike \"Yritä uudelleen\""
         },
         {
-          "label":"Leipäteksti",
-          "default":"Are you sure you wish to finish ?"
+          "label": "Salli painike \"Katso vastaus\""
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label": "Älä salli kysymykseen liitetyn kuvan suurentamista"
         },
         {
-          "label":"Confirm button label",
-          "default":"Finish"
+          "label": "Näytä varmistusdialogi, kun käyttäjä klikkaa \"Tarkista\""
+        },
+        {
+          "label": "Näytä varmistusdialogi, kun käyttäjä klikkaa \"Yritä uudelleen\""
+        },
+        {
+          "label": "Tarkista vastaukset automaattisesti",
+          "description": "Tämä saattaa heikentää esteettömyyttä, varmista mitä olet tekemässä."
+        },
+        {
+          "label": "Palaute oikeasta vastauksesta",
+          "description": "Tämä korvaa oletuspalautteen. Käytettävissä on seuraavat muuttujat: @score ja @total."
+        },
+        {
+          "label": "Palaute väärästä vastauksesta",
+          "description": "Tämä korvaa oletuspalautteen. Käytettävissä on seuraavat muuttujat: @score ja @total."
         }
       ]
     },
     {
-      "label":"Retry confirmation dialog",
-      "fields":[
+      "label": "Painikkeen \"Tarkista\" varmistusdialogi",
+      "fields": [
         {
-          "label":"Header text",
-          "default":"Retry ?"
+          "label": "Otsikkoteksti",
+          "default": "Valmis?"
         },
         {
-          "label":"Leipäteksti",
-          "default":"Are you sure you wish to retry ?"
+          "label": "Leipäteksti",
+          "default": "Haluatko tarkistaa?"
         },
         {
-          "label":"Cancel button label",
-          "default":"Cancel"
+          "label": "Painikkeen Ei teksti",
+          "default": "En"
         },
         {
-          "label":"Confirm button label",
-          "default":"Confirm"
+          "label": "Painikkeen Kyllä teksti",
+          "default": "Kyllä"
+        }
+      ]
+    },
+    {
+      "label": "Painikkeen \"Yritä uudelleen\" varmistusdialogi",
+      "fields": [
+        {
+          "label": "Otsikkoteksti",
+          "default": "Yritätkö uudelleen?"
+        },
+        {
+          "label": "Leipäteksti",
+          "default": "Haluatko yrittää uudelleen?"
+        },
+        {
+          "label": "Painikkeen Ei teksti",
+          "default": "En"
+        },
+        {
+          "label": "Painikkeen Kyllä teksti",
+          "default": "Kyllä"
         }
       ]
     }
