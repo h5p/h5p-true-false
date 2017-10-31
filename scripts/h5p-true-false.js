@@ -132,7 +132,7 @@ H5P.TrueFalse = (function ($, Question) {
       }
 
       // Check button
-      if (!params.behaviour.autoCheck) {
+      if (!params.behaviour.autoCheck && params.behaviour.enableCheckButton) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
           checkAnswer();
           triggerXAPIAnswered();
@@ -257,14 +257,8 @@ H5P.TrueFalse = (function ($, Question) {
      */
     var toggleButtonState = function (state) {
       toggleButtonVisibility(Button.SHOW_SOLUTION, state === State.FINISHED_WRONG);
+      toggleButtonVisibility(Button.CHECK, state === State.ONGOING);
       toggleButtonVisibility(Button.TRYAGAIN, state === State.FINISHED_WRONG || state === State.INTERNAL_SOLUTION);
-
-      if (params.behaviour.enableCheckButton) {
-        toggleButtonVisibility(Button.CHECK, state === State.ONGOING);
-      } else {
-        self.hideButton(Button.CHECK);
-      }
-
     };
 
     /**
