@@ -76,6 +76,9 @@
           "label": "Enable \"Show Solution\" button"
         },
         {
+          "label": "Enable \"Check\" button"
+        },
+        {
           "label": "Disable image zooming for question image"
         },
         {
