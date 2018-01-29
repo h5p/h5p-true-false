@@ -76,6 +76,9 @@
           "label": "Activa el botó \"Mostrar solució\""
         },
         {
+          "label": "Enable \"Check\" button"
+        },
+        {
           "label": "Desactivar el zoom per la imatge de la pregunta"
         },
         {

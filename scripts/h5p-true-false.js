@@ -58,6 +58,7 @@ H5P.TrueFalse = (function ($, Question) {
       behaviour: {
         enableRetry: true,
         enableSolutionsButton: true,
+        enableCheckButton: true,
         disableImageZooming: false,
         confirmCheckDialog: false,
         confirmRetryDialog: false,
@@ -131,7 +132,7 @@ H5P.TrueFalse = (function ($, Question) {
       }
 
       // Check button
-      if (!params.behaviour.autoCheck) {
+      if (!params.behaviour.autoCheck && params.behaviour.enableCheckButton) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
           checkAnswer();
           triggerXAPIAnswered();

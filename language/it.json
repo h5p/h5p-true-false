@@ -76,6 +76,9 @@
           "label": "Abilita pulsante \"Mostra soluzione\""
         },
         {
+          "label": "Enable \"Check\" button"
+        },
+        {
           "label": "Disabilita lo zoom dell'immagine su immagini-domanda"
         },
         {
