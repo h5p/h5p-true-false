@@ -74,6 +74,7 @@ H5P.TrueFalse = (function ($, Question) {
 
     // saves the content id
     this.contentId = id;
+    this.contentData = contentData;
 
     // The radio group
     var answerGroup = new H5P.TrueFalse.AnswerGroup(domId, params.correct, params.l10n);
@@ -382,11 +383,11 @@ H5P.TrueFalse = (function ($, Question) {
      * Get title of task
      *
      * @method getTitle
-     * @upblic
+     * @public
      * @returns {string} title
      */
     self.getTitle = function () {
-      return H5P.createTitle(params.question);
+      return H5P.createTitle((self.contentData && self.contentData.metadata && self.contentData.metadata.title) ? self.contentData.metadata.title : 'True-False');
     };
 
     /**
