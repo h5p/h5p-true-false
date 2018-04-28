@@ -1,145 +1,145 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "媒體",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "類型",
+          "description": "非必要項，在問題上方要顯示的媒體。"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "問題"
     },
     {
-      "label": "Correct answer",
+      "label": "正解",
       "options": [
         {
-          "label": "True"
+          "label": "是"
         },
         {
-          "label": "False"
+          "label": "否"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "使用介面本地化",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "是的按鈕的顯示文字",
+          "default": "是"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "否的按鈕的顯示文字",
+          "default": "否"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "回饋文字",
+          "default": "你得到 @score 分，總分 @total 分。",
+          "description": "回饋文字，@score 表示得分，@total 表示總分。"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "核對答案按鈕的顯示文字",
+          "default": "核對答案"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "顯示正解按鈕的顯示文字",
+          "default": "顯示正解"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "再試一次按鈕的顯示文字",
+          "default": "再試一次"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "答錯時的顯示文字",
+          "default": "答錯囉…"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "答對時的顯示文字",
+          "default": "答對啦！"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "報讀器用結果文本（非顯示用）",
+          "default": "你得到 :num 分，總為是 :total 分。"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "行為設置",
+      "description": "用來控制任務行為的一些設定。",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "啟用「再試一次」按鈕"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "啟用「顯示正解」按鈕"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "啟用「核對答案」按鈕"
         },
         {
-          "label": "Disable image zooming for question image"
+          "label": "停用題目上圖片的放大功能"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "核對答案前彈出確認視窗"
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "再試一次前彈出確認視窗"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "自動核對答案",
+          "description": "勾選後會導致無障礙功能失效"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "正確回饋訊息",
+          "description": "這會覆蓋預設的答對時顯示文字，可用變數為 @score 和 @total。"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "錯誤回饋訊息",
+          "description": "這會覆蓋預設的答錯時顯示文字，可用變數為 @score 和 @total。"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "核對答案前的確認視窗",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "標題文字",
+          "default": "確定要核對嗎？"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "內文文字",
+          "default": "完成後記得再仔細檢查，避免粗心！"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "取消按鈕顯示文字",
+          "default": "取消"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "確定按鈕顯示文字",
+          "default": "確定"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "再試一次前的確認視窗",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "標題文字",
+          "default": "確定要重試嗎？"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "內文文字",
+          "default": "準備好了？挑戰吧！"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "取消按鈕顯示文字",
+          "default": "取消"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "確定按鈕顯示文字",
+          "default": "確定"
         }
       ]
     }
