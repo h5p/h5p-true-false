@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type de média",
-          "description": "Média optionnel à afficher au-dessus de la question."
+          "description": "Média optionnel à afficher au-dessus de la question"
         }
       ]
     },
@@ -36,8 +36,8 @@
         },
         {
           "label": "Texte de feedback",
-          "default": "Vous avez obtenu @score sur @total points",
-          "description": "Texte de feedback, les variables disponibles sont: @score et @total. Exemple: 'Vous avez obtenu @score sur @total points'"
+          "default": "Vous avez obtenu @score points sur un total de @total",
+          "description": "Texte de feedback, les variables disponibles sont: @score et @total. Exemple: 'Vous avez obtenu @score sur @total points'."
         },
         {
           "label": "Texte du bouton \"Vérifier\"",
@@ -60,13 +60,13 @@
           "default": "Bonne réponse"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Représentation textuelle de la barre de score pour ceux qui utilisent une synthèse vocale",
+          "default": "Vous avez obtenu @score points sur un total de @total"
         }
       ]
     },
     {
-      "label": "Options générales.",
+      "label": "Options générales",
       "description": "Ces options vous permettent de contrôler le déroulement de vos activités.",
       "fields": [
         {
@@ -76,10 +76,10 @@
           "label": "Activer le bouton \"Voir la solution\""
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Activer le bouton \"Vérifier\""
         },
         {
-          "label": "Désactiver la possibilité d'agrandir l'image de la question."
+          "label": "Désactiver la possibilité d'agrandir l'image de la question"
         },
         {
           "label": "Afficher la fenêtre de confirmation pour \"Vérifier\""
@@ -89,15 +89,15 @@
         },
         {
           "label": "Vérifier automatiquement la réponse cochée",
-          "description": "Note: cette option peut impacter l'ergonomie."
+          "description": "Noter que l'accessibilité sera pénalisée si cette option est activée."
         },
         {
           "label": "Commentaire pour une réponse correcte",
-          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
+          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total."
         },
         {
           "label": "Commentaire pour une mauvaise réponse",
-          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
+          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total."
         }
       ]
     },
