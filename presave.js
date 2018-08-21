@@ -14,9 +14,7 @@ H5PPresave['H5P.TrueFalse'] = function (content, finished) {
     throw new presave.exceptions.InvalidContentSemanticsException('Invalid True/False Error');
   }
 
-  if (finished) {
-    finished({maxScore: 1});
-  }
+  finished({maxScore: 1});
 
   /**
    * Check if required parameters is present
