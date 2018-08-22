@@ -3,7 +3,7 @@ var H5PUpgrades = H5PUpgrades || {};
 H5PUpgrades['H5P.TrueFalse'] = (function () {
   return {
     1: {
-      3: function (parameters, finished, extras) {
+      5: function (parameters, finished, extras) {
         var title;
 
         if (parameters && parameters.question) {

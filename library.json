@@ -3,8 +3,8 @@
   "description": "Test your users with 'True or False' type questions",
   "machineName": "H5P.TrueFalse",
   "majorVersion": 1,
-  "minorVersion": 4,
-  "patchVersion": 1,
+  "minorVersion": 5,
+  "patchVersion": 0,
   "runnable": 1,
   "license": "MIT",
   "author": "Joubel",
@@ -13,7 +13,7 @@
   ],
   "coreApi": {
     "majorVersion": 1,
-    "minorVersion": 15
+    "minorVersion": 19
   },
   "preloadedCss": [
     {
