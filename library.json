@@ -13,7 +13,7 @@
   ],
   "coreApi": {
     "majorVersion": 1,
-    "minorVersion": 9
+    "minorVersion": 15
   },
   "preloadedCss": [
     {
