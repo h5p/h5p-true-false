@@ -4,142 +4,142 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipo",
+          "description": "Medios opcionales para mostrar sobre la pregunta."
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Pregunta"
     },
     {
-      "label": "Correct answer",
+      "label": "Respuesta correcta",
       "options": [
         {
-          "label": "True"
+          "label": "Verdadero"
         },
         {
-          "label": "False"
+          "label": "Falso"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Traducciones de interfaz de usuario para preguntas verdaderas/falsas",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Texto para el botón verdadero",
+          "default": "Verdadero"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Texto para botón falso",
+          "default": "Falso"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Texto de retroalimentación",
+          "default": "Tienes @score de @total",
+          "description": "Texto de retroalimentación, variables disponibles: @score y @total. Ejemplo: 'Tienes @score de @total puntos posibles'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Texto para el botón \"Verificar\"",
+          "default": "Verificar"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Texto para el botón \"Mostrar solución\"",
+          "default": "Mostrar solución"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Texto para el botón \"Reintentar\"",
+          "default": "Reintentar"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Respuesta incorrecta",
+          "default": "Respuesta incorrecta"
         },
         {
           "label": "Correct Answer",
-          "default": "Correct answer"
+          "default": "Respuesta correcta"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Representación textual de la barra de puntaje para aquellos que usan un lector en voz alta",
+          "default": "Tienes :num de :puntos posibles"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Configuraciones de comportamiento",
+      "description": "Estas opciones te permitirán controlar cómo se comporta la tarea.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Habilitar el botón \"Reintentar\""
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Habilite el botón \"Mostrar solución\""
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Habilite el botón \"Comprobar\""
         },
         {
-          "label": "Disable image zooming for question image"
+          "label": "Desactivar zoom de imagen para imagen de pregunta"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Mostrar el cuadro de diálogo de confirmación en \"Comprobar\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Mostrar el diálogo de confirmación en \"Reintentar\""
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Verificar automáticamente la respuesta",
+          "description": "Tenga en cuenta que la accesibilidad sufrirá si habilita esta opción"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Retrolimentación en respuestas correctas",
+          "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Retroalimentación en respuestas incorrectas",
+          "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Verifique el diálogo de confirmación",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Texto de cabecera",
+          "default": "¿Terminar?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Cuerpo del texto",
+          "default": "¿Seguro de que desea terminar?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Texto del botón Cancelar",
+          "default": "Cancelar"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Texto del botón Terminar",
+          "default": "Terminar"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Diálogo de confirmación Reintentar",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Texto de cabecera",
+          "default": "¿Reintentar?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Cuerpo de texto",
+          "default": "¿Estás seguro de que deseas volver a intentarlo?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Texto del botón Cancelar",
+          "default": "Cancelar"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Texto del botón Confirmar",
+          "default": "Confirmar"
         }
       ]
     }
