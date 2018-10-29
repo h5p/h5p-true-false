@@ -4,95 +4,95 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Vrsta",
+          "description": "Prikaz medija iznad pitanja (opcionalno)."
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Pitanje"
     },
     {
-      "label": "Correct answer",
+      "label": "Tačan odgovor",
       "options": [
         {
-          "label": "True"
+          "label": "Tačno"
         },
         {
-          "label": "False"
+          "label": "Pogrešno"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Interfejs za prijevode za Pitanja Tačno/Pogrešno",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Tekst na dugmetu tačno",
+          "default": "Tačno"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Naziv na dugmetu pogrešno",
+          "default": "Pogrešno"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Feedback tekst",
+          "default": "Osvojili ste @score od @total bodova",
+          "description": "Feedback tekst, moguće varijable: @score i @total. Primjer: 'Osvojili ste @score od @total mogućih bodova'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Tekst za \"Provjera\" dugme",
+          "default": "Provjera"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Tekst za \"Prikazati rješenje\" dugme",
+          "default": "Prikazati rješenje"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Tekst za \"Ponoviti\" dugme",
+          "default": "Ponoviti"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Pogrešan odgovor",
+          "default": "Pogrešan odgovor"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Tačan odgovor",
+          "default": "Tačan odgovor"
         },
         {
           "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "default": "Osvojili ste :num od of :total bodova"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Podešavanje ponašanja",
+      "description": "Ove opcije će vam omogućiti da kontrolirate kako se zadatak ponaša.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Omogućiti \"Ponoviti\" dugme"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Omogućiti \"Prikazati rješenje\" dugme"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Omogućiti \"Provjeriti\" dugme"
         },
         {
-          "label": "Disable image zooming for question image"
+          "label": "Onemogućiti zumiranje slike kod pitanja sa slikom"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Prikazati ociju prihvatanja za \"Provjeriti\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Prikazati opciju prihvatanja za \"Ponoviti\""
         },
         {
-          "label": "Automatically check answer",
+          "label": "Automatski provjeri odgovor",
           "description": "Note that accessibility will suffer if enabling this option"
         },
         {
-          "label": "Feedback on correct answer",
+          "label": "Feedback za tačan odgovor",
           "description": "This will override the default feedback text. Variables available: @score and @total"
         },
         {
@@ -102,44 +102,44 @@
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Provjeriti opciju prikaza",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Naslov zaglavlja",
+          "default": "Završiti ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Glavni tekst",
+          "default": "Jeste li sigurni da želite završiti ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Tekst na dugmetu orkazivanja",
+          "default": "Otkazati"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Tekst na dugmetu završetka",
+          "default": "završiti"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Ponoviti opciju prihvatanja",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Tekst zaglavlja",
+          "default": "Ponoviti ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Glavni tekst",
+          "default": "Jeste li sigurni da želite ponoviti ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Tekst na dugmetu otkazivanja",
+          "default": "Otkazati"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Tekst na dugmetu prihvatanja",
+          "default": "Prihvatiti"
         }
       ]
     }
