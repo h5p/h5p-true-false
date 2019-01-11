@@ -6,6 +6,9 @@
         {
           "label": "Yazınız",
           "description": "Soru üzerinde görüntülenecek isteğe bağlı ortam."
+        },
+        {
+          "label": "Soru resmi için resim yakınlaştırmasını devre dışı bırakın"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Soru resmi için resim yakınlaştırmasını devre dışı bırakın"
         },
         {
           "label": "\"Kontrol et\"deki onay kutucuğunu göster"

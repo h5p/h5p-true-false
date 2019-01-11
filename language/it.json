@@ -6,6 +6,9 @@
         {
           "label": "Tipo",
           "description": "Media facoltativo da mostrare sopra la domanda."
+        },
+        {
+          "label": "Disabilita lo zoom dell'immagine"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Disabilita lo zoom dell'immagine su immagini-domanda"
         },
         {
           "label": "Mostra la finestra di dialogo di conferma su \"Verifica\""

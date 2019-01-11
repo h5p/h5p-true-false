@@ -6,6 +6,9 @@
         {
           "label": "Type de média",
           "description": "Média optionnel à afficher au-dessus de la question"
+        },
+        {
+          "label": "Désactiver la possibilité d'agrandir l'image"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Activer le bouton \"Vérifier\""
-        },
-        {
-          "label": "Désactiver la possibilité d'agrandir l'image de la question"
         },
         {
           "label": "Afficher la fenêtre de confirmation pour \"Vérifier\""

@@ -6,6 +6,9 @@
         {
           "label": "Type",
           "description": "Optional media to display above the question."
+        },
+        {
+          "label": "Disable image zooming"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Disable image zooming for question image"
         },
         {
           "label": "Show confirmation dialog on \"Check\""

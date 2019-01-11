@@ -6,6 +6,9 @@
         {
           "label": "Type",
           "description": "Eit valfritt multimediaelement som skal visast over spørsmålet."
+        },
+        {
+          "label": "Slå av bilete zooming"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Slå av bilete zooming."
         },
         {
           "label": "Slå på bruker-bekreftelse før \"Sjekk svar\""

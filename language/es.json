@@ -4,8 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Tipo",
+          "label": "Type",
           "description": "Medios opcionales para mostrar sobre la pregunta."
+        },
+        {
+          "label": "Desactivar zoom de imagen para imagen de pregunta"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Habilite el botón \"Comprobar\""
-        },
-        {
-          "label": "Desactivar zoom de imagen para imagen de pregunta"
         },
         {
           "label": "Mostrar el cuadro de diálogo de confirmación en \"Comprobar\""

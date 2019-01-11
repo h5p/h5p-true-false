@@ -6,6 +6,9 @@
         {
           "label": "Typ",
           "description": "Optionale Medien, die über der Frage dargestellt werden"
+        },
+        {
+          "label": "Bildzoom deaktivieren"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Bilderzoom für Bilder-Fragen deaktivieren"
         },
         {
           "label": "Bestätigungsdialog beim Klicken auf \"Überprüfen\" anzeigen"
