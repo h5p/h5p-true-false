@@ -6,6 +6,9 @@
         {
           "label": "Mota",
           "description": "Galderaren gaineko aukerako multimedia."
+        },
+        {
+          "label": "Disable image zooming"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Gaitu \"Egiaztatu\" botoia"
-        },
-        {
-          "label": "Desgaitu irudiaren tamaina-aldaketa galderetako irudietarako"
         },
         {
           "label": "Erakutsi \"Egiaztatu\" botoirako baieztapen-mezua"
