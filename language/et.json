@@ -8,7 +8,7 @@
           "description": "Pilt või video, mida kuvatakse küsimuse juures (mittekohustuslik element)."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Keela pildi suumimine"
         }
       ]
     },
@@ -19,127 +19,127 @@
       "label": "Õige vastus",
       "options": [
         {
-          "label": "True"
+          "label": "Õige"
         },
         {
-          "label": "False"
+          "label": "Vale"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Kasutajaliidese tõlge õige/vale küsimustele",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Õige nupu silt",
+          "default": "Õige"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Vale nupu silt",
+          "default": "Vale"
         },
         {
           "label": "Tagasiside tekst",
           "default": "Said @score punkti @total võimalikust",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "description": "Tagasiside tekst, kasutatavad muutujad on: @score ja @total. Näiteks: 'Said @score punkti @total võimalikust'"
         },
         {
-          "label": "Text for \"Check\" button",
+          "label": "\"Check\" nupu tekst",
           "default": "Kontrolli"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Õige vastus"
+          "label": "\"Näita lahendust\" nupu tekst",
+          "default": "Näita lahendust"
         },
         {
-          "label": "Text for \"Retry\" button",
+          "label": "\"Proovi uuesti\" nupu tekst",
           "default": "Proovi uuesti"
         },
         {
-          "label": "Wrong Answer",
+          "label": "Vale vastus",
           "default": "Vale vastus"
         },
         {
-          "label": "Correct Answer",
+          "label": "Õige vastus",
           "default": "Õige vastus"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Tekstilugeri kasutajale punktisummariba tekstiline esitus",
+          "default": "Sa said :num punkti :total punktist"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Käitumisseaded",
+      "description": "Need valikud määravad, kuidas ülesanne käitub.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Luba \"Proovi uuesti\" nupp"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Luba \"Näita lahendust\" nupp"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Luba \"Kontrolli\" nupp"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Näita kinnitusdialoogi nupule \"Kontrolli\" vajutamisel"
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Näita kinnitusdialoogi nupule \"Proovi uuesti\" vajutamisel"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Kontrolli vastust automaatselt",
+          "description": "Pane tähele, et puudega inimeste kasutajakogemus kanntab selle valiku lubamisel"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Õige vastuse tagasiside",
+          "description": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Vale vastuse tagasiside",
+          "description": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Kontrolli kinnitusdialoog",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Pealkirja tekst",
+          "default": "Lõpetada?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Sisu tekst",
+          "default": "Kas oled kindel, et soovid lõpetada?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Katkesta nupu silt",
+          "default": "Ei"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Kinnita nupu silt",
+          "default": "Jah"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Proovi uuesti kinnitusdialoog",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Pealkirja tekst",
+          "default": "Proovida uuesti?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Sisu tekst",
+          "default": "Kas oled kindel, et soovid uuesti proovida?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Katkesta nupu silt",
+          "default": "Ei"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Kinnita nupu silt",
+          "default": "Jah"
         }
       ]
     }
