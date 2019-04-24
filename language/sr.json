@@ -1,145 +1,145 @@
-{
+﻿{
   "semantics": [
     {
-      "label": "Media",
+      "label": "Мултимедија",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Тип",
+          "description": "Опционална мултимедијална датотека која ће бити приказана изнад питања."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Онемогући зумирање слике"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Питање"
     },
     {
-      "label": "Correct answer",
+      "label": "Тачан одговор",
       "options": [
         {
-          "label": "True"
+          "label": "Тачно"
         },
         {
-          "label": "False"
+          "label": "Нетачно"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Превод корисничког интерфејса за питање Тачно\Нетачно",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Ознака за дугме Тачно",
+          "default": "Тачно"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Ознака за дугме Нетачно",
+          "default": "Нетачно"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Текст повратне информације",
+          "default": "Освојили сте @score од укупно @total поена",
+          "description": "Текст повратне информације, доступне варијабле: @score и @total. Пример: 'Освојили сте @score од укупно @total могућа/их поена'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Текст за дугме \"Провери\"",
+          "default": "Провери"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Текст за дугме \"Прикажи одговор\"",
+          "default": "Прикажи одговор"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Текст за дугме \"Покушај поново\"",
+          "default": "Покушај поново"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Погрешан одговор",
+          "default": "Погрешан одговор"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Тачан одговор",
+          "default": "Тачан одговор"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Текстуална репрезентација траке резултата за оне који користе читач екрана",
+          "default": "Освојили сте :num out од укупно :total поена"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Подешавања понашања",
+      "description": "Ове опције ће вам омогућити да контролишете како се задатак понаша.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Омогући дугме \"Покушај поново\""
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Омогући дугме \"Прикажи одговор\""
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Омогући дугме \"Провери\""
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Прикажи дијалог за потврду за \"Провери\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Прикажи дијалог за потврду за \"Покушај поново\""
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Аутоматски проверите одговор",
+          "description": "Имајте на уму да може бити проблема са пристпачношћу ако је ова опција омогућена"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Повратна информација за тачан одговор",
+          "description": "Ово ће изменити подразумевани текст повратне информације. Доступне променљиве: @score и @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Повратна информација за погрешан одговор",
+          "description": "Ово ће изменити подразумевани текст повратне информације. Доступне променљиве: @score и @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Дијалог за потврду завршетка",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Текст заглавља",
+          "default": "Желите да завршите ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Текст оквира за дијалог",
+          "default": "Да ли сте сигурни да желите да завршите ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Ознака дугмета Откажи",
+          "default": "Откажи"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Ознака дугмета за потврду",
+          "default": "Заврши"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Дијалог за потврду поновног покушаја",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Текст заглавља",
+          "default": "Желите да поново покушате ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Текст оквира за дијалог",
+          "default": "Да ли сте сигурни да желите да покушате поново ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Ознака дугмета Откажи",
+          "default": "Откажи"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Ознака дугмета за потврду",
+          "default": "Потврди"
         }
       ]
     }
