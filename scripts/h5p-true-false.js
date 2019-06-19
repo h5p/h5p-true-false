@@ -52,17 +52,17 @@ H5P.TrueFalse = (function ($, Question) {
         showSolutionButton: 'Show solution',
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
-        correctAnswerMessage: 'Correct answer'
+        correctAnswerMessage: 'Correct answer',
+        scoreBarLabel: 'You got :num out of :total points'
       },
       behaviour: {
         enableRetry: true,
         enableSolutionsButton: true,
-        disableImageZooming: false,
+        enableCheckButton: true,
         confirmCheckDialog: false,
         confirmRetryDialog: false,
         autoCheck: false
-      },
-      overrideSettings: {}
+      }
     }, options);
 
     // Counter used to create unique id for this question
@@ -70,6 +70,10 @@ H5P.TrueFalse = (function ($, Question) {
 
     // A unique ID is needed for aria label
     var domId = 'h5p-tfq' + H5P.TrueFalse.counter;
+
+    // saves the content id
+    this.contentId = id;
+    this.contentData = contentData;
 
     // The radio group
     var answerGroup = new H5P.TrueFalse.AnswerGroup(domId, params.correct, params.l10n);
@@ -104,6 +108,22 @@ H5P.TrueFalse = (function ($, Question) {
      * @private
      */
     var registerButtons = function () {
+      var $content = $('[data-content-id="' + self.contentId + '"].h5p-content');
+      var $containerParents = $content.parents('.h5p-container');
+
+      // select find container to attach dialogs to
+      var $container;
+      if($containerParents.length !== 0) {
+        // use parent highest up if any
+        $container = $containerParents.last();
+      }
+      else if($content.length !== 0){
+        $container = $content;
+      }
+      else  {
+        $container = $(document.body);
+      }
+
       // Show solution button
       if (params.behaviour.enableSolutionsButton === true) {
         self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
@@ -112,7 +132,7 @@ H5P.TrueFalse = (function ($, Question) {
       }
 
       // Check button
-      if (!params.behaviour.autoCheck) {
+      if (!params.behaviour.autoCheck && params.behaviour.enableCheckButton) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
           checkAnswer();
           triggerXAPIAnswered();
@@ -120,8 +140,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmCheckDialog,
             l10n: params.confirmCheck,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: $container
           }
         });
       }
@@ -134,8 +154,8 @@ H5P.TrueFalse = (function ($, Question) {
           confirmationDialog: {
             enable: params.behaviour.confirmRetryDialog,
             l10n: params.confirmRetry,
-            instance: params.overrideSettings.instance,
-            $parentElement: params.overrideSettings.$confirmationDialogParent
+            instance: self,
+            $parentElement: $container
           }
         });
       }
@@ -183,7 +203,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getCorrectAnswer = function () {
-      return (params.correct === 'true' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'true' ? 'true' : 'false');
     };
 
     /**
@@ -194,7 +214,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getWrongAnswer = function () {
-      return (params.correct === 'false' ? params.l10n.trueText : params.l10n.falseText);
+      return (params.correct === 'false' ? 'true' : 'false');
     };
 
     /**
@@ -265,7 +285,7 @@ H5P.TrueFalse = (function ($, Question) {
       }
       // Replace relevant variables:
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
-      self.setFeedback(scoreText, score, MAX_SCORE);
+      self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
     };
 
@@ -280,14 +300,14 @@ H5P.TrueFalse = (function ($, Question) {
       var self = this;
 
       // Check for task media
-      var media = params.media;
+      var media = params.media.type;
       if (media && media.library) {
         var type = media.library.split(' ')[0];
         if (type === 'H5P.Image') {
           if (media.params.file) {
             // Register task image
             self.setImage(media.params.file.path, {
-              disableImageZooming: params.behaviour.disableImageZooming,
+              disableImageZooming: params.media.disableImageZooming || false,
               alt: media.params.alt
             });
           }
@@ -304,7 +324,8 @@ H5P.TrueFalse = (function ($, Question) {
       self.setIntroduction('<div id="' + domId + '">' + params.question + '</div>');
 
       // Register task content area
-      self.setContent(createAnswers());
+      self.$content = createAnswers();
+      self.setContent(self.$content);
 
       // ... and buttons
       registerButtons();
@@ -361,11 +382,11 @@ H5P.TrueFalse = (function ($, Question) {
      * Get title of task
      *
      * @method getTitle
-     * @upblic
+     * @public
      * @returns {string} title
      */
     self.getTitle = function () {
-      return H5P.createTitle(params.question);
+      return H5P.createTitle((self.contentData && self.contentData.metadata && self.contentData.metadata.title) ? self.contentData.metadata.title : 'True-False');
     };
 
     /**
@@ -390,7 +411,7 @@ H5P.TrueFalse = (function ($, Question) {
      */
     self.resetTask = function () {
       answerGroup.reset();
-      self.setFeedback();
+      self.removeFeedback();
       toggleButtonState(State.ONGOING);
     };
 
@@ -406,7 +427,7 @@ H5P.TrueFalse = (function ($, Question) {
       this.addResponseToXAPI(xAPIEvent);
       return {
         statement: xAPIEvent.data.statement
-      }
+      };
     };
 
     /**

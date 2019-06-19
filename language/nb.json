@@ -1,11 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Multimedia",
       "fields": [
         {
           "label": "Type",
           "description": "En valgfri mediakilde som vises over spørsmålet."
+        },
+        {
+          "label": "Slå av bildezooming"
         }
       ]
     },
@@ -58,6 +61,10 @@
         {
           "label": "Rett svar",
           "default": "Rett svar"
+        },
+        {
+          "label": "Textual representation of the score bar for those using a readspeaker",
+          "default": "You got :num out of :total points"
         }
       ]
     },
@@ -72,7 +79,7 @@
           "label": "Aktiver \"Fasit\" knapp"
         },
         {
-          "label": "Slå av bildezooming"
+          "label": "Enable \"Check\" button"
         },
         {
           "label": "Slå på brukerbekreftelse før \"Fasit\""
