@@ -50,7 +50,7 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     falseAnswer.on('invert', handleInvert(true, trueAnswer));
 
     // Handle tabbing
-    var handleTabable = function(other, tabable) {
+    var handleTabable = function (other, tabable) {
       return function () {
         // If one of them are checked, that one should get tabfocus
         if (!tabable || !self.hasAnswered() || other.isChecked()) {

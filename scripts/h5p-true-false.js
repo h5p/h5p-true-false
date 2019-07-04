@@ -114,11 +114,11 @@ H5P.TrueFalse = (function ($, Question) {
 
       // select find container to attach dialogs to
       var $container;
-      if($containerParents.length !== 0) {
+      if ($containerParents.length !== 0) {
         // use parent highest up if any
         $container = $containerParents.last();
       }
-      else if($content.length !== 0){
+      else if ($content.length !== 0) {
         $container = $content;
       }
       else  {
@@ -185,7 +185,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @param {XAPIEvent} xAPIEvent
      * @private
      */
-    var addQuestionToXAPI = function(xAPIEvent) {
+    var addQuestionToXAPI = function (xAPIEvent) {
       var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
       definition.description = {
         // Remove tags, must wrap in div tag because jQuery 1.9 will crash if the string isn't wrapped in a tag.
@@ -226,7 +226,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @param {H5P.XAPIEvent} xAPIEvent
      *  The xAPI event we will add a response to
      */
-    var addResponseToXAPI = function(xAPIEvent) {
+    var addResponseToXAPI = function (xAPIEvent) {
       var isCorrect = answerGroup.isCorrect();
       xAPIEvent.setScoredResult(isCorrect ? MAX_SCORE : 0, MAX_SCORE, self, true, isCorrect);
       xAPIEvent.data.statement.result.response = (isCorrect ? getCorrectAnswer() : getWrongAnswer());
@@ -273,6 +273,7 @@ H5P.TrueFalse = (function ($, Question) {
       var score = self.getScore();
       var scoreText;
 
+      //
       answerGroup.setAnswer(null);
 
       toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
@@ -424,7 +425,7 @@ H5P.TrueFalse = (function ($, Question) {
      *
      * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
      */
-    self.getXAPIData = function(){
+    self.getXAPIData = function () {
       var xAPIEvent = this.createXAPIEventTemplate('answered');
       this.addQuestionToXAPI(xAPIEvent);
       this.addResponseToXAPI(xAPIEvent);
@@ -436,7 +437,7 @@ H5P.TrueFalse = (function ($, Question) {
     /**
      * Add the question itself to the definition part of an xAPIEvent
      */
-    self.addQuestionToXAPI = function(xAPIEvent) {
+    self.addQuestionToXAPI = function (xAPIEvent) {
       var definition = xAPIEvent.getVerifiedStatementValue(['object', 'definition']);
       $.extend(definition, this.getxAPIDefinition());
     };
@@ -470,12 +471,12 @@ H5P.TrueFalse = (function ($, Question) {
 
       xAPIEvent.setScoredResult(rawUserScore, MAX_SCORE, self, true, isCorrect);
 
-      if(self.getCurrentState().answer !== undefined) {
+      if (self.getCurrentState().answer !== undefined) {
         currentResponse += answerGroup.isCorrect() ? getCorrectAnswer() : getWrongAnswer();
       }
       xAPIEvent.data.statement.result.response = currentResponse;
     };
-   }
+  }
 
   // Inheritance
   TrueFalse.prototype = Object.create(Question.prototype);
