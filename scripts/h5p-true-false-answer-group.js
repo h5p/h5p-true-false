@@ -101,6 +101,15 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
     };
 
     /**
+     * Return current answer
+     * @method setAnswer
+     * @param {Boolean|null} answerToSet null if no explicit answer given.
+     */
+    self.setAnswer = function (answerToSet) {
+      answer = answerToSet;
+    };
+
+    /**
      * Check if user has answered question yet
      * @method hasAnswered
      * @return {Boolean}
@@ -144,7 +153,7 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
      * @method reveal
      */
     self.reveal = function () {
-      if (self.hasAnswered()) {
+      if (typeof self.hasAnswered() === 'boolean') {
         if (self.isCorrect()) {
           correctAnswer.markCorrect();
         }

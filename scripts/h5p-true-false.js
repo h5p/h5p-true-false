@@ -273,6 +273,8 @@ H5P.TrueFalse = (function ($, Question) {
       var score = self.getScore();
       var scoreText;
 
+      answerGroup.setAnswer(null);
+
       toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
 
       if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
