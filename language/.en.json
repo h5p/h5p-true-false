@@ -1,145 +1,145 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Mediji",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tip",
+          "description": "Neobvezna nastavitev dodatnega medija za prikaz nad vprašanjem."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Onemogoči povečavo slike"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Vprašanje"
     },
     {
-      "label": "Correct answer",
+      "label": "Pravilen odgovor",
       "options": [
         {
-          "label": "True"
+          "label": "Drži"
         },
         {
-          "label": "False"
+          "label": "Ne drži"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Prevodi uporabniškega vmesnika za aktivnost Drži/Ne drži",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Oznaka gumba Drži",
+          "default": "Drži"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Oznaka gumba Ne drži",
+          "default": "Ne drži"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Besedilo za povratno informacijo",
+          "default": "Dosegli ste @score od @total točk",
+          "description": "Spremenljivki v povratni informaciji sta @score in @total. Primer: 'Dosegli ste @score od @total točk'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Besedilo za gumb \"Preveri\"",
+          "default": "Preveri"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Besedilo za gumb \"Prikaži rešitev\"",
+          "default": "Prikaži rešitev"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Besedilo za gumb \"Poskusi ponovno\"",
+          "default": "Poskusi ponovno"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Nepravilen odgovor",
+          "default": "Nepravilen odgovor"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Pravilen odgovor",
+          "default": "Pravilen odgovor"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Besedilo vrstice z rezultati za udeležence, ki uporabljajo bralnik zaslona",
+          "default": "Dosegli ste :num od :total točk"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Nastavitve interakcije",
+      "description": "Nastavitve omogočajo nadzor nad interakcijo aktivnosti za udeležence.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Omogoči gumb \"Poskusi ponovno\""
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Omogoči gumb \"Prikaži rešitev\""
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Omogoči gumb \"Preveri\""
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Pred oddajo odgovora z gumbom \"Preveri\" zahtevaj potrditev"
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Pred ponovitvijo aktivnosti z gumbom \"Poskusi ponovno\" zahtevaj potrditev"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Sprotno preverjanje odgovorov",
+          "description": "Nastavitev lahko obremenjuje delovanje spletne strani."
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Povratna informacija za pravilni odgovor",
+          "description": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Povratna informacija za nepravilni odgovor",
+          "description": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Pogovorno okno pred oddajo odgovora",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Naslov",
+          "default": "Zaključi?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Besedilo telesa pogovornega okna",
+          "default": "Ste prepričani, da želite zaključiti?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Besedilo gumba Prekliči",
+          "default": "Prekliči"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Besedilo gumba Potrdi",
+          "default": "Potrdi"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Pogovorno okno pred ponovitvijo aktivnosti",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Naslov",
+          "default": "Poskusi ponovno?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Besedilo telesa pogovornega okna",
+          "default": "Ste prepričani, da želite poskusiti ponovno?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Besedilo gumba Prekliči",
+          "default": "Prekliči"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Besedilo gumba Potrdi",
+          "default": "Potrdi"
         }
       ]
     }
