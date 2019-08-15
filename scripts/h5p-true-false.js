@@ -300,8 +300,9 @@ H5P.TrueFalse = (function ($, Question) {
       var self = this;
 
       // Check for task media
-      var media = params.media.type;
-      if (media && media.library) {
+      var media = params.media;
+      if (media && media.type && media.type.library) {
+        media = media.type;
         var type = media.library.split(' ')[0];
         if (type === 'H5P.Image') {
           if (media.params.file) {
