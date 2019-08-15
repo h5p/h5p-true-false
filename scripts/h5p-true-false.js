@@ -59,7 +59,6 @@ H5P.TrueFalse = (function ($, Question) {
         enableRetry: true,
         enableSolutionsButton: true,
         enableCheckButton: true,
-        disableImageZooming: false,
         confirmCheckDialog: false,
         confirmRetryDialog: false,
         autoCheck: false
@@ -302,13 +301,14 @@ H5P.TrueFalse = (function ($, Question) {
 
       // Check for task media
       var media = params.media;
-      if (media && media.library) {
+      if (media && media.type && media.type.library) {
+        media = media.type;
         var type = media.library.split(' ')[0];
         if (type === 'H5P.Image') {
           if (media.params.file) {
             // Register task image
             self.setImage(media.params.file.path, {
-              disableImageZooming: params.behaviour.disableImageZooming,
+              disableImageZooming: params.media.disableImageZooming || false,
               alt: media.params.alt
             });
           }

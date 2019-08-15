@@ -4,8 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Vrsta",
+          "label": "Type",
           "description": "Prikaz medija iznad pitanja (opcionalno)."
+        },
+        {
+          "label": "Onemogući zumiranje slike kod pitanja sa slikom"
         }
       ]
     },
@@ -45,11 +48,11 @@
         },
         {
           "label": "Tekst za \"Prikazati rješenje\" dugme",
-          "default": "Prikazati rješenje"
+          "default": "Prikaži rješenje"
         },
         {
           "label": "Tekst za \"Ponoviti\" dugme",
-          "default": "Ponoviti"
+          "default": "Ponovi"
         },
         {
           "label": "Pogrešan odgovor",
@@ -61,7 +64,7 @@
         },
         {
           "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "Osvojili ste :num od of :total bodova"
+          "default": "Osvojili ste :num od :total bodova"
         }
       ]
     },
@@ -70,22 +73,19 @@
       "description": "Ove opcije će vam omogućiti da kontrolirate kako se zadatak ponaša.",
       "fields": [
         {
-          "label": "Omogućiti \"Ponoviti\" dugme"
+          "label": "Omogući \"Ponoviti\" dugme"
         },
         {
-          "label": "Omogućiti \"Prikazati rješenje\" dugme"
+          "label": "Omogući \"Prikazati rješenje\" dugme"
         },
         {
-          "label": "Omogućiti \"Provjeriti\" dugme"
+          "label": "Omogući \"Provjeriti\" dugme"
         },
         {
-          "label": "Onemogućiti zumiranje slike kod pitanja sa slikom"
+          "label": "Prikaži ociju prihvatanja za \"Provjeri\""
         },
         {
-          "label": "Prikazati ociju prihvatanja za \"Provjeriti\""
-        },
-        {
-          "label": "Prikazati opciju prihvatanja za \"Ponoviti\""
+          "label": "Prikaži opciju prihvatanja za \"Ponovi\""
         },
         {
           "label": "Automatski provjeri odgovor",
@@ -96,7 +96,7 @@
           "description": "This will override the default feedback text. Variables available: @score and @total"
         },
         {
-          "label": "Feedback on wrong answer",
+          "label": "Feedback za pogrešan odgovor",
           "description": "This will override the default feedback text. Variables available: @score and @total"
         }
       ]
@@ -106,7 +106,7 @@
       "fields": [
         {
           "label": "Naslov zaglavlja",
-          "default": "Završiti ?"
+          "default": "Završi?"
         },
         {
           "label": "Glavni tekst",
@@ -114,11 +114,11 @@
         },
         {
           "label": "Tekst na dugmetu orkazivanja",
-          "default": "Otkazati"
+          "default": "Otkaži"
         },
         {
           "label": "Tekst na dugmetu završetka",
-          "default": "završiti"
+          "default": "Završi"
         }
       ]
     },
@@ -127,7 +127,7 @@
       "fields": [
         {
           "label": "Tekst zaglavlja",
-          "default": "Ponoviti ?"
+          "default": "Ponovi?"
         },
         {
           "label": "Glavni tekst",
@@ -135,11 +135,11 @@
         },
         {
           "label": "Tekst na dugmetu otkazivanja",
-          "default": "Otkazati"
+          "default": "Otkaži"
         },
         {
           "label": "Tekst na dugmetu prihvatanja",
-          "default": "Prihvatiti"
+          "default": "Prihvati"
         }
       ]
     }

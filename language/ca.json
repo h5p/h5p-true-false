@@ -6,6 +6,9 @@
         {
           "label": "Tipus",
           "description": "Recursos opcionals per mostrar al damunt de la pregunta."
+        },
+        {
+          "label": "Desactivar el zoom per la imatge"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Desactivar el zoom per la imatge de la pregunta"
         },
         {
           "label": "Mostra el diàleg de confirmació a \"Verificar\""

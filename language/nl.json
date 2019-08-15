@@ -6,6 +6,9 @@
         {
           "label": "Type",
           "description": "Optionele media, die boven de vragen worden getoond"
+        },
+        {
+          "label": "Deactiveer zoomen op een afbeelding"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "\"Controleer\"-knop inschakelen"
-        },
-        {
-          "label": "Deactiveer het zoomen voor afbeeldingsvragen."
         },
         {
           "label": "Toon de bevestigingsdialoog bij \"Controleer\""

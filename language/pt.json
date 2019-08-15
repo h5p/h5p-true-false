@@ -6,6 +6,9 @@
         {
           "label": "Tipo",
           "description": "Mídia opcional para exibir acima da pergunta."
+        },
+        {
+          "label": "Desativar zoom da imagem"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Desativar zoom da imagem para a imagem da pergunta"
         },
         {
           "label": "Solicitar confirmação ao clicar \"Verificar\""

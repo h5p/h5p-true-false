@@ -4,142 +4,142 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Typ",
+          "description": "Valfri media som visas ovanför frågan."
+        },
+        {
+          "label": "Stäng av bildzoomning"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Fråga"
     },
     {
-      "label": "Correct answer",
+      "label": "Rätt svar",
       "options": [
         {
-          "label": "True"
+          "label": "Sant"
         },
         {
-          "label": "False"
+          "label": "Falskt"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Översättning i användargränssnitt för Sant/Falskt-frågor",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Etikett för sant-knapp",
+          "default": "Sant"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Etikett för falskt-knapp",
+          "default": "Falskt"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Feedbacktext",
+          "default": "Du fick @score av @total poäng",
+          "description": "Feedbacktext, tillgängliga variabler: @score och @total. Exempel: 'Du fick @score av @total möjliga poäng'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Text för \"Rätta\"-knapp",
+          "default": "Rätta"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Text för \"Visa rätt svar\"-knapp",
+          "default": "Visa rätt svar"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Försök på nytt"
+          "label": "Text för \"Försök igen\"-knapp",
+          "default": "Försök igen"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Fel svar",
+          "default": "Fel svar"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Rätt svar",
+          "default": "Rätt svar"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Text som används för att presentera poäng för användare med skärmläsare",
+          "default": "Du fick :num av :total poäng"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Allmänna inställningar",
+      "description": "Dessa inställningar påverkar hur uppgiftstypen beter sig.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Aktivera \"Försök igen\"-knapp"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Aktivera \"Visa rätt svar\"-knapp"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Aktivera \"Rätta\"-knapp"
         },
         {
-          "label": "Disable image zooming for question image"
+          "label": "Visa bekräftelsefönster vid \"Rätta\""
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Visa bekräftelsefönster vid \"Försök igen\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Rätt svar automatiskt",
+          "description": "Notera att tillgängligheten försämras om du aktiverar detta"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Feedback vid rätt svar",
+          "description": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
-        },
-        {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Feedback vid fel svar",
+          "description": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Bekräftelse för Visa rätt svar",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Titel",
+          "default": "Färdig?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Text",
+          "default": "Är du säker på att du är färdig?"
         },
         {
-          "label": "Cancel button label",
+          "label": "Etikett för \"Avbryt\"-knapp",
           "default": "Avbryt"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Etikett för \"Bekräfta\"-knapp",
+          "default": "Bekräfta"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Bekräftelse för Försök igen",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Titel",
+          "default": "Försök igen?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Text",
+          "default": "Är du säker på att du vill försöka igen?"
         },
         {
-          "label": "Cancel button label",
+          "label": "Etikett för \"Avbryt\"-knapp",
           "default": "Avbryt"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Etikett för \"Bekräfta\"-knapp",
+          "default": "Bekräfta"
         }
       ]
     }

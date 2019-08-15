@@ -6,6 +6,9 @@
         {
           "label": "Type",
           "description": "Eit valfritt multimediaelement som skal visast over spørsmålet."
+        },
+        {
+          "label": "Slå av bilete zooming"
         }
       ]
     },
@@ -16,10 +19,10 @@
       "label": "Riktig svar",
       "options": [
         {
-          "label": "True"
+          "label": "Rett"
         },
         {
-          "label": "False"
+          "label": "Feil"
         }
       ]
     },
@@ -28,11 +31,11 @@
       "fields": [
         {
           "label": "Label for true button",
-          "default": "True"
+          "default": "Rett"
         },
         {
           "label": "Label for false button",
-          "default": "False"
+          "default": "Feil"
         },
         {
           "label": "Tilbakemelding",
@@ -61,7 +64,7 @@
         },
         {
           "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "default": "Du fikk :num av :total points"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Slå av bilete zooming."
         },
         {
           "label": "Slå på bruker-bekreftelse før \"Sjekk svar\""
@@ -114,7 +114,7 @@
         },
         {
           "label": "Avbryt etikett",
-          "default": "Avbrytt"
+          "default": "Avbryt"
         },
         {
           "label": "Bekreft etikett",
@@ -127,7 +127,7 @@
       "fields": [
         {
           "label": "Tittel",
-          "default": "Prøv igjen ?"
+          "default": "Prøv igjen?"
         },
         {
           "label": "Tekst",
@@ -135,7 +135,7 @@
         },
         {
           "label": "Avbryt etikett",
-          "default": "Avbrytt"
+          "default": "Avbryt"
         },
         {
           "label": "Bekreft etikett",

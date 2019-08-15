@@ -6,6 +6,9 @@
         {
           "label": "Type",
           "description": "En valgfri mediakilde som vises over spørsmålet."
+        },
+        {
+          "label": "Slå av bildezooming"
         }
       ]
     },
@@ -77,9 +80,6 @@
         },
         {
           "label": "Enable \"Check\" button"
-        },
-        {
-          "label": "Slå av bildezooming"
         },
         {
           "label": "Slå på brukerbekreftelse før \"Fasit\""
