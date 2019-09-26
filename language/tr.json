@@ -1,14 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Ortam",
+      "label": "Medya",
       "fields": [
         {
-          "label": "Yazınız",
-          "description": "Soru üzerinde görüntülenecek isteğe bağlı ortam."
+          "label": "Tipi",
+          "description": "Soru üzerinde görüntülenecek isteğe bağlı medya."
         },
         {
-          "label": "Soru resmi için resim yakınlaştırmasını devre dışı bırakın"
+          "label": "Soru görseli yakınlaştırmasını devre dışı bırakın"
         }
       ]
     },
@@ -30,28 +30,28 @@
       "label": "Doğru/Yanlış soruları için kullanıcı arayüzü çevirileri",
       "fields": [
         {
-          "label": "Doğru butonu etiketi",
+          "label": "Doğru düğmesi etiketi",
           "default": "Doğru"
         },
         {
-          "label": "Yanlış butonu etiketi",
+          "label": "Yanlış düğmesi etiketi",
           "default": "Yanlış"
         },
         {
-          "label": "Geri bildirim metni",
-          "default": "@Toplam puanlardan @puan aldınız",
-          "description": "Geri bildirim metni, mevcut değişkenler: @puan ve @toplam. Örneğin: '@Toplam puanlardan @puan aldınız'"
+          "label": "Geribildirim metni",
+          "default": "@total puan üzerinden @score puan aldınız",
+          "description": "Geri bildirim metni, mevcut değişkenler: @score ve @total. Örneğin: '@total puan üzerinden @score puan aldınız'"
         },
         {
-          "label": "\"Kontrol et\" butonu için metin",
+          "label": "\"Kontrol et\" düğmesi için metin",
           "default": "Kontrol et"
         },
         {
-          "label": "\"Çözümü göster\" butonunu için metin",
+          "label": "\"Çözümü göster\" düğmesi için metin",
           "default": "Çözümü göster"
         },
         {
-          "label": "\"Yeniden dene\" butonu için metin",
+          "label": "\"Yeniden dene\" düğmesi için metin",
           "default": "Yeniden dene"
         },
         {
@@ -92,12 +92,12 @@
           "description": "Bu seçeneği etkinleştirmenin erişilebilirliği etkileyeceğini unutmayın"
         },
         {
-          "label": "Doğru cevap geri bildirimi",
-          "description": "Bu varsayılan geri bildirim metnini geçersiz kılar. Mevcut değişkenler: @puan ve @toplam"
+          "label": "Doğru cevap geribildirimi",
+          "description": "Bu varsayılan geribildirim metnini geçersiz kılar. Mevcut değişkenler: @score ve @total"
         },
         {
-          "label": "Yanlış cevap geri bildirimi",
-          "description": "Bu varsayılan geri bildirim metnini geçersiz kılar. Mevcut değişkenler: @puan ve @toplam"
+          "label": "Yanlış cevap geribildirimi",
+          "description": "Bu varsayılan geribildirim metnini geçersiz kılar. Mevcut değişkenler: @score ve @total"
         }
       ]
     },
@@ -113,11 +113,11 @@
           "default": "Tamamlamak istediğinizden emin misiniz?"
         },
         {
-          "label": "İptal et butonu etiketi",
+          "label": "İptal et düğmesi etiketi",
           "default": "İptal et"
         },
         {
-          "label": "Onay butonu etiketi",
+          "label": "Onay düğmesi etiketi",
           "default": "Bitir"
         }
       ]
@@ -134,11 +134,11 @@
           "default": "Yeniden denemek istediğinizden emin misiniz?"
         },
         {
-          "label": "İptal et butonu etiketi",
+          "label": "İptal et düğmesi etiketi",
           "default": "İptal et"
         },
         {
-          "label": "Onay butonu etiketi",
+          "label": "Onay düğmesi etiketi",
           "default": "Onayla"
         }
       ]
