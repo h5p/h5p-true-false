@@ -1,145 +1,145 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Στοιχεία Πολυμέσων",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Τύπος",
+          "description": "Προσθήκη στοιχείου πολυμέσων προς εμφάνιση πάνω από την ερώτηση (προαιρετικό)."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Απενεργοποίηση της επιλογής zoom για την εικόνα της ερώτησης"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Ερώτηση"
     },
     {
-      "label": "Correct answer",
+      "label": "Σωστή απάντηση",
       "options": [
         {
-          "label": "True"
+          "label": "Σωστό"
         },
         {
-          "label": "False"
+          "label": "Λάθος"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Μεταφράσεις διεπαφής χρήστη για ερωτήσεις Σωστού/ Λάθους",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Ετικέτα κουμπιού \"Σωστό\"",
+          "default": "Σωστό"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Ετικέτα κουμπιού \"Λάθος\"",
+          "default": "Λάθος"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Κείμενο ανατροφοδότησης",
+          "default": "Συγκέντρωσες @score από @total βαθμούς",
+          "description": "Κείμενο ανατροφοδότησης, διαθέσιμες μεταβλητές: @score και @total. Παράδειγμα: 'Συγκέντρωσες @score από @total βαθμούς'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Ετικέτα κουμπιού ελέγχου απάντησης",
+          "default": "Έλεγχος"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Ετικέτα κουμπιού εμφάνισης λύσης",
+          "default": "Λύση"
         },
         {
-          "label": "Text for \"Retry\" button",
+          "label": "Ετικέτα κουμπιού νέας προσπάθειας",
           "default": "Επανάληψη"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Λάθος απάντηση",
+          "default": "Λάθος απάντηση"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Σωστή απάντηση",
+          "default": "Σωστή απάντηση"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Κειμενική απόδοση της μπάρας βαθμολογίας για όσους χρησιμοποιούν ακουστική υποβοήθηση",
+          "default": "Συγκεντρώσατε :num από :total βαθμούς"
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Ρυθμίσεις άσκησης",
+      "description": "Αυτές οι ρυθμίσεις σας επιτρέπουν να καθορίσετε τον τρόπο λειτουργίας της άσκησης.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Ενεργοποίηση κουμπιού \"Επανάληψη\""
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Ενεργοποίηση κουμπιού \"Λύση\""
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Ενεργοποίηση κουμπιού \"Έλεγχος\""
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Εμφάνιση παραθύρου επιβεβαίωσης κατά τον \"Έλεγχο\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Εμφάνιση παραθύρου επιβεβαίωσης κατά την \"Επανάληψη\""
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Αυτόματος έλεγχος απαντήσεων",
+          "description": "Η ενεργοποίηση της επιλογής θα δυσχεράνει την προσβασιμότητα"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Ανατροφοδότηση για σωστή απάντηση",
+          "description": "Ό,τι συμπληρώσετε εδώ θα αντικαταστήσει το προεπιλεγμένο κείμενο ανατροφοδότησης. Διαθέσιμες μεταβλητές: @score και @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Ανατροφοδότηση για λάθος απάντηση",
+          "description": "Ό,τι συμπληρώσετε εδώ θα αντικαταστήσει το προεπιλεγμένο κείμενο ανατροφοδότησης. Διαθέσιμες μεταβλητές: @score και @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Παράθυρο επιβεβαίωσης",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Κείμενο επικεφαλίδας",
+          "default": "Ολοκλήρωση άσκησης"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Κυρίως κείμενο",
+          "default": "Είσαι σίγουρος ότι θέλεις να ολοκληρώσεις την άσκηση;"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Ετικέτα κουμπιού ακύρωσης",
+          "default": "Όχι"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Ετικέτα κουμπιού επιβεβαίωσης",
+          "default": "Ναι"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Παράθυρο επιβεβαίωσης",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Κείμενο επικεφαλίδας",
+          "default": "Επανάληψη"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Κυρίως κείμενο",
+          "default": "Είσαι σίγουρος ότι θέλεις να προσπαθήσεις ξανά;"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Ετικέτα κουμπιού ακύρωσης",
+          "default": "Όχι"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Ετικέτα κουμπιού επιβεβαίωσης",
+          "default": "Ναι"
         }
       ]
     }
