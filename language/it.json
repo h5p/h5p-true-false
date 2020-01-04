@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Media facoltativo da mostrare sopra la domanda."
+          "description": "Media facoltativo da mostrare sopra la domanda"
         },
         {
           "label": "Disabilita lo zoom dell'immagine"
@@ -38,8 +38,8 @@
           "default": "Falso"
         },
         {
-          "label": "Testo di feedback",
-          "default": "Hai @score di @total punti totali",
+          "label": "Testo del feedback",
+          "default": "Il tuo punteggio è di @score su @total",
           "description": "Testo di feedback, variabili disponibili: @score e @total. Esempio: 'Hai @score di @total punti possibili'"
         },
         {
@@ -70,7 +70,7 @@
     },
     {
       "label": "Impostazioni di esecuzione",
-      "description": "Queste opzioni consentono di controllare l'andamento del compito.",
+      "description": "Queste opzioni permettono di controllare il comportamento del compito",
       "fields": [
         {
           "label": "Attiva pulsante \"Riprova\""
@@ -105,12 +105,12 @@
       "label": "Finestra di conferma per la verifica",
       "fields": [
         {
-          "label": "Etichetta di intestazione",
-          "default": "Finito?"
+          "label": "Testo dell'intestazione",
+          "default": "Terminato?"
         },
         {
-          "label": "Testo del corpo",
-          "default": "Sei sicuro di voler concludere?"
+          "label": "Corpo del testo",
+          "default": "Sei sicuro di voler terminare?"
         },
         {
           "label": "Etichetta del pulsante di annullamento",
@@ -118,7 +118,7 @@
         },
         {
           "label": "Etichetta del pulsante di conferma",
-          "default": "Finito"
+          "default": "Terminato"
         }
       ]
     },
@@ -130,7 +130,7 @@
           "default": "Vuoi riprovare?"
         },
         {
-          "label": "Testo del corpo",
+          "label": "Corpo del testo",
           "default": "Sei sicuro di voler riprovare?"
         },
         {
