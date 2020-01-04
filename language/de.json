@@ -4,8 +4,8 @@
       "label": "Medien",
       "fields": [
         {
-          "label": "Art",
-          "description": "Medien, die wahlweise oberhalb der Aufgabe angezeigt werden."
+          "label": "Typ",
+          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
         },
         {
           "label": "Bildzoom deaktivieren"
