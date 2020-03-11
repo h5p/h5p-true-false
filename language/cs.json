@@ -126,7 +126,7 @@
       "label": "Dialog pro potvrzení opakování",
       "fields": [
         {
-          "label": "	Text záhlaví",
+          "label": "Text záhlaví",
           "default": "Opakovat  ?"
         },
         {
