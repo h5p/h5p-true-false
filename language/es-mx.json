@@ -1,10 +1,10 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Medio",
       "fields": [
         {
-          "label": "Type",
+          "label": "Tipo",
           "description": "Medios opcionales para mostrar sobre la pregunta."
         },
         {
@@ -59,7 +59,7 @@
           "default": "Respuesta incorrecta"
         },
         {
-          "label": "Correct Answer",
+          "label": "Respuesta correcta",
           "default": "Respuesta correcta"
         },
         {
