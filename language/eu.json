@@ -106,11 +106,11 @@
       "fields": [
         {
           "label": "Goiburuaren testua",
-          "default": "Bukatu?"
+          "default": "Amaitu?"
         },
         {
           "label": "Gorputzaren testua",
-          "default": "Ziur zaude bukatu nahi duzula?"
+          "default": "Ziur zaude amaitu nahi duzula?"
         },
         {
           "label": "Utzi botoiaren etiketa",
@@ -118,7 +118,7 @@
         },
         {
           "label": "Berretsi botoiaren etiketa",
-          "default": "Bukatuta"
+          "default": "Amaitu"
         }
       ]
     },
