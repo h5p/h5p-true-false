@@ -1,11 +1,11 @@
 {
   "semantics": [
     {
-      "label": "Image ou vidéo",
+      "label": "Média",
       "fields": [
         {
-          "label": "Type de média",
-          "description": "Média optionnel à afficher au-dessus de la question"
+          "label": "Type",
+          "description": "Média à afficher au-dessus de la question (facultatif)."
         },
         {
           "label": "Désactiver la possibilité d'agrandir l'image"
@@ -70,7 +70,7 @@
     },
     {
       "label": "Options générales",
-      "description": "Ces options vous permettent de contrôler le déroulement de vos activités.",
+      "description": "Ces options vous permettent de paramétrer le déroulement de l'exercice.",
       "fields": [
         {
           "label": "Activer le bouton \"Recommencer\""
