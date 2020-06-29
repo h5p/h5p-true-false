@@ -3,6 +3,7 @@ test
 karma.conf.js
 package-lock.json
 README.md
+crowdin.yml
 .gitmodules
 .git
 .gitignore
