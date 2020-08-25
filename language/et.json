@@ -65,6 +65,18 @@
         {
           "label": "Tekstilugeri kasutajale punktisummariba tekstiline esitus",
           "default": "Sa said :num punkti :total punktist"
+        },
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     },

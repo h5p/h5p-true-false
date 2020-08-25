@@ -65,6 +65,18 @@
         {
           "label": "報讀器用結果文本（非顯示用）",
           "default": "你得到 :num 分，總為是 :total 分。"
+        },
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     },

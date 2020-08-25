@@ -65,6 +65,18 @@
         {
           "label": "תצוגה חזותית של סרגל ניקוד למי שמשתמש בתוכנת הקראה",
           "default": "התקבלו :num מתוך :total נקודות"
+        },
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     },

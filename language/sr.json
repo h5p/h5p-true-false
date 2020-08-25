@@ -65,6 +65,18 @@
         {
           "label": "Текстуална репрезентација траке резултата за оне који користе читач екрана",
           "default": "Освојили сте :num out од укупно :total поена"
+        },
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     },
