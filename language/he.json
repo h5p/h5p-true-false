@@ -67,16 +67,16 @@
           "default": "התקבלו :num מתוך :total נקודות"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "תיאור טכנולוגיה מסייעת לכפתור \"בדיקה\"",
+          "default": "בדיקה"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "תיאור טכנולוגיה מסייעת עבור כפתור \"הצגת פתרון\"",
+          "default": "הצגת פתרון"
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "תיאור טכנולוגיה מסייעת עבור כפתור \"ניסיון חוזר\"",
+          "default": "ניסיון חוזר"
         }
       ]
     },
