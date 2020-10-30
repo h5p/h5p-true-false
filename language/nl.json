@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Optionele media, die boven de vragen worden getoond"
+          "description": "Optionele media, die boven de vraag wordt getoond"
         },
         {
           "label": "Deactiveer zoomen op een afbeelding"
@@ -67,16 +67,16 @@
           "default": "Je hebt :num van :total punten"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Assistive technology beschrijving voor de \"Controleer\" knop",
+          "default": "Controleer de antwoorden. De antwoorden worden gemarkeerd als juist, onjuist, of onbeantwoord."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Assistive technology beschrijving voor de \"Toon oplossing\" knop",
+          "default": "Toon de oplossing. De taak wordt gemarkeerd met de juiste oplossing."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Assistive technology beschrijving voor de \"Opnieuw proberen\" knop",
+          "default": "Probeer de taak opnieuw. Stelt de antwoorden opnieuw in en start de taak nogmaals."
         }
       ]
     },
