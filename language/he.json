@@ -67,16 +67,16 @@
           "default": "התקבלו :num מתוך :total נקודות"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check"
+          "label": "תיאור טכנולוגיה מסייעת לכפתור \"בדיקה\"",
+          "default": "בדיקה"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show Solution"
+          "label": "תיאור טכנולוגיה מסייעת עבור כפתור \"הצגת פתרון\"",
+          "default": "הצגת פתרון"
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry"
+          "label": "תיאור טכנולוגיה מסייעת עבור כפתור \"ניסיון חוזר\"",
+          "default": "ניסיון חוזר"
         }
       ]
     },
