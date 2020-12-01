@@ -5,10 +5,10 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Valfri media som visas ovanför frågan."
+          "description": "Valfri media att visa ovanför frågan."
         },
         {
-          "label": "Stäng av bildzoomning"
+          "label": "Inaktivera zoomning i bild"
         }
       ]
     },
@@ -67,25 +67,25 @@
           "default": "Du fick :num av :total poäng"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Beskrivning av knappen \"Rätta\" för tillgänglighetshjälpmedel",
+          "default": "Rätta svaren. Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Beskrivning av knappen \"Visa lösning\" för tillgänglighetshjälpmedel",
+          "default": "Visa lösningen. Uppgiften kommer att markeras med dess korrekta lösning."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Beskrivning av knappen \"Försök igen\" för tillgänglighetshjälpmedel",
+          "default": "Försök igen med uppgiften. Nollställer alla svar och startar om uppgiften."
         }
       ]
     },
     {
       "label": "Allmänna inställningar",
-      "description": "Dessa inställningar påverkar hur uppgiftstypen beter sig.",
+      "description": "Dessa inställningar påverkar hur uppgiften beter sig.",
       "fields": [
         {
-          "label": "Aktivera \"Försök igen\"-knapp"
+          "label": "Aktivera  knappen \"Försök igen\""
         },
         {
           "label": "Aktivera \"Visa rätt svar\"-knapp"
@@ -138,7 +138,7 @@
       "label": "Bekräftelse för Försök igen",
       "fields": [
         {
-          "label": "Titel",
+          "label": "Rubriktext",
           "default": "Försök igen?"
         },
         {
@@ -146,11 +146,11 @@
           "default": "Är du säker på att du vill försöka igen?"
         },
         {
-          "label": "Etikett för \"Avbryt\"-knapp",
+          "label": "Etikett på avbryt-knapp",
           "default": "Avbryt"
         },
         {
-          "label": "Etikett för \"Bekräfta\"-knapp",
+          "label": "Etikett på knappen Bekräfta",
           "default": "Bekräfta"
         }
       ]
