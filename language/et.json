@@ -68,7 +68,7 @@
         },
         {
           "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "default": "Kontrolli vastuseid. Vastused on tähistatud kui õiged, valed ja vastamata."
         },
         {
           "label": "Assistive technology description for \"Show Solution\" button",
