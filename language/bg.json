@@ -67,16 +67,16 @@
           "default": "Вие имате :num от общо :total точки"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Описание за помощни технологии бутон \"Провери\" ",
+          "default": "Проверете отговорите. Отговорите ще бъдат маркирани като верни, неправилни или без отговор."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Описание за помощни технологии бутон \"Покажи решението\" ",
+          "default": "Показване на решението. Задачата ще бъде показа с правилното решение."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Описание за помощни технологии бутон \"Опитай пак\" ",
+          "default": "Опитай пак задачата. Нулиране на всички отговори и започване на задачата отначало."
         }
       ]
     },
@@ -101,7 +101,7 @@
         },
         {
           "label": "Автроматична проверка на отговорите",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "description": "При активиране на тази опция достъпността ще бъде повлияна"
         },
         {
           "label": "Обратна връзка при верен отговор",
