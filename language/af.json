@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipe",
+          "description": "Verkieslike media om bo die vraag te vertoon."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Deaktiveer zoomfunksie by prente"
         }
       ]
     },
@@ -81,11 +81,11 @@
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Gedragsinstellings",
+      "description": "Hierdie keuses laat jou beheer hoe die onderskeie take uitgevoer moet word.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Aktiveer \"Probeer weer\" knoppie"
         },
         {
           "label": "Enable \"Show Solution\" button"
