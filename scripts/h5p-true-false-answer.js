@@ -44,9 +44,11 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
           return;
         }
         if ([Keys.SPACE, Keys.ENTER].indexOf(event.keyCode) !== -1) {
+          event.preventDefault();
           self.check();
         }
         else if ([Keys.LEFT_ARROW, Keys.UP_ARROW, Keys.RIGHT_ARROW, Keys.DOWN_ARROW].indexOf(event.keyCode) !== -1) {
+          event.preventDefault();
           self.uncheck();
           self.trigger('invert');
         }
