@@ -85,7 +85,7 @@
       "description": "Aquestes opcions et permetran controlar com es comporta la tasca.",
       "fields": [
         {
-          "label": "Activa el botó \"Torna-ho a provar\""
+          "label": "Activa el botó “Torna-ho a provar”"
         },
         {
           "label": "Activa el botó \"Mostra la solució\""
