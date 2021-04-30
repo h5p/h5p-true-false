@@ -16,7 +16,7 @@
       "label": "Question"
     },
     {
-      "label": "Correct answer",
+      "label": "Helyes válasz",
       "options": [
         {
           "label": "True"
@@ -60,7 +60,7 @@
         },
         {
           "label": "Correct Answer",
-          "default": "Correct answer"
+          "default": "Helyes válasz"
         },
         {
           "label": "Textual representation of the score bar for those using a readspeaker",
