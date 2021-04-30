@@ -68,7 +68,7 @@
         },
         {
           "label": "Beskrivning av knappen \"Rätta\" för tillgänglighetshjälpmedel",
-          "default": "Rätta svaren.  Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
+          "default": "Rätta svaren. Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
         },
         {
           "label": "Beskrivning av knappen \"Visa lösning\" för tillgänglighetshjälpmedel",
@@ -85,7 +85,7 @@
       "description": "Dessa inställningar påverkar hur uppgiften beter sig.",
       "fields": [
         {
-          "label": "Aktivera  knappen \"Försök igen\""
+          "label": "Aktivera knappen \"Försök igen\""
         },
         {
           "label": "Aktivera \"Visa rätt svar\"-knapp"
