@@ -40,18 +40,18 @@
         {
           "label": "Text zpětné vazby",
           "default": "Získal jste @score z @total bodů",
-          "description": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: 'Získal jste @score z @total možných bodů'"
+          "description": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: \"Získal jste @score z @total možných bodů\""
         },
         {
-          "label": "Text pro tlačítko  \"Zkontrolovat\" ",
+          "label": "Text pro tlačítko \"Zkontrolovat\"",
           "default": "Zkontrolovat"
         },
         {
-          "label": "Text pro tlačítko  \"Zobrazit řešení\" ",
+          "label": "Text pro tlačítko \"Zobrazit řešení\"",
           "default": "Zobrazit řešení"
         },
         {
-          "label": "Text pro tlačítko  \"Opakovat\" ",
+          "label": "Text pro tlačítko \"Opakovat\"",
           "default": "Opakovat"
         },
         {
@@ -63,7 +63,7 @@
           "default": "Správná odpověď"
         },
         {
-          "label": "Textové znázornění výsledkové lišty pro ty, kteří používají čtecí zařízenír",
+          "label": "Textové znázornění výsledkové lišty pro ty, kteří používají čtecí zařízení",
           "default": "Získal jste :num z :total bodů"
         },
         {
@@ -85,19 +85,19 @@
       "description": "Tyto možnosti vám umožní řídit, jak se bude úloha chovat.",
       "fields": [
         {
-          "label": "Povolit tlačítko \"Opakovat\" "
+          "label": "Povolit tlačítko \"Opakovat\""
         },
         {
-          "label": "Povolit tlačítko \"Zobrazit řešení\" "
+          "label": "Povolit tlačítko \"Zobrazit řešení\""
         },
         {
-          "label": "Povolit tlačítko \"Zkontrolovat\" "
+          "label": "Povolit tlačítko \"Zkontrolovat\""
         },
         {
-          "label": "Zobrazit potvrzovací dialog  \"Zkontrolovat\""
+          "label": "Zobrazit potvrzovací dialog \"Zkontrolovat\""
         },
         {
-          "label": "Zobrazit potvrzovací dialog  \"Opakovat\""
+          "label": "Zobrazit potvrzovací dialog \"Opakovat\""
         },
         {
           "label": "Automaticky zkontrolovat odpovědi",
@@ -139,7 +139,7 @@
       "fields": [
         {
           "label": "Text záhlaví",
-          "default": "Opakovat  ?"
+          "default": "Opakovat?"
         },
         {
           "label": "Tělo textu",
