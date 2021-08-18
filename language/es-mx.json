@@ -8,7 +8,7 @@
           "description": "Medio opcional para mostrar arriba de la pregunta."
         },
         {
-          "label": "Deshabilitar zoom de imagen"
+          "label": "Deshabilitar agrandado de imagen"
         }
       ]
     },
@@ -117,7 +117,7 @@
       "label": "Diálogo de confirmación para Comprobar",
       "fields": [
         {
-          "label": "Texto de cabecera",
+          "label": "Texto del encabezado",
           "default": "¿Terminar?"
         },
         {
@@ -125,7 +125,7 @@
           "default": "¿Está seguro que desea terminar ?"
         },
         {
-          "label": "Texto del botón Cancelar",
+          "label": "Etiqueta botón Cancelar",
           "default": "Cancelar"
         },
         {
@@ -138,7 +138,7 @@
       "label": "Diálogo de confirmación Reintentar",
       "fields": [
         {
-          "label": "Texto de cabecera",
+          "label": "Texto del encabezado",
           "default": "¿Reintentar?"
         },
         {
@@ -146,7 +146,7 @@
           "default": "¿Está seguro que desea volver a intentarlo?"
         },
         {
-          "label": "Texto del botón Cancelar",
+          "label": "Etiqueta botón Cancelar",
           "default": "Cancelar"
         },
         {

@@ -82,7 +82,7 @@
     },
     {
       "label": "Impostazioni di esecuzione",
-      "description": "Queste opzioni permettono di controllare il comportamento del compito",
+      "description": "Queste opzioni permettono di controllare il comportamento dell'esercizio.",
       "fields": [
         {
           "label": "Attiva pulsante \"Riprova\""
