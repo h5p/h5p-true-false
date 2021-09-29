@@ -129,7 +129,7 @@
           "default": "Cancelar"
         },
         {
-          "label": "Texto del botón Terminar",
+          "label": "Etiqueta del botón Confirmar",
           "default": "Terminar"
         }
       ]
@@ -150,7 +150,7 @@
           "default": "Cancelar"
         },
         {
-          "label": "Texto del botón Confirmar",
+          "label": "Etiqueta del botón Confirmar",
           "default": "Confirmar"
         }
       ]

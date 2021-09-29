@@ -81,8 +81,8 @@
       ]
     },
     {
-      "label": "Allmänna inställningar",
-      "description": "Dessa inställningar påverkar hur uppgiften beter sig.",
+      "label": "Beteende-inställningar",
+      "description": "Denna inställningar påverkar hur uppgiften beter sig.",
       "fields": [
         {
           "label": "Aktivera knappen \"Försök igen\""
