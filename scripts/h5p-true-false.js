@@ -328,6 +328,12 @@ H5P.TrueFalse = (function ($, Question) {
             self.setVideo(media);
           }
         }
+        else if (type === 'H5P.Audio') {
+          if (media.params.files) {
+            // Register task audio
+            self.setAudio(media);
+          }
+        }
       }
 
       // Add task question text
