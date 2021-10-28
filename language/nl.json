@@ -77,6 +77,10 @@
         {
           "label": "Assistive technology beschrijving voor de \"Opnieuw proberen\" knop",
           "default": "Probeer de taak opnieuw. Stelt de antwoorden opnieuw in en start de taak nogmaals."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },

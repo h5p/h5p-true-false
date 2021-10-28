@@ -77,6 +77,10 @@
         {
           "label": "Descripció de la tecnologia d’assistència per al botó \"Torna-ho a provar\"",
           "default": "Intenta de nou la tasca. Reajusta totes les respostes i comença la tasca de nou."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },

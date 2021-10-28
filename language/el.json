@@ -77,6 +77,10 @@
         {
           "label": "Περιγραφή υποστηρικτικών τεχνολογιών για το πλήκτρο \"Επανάληψη\"",
           "default": "Επανάληψη της εργασίας. Επαναφορά όλων των απαντήσεων και έναρξη από την αρχή."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
