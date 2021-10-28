@@ -77,6 +77,10 @@
         {
           "label": "\"Retry\" 버튼에 대한 보조 기술 설명",
           "default": "재시도하세요. 모든 답변을 초기화하고 새로 시도하세요."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
