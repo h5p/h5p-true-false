@@ -43,8 +43,8 @@
           "description": "Feedbacktext, tillgängliga variabler: @score och @total. Exempel: 'Du fick @score av @total möjliga poäng'"
         },
         {
-          "label": "Text för \"Rätta\"-knapp",
-          "default": "Rätta"
+          "label": "Text för \"Svara\"-knapp",
+          "default": "Svara"
         },
         {
           "label": "Text för \"Visa rätt svar\"-knapp",
@@ -67,7 +67,7 @@
           "default": "Du fick :num av :total poäng"
         },
         {
-          "label": "Beskrivning av knappen \"Rätta\" för tillgänglighetshjälpmedel",
+          "label": "Beskrivning av knappen \"Svara\" för tillgänglighetshjälpmedel",
           "default": "Rätta svaren. Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
         },
         {
@@ -91,10 +91,10 @@
           "label": "Aktivera \"Visa rätt svar\"-knapp"
         },
         {
-          "label": "Aktivera \"Rätta\"-knapp"
+          "label": "Aktivera \"Svara\"-knapp"
         },
         {
-          "label": "Visa bekräftelsefönster vid \"Rätta\""
+          "label": "Visa bekräftelsefönster vid \"Svara\""
         },
         {
           "label": "Visa bekräftelsefönster vid \"Försök igen\""
