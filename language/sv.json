@@ -77,6 +77,10 @@
         {
           "label": "Beskrivning av knappen \"Försök igen\" för tillgänglighetshjälpmedel",
           "default": "Försök igen med uppgiften. Nollställ alla svar och starta om uppgiften."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },

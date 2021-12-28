@@ -77,6 +77,10 @@
         {
           "label": "תיאור טכנולוגיה מסייעת עבור כפתור \"ניסיון חוזר\"",
           "default": "ניסיון חוזר"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
