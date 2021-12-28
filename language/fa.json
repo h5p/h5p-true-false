@@ -47,6 +47,10 @@
           "default": "بررسی"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "متن برای دکمۀ نمایش پاسخ صحیح",
           "default": "نمایش پاسخ صحیح"
         },

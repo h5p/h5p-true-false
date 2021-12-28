@@ -47,6 +47,10 @@
           "default": "Провери"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Текст за бутон \"Покажи решение\" ",
           "default": "Покажи решение"
         },

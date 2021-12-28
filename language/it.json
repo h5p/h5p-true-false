@@ -47,6 +47,10 @@
           "default": "Verifica"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Testo per il pulsante \"Mostra la soluzione\"",
           "default": "Mostra la soluzione"
         },

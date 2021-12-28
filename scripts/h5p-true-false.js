@@ -49,6 +49,7 @@ H5P.TrueFalse = (function ($, Question) {
         falseText: 'False',
         score: 'You got @score of @total points',
         checkAnswer: 'Check',
+        submitAnswer: 'Submit',
         showSolutionButton: 'Show solution',
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
@@ -149,7 +150,9 @@ H5P.TrueFalse = (function ($, Question) {
             l10n: params.confirmCheck,
             instance: self,
             $parentElement: $container
-          }
+          },
+          contentData: self.contentData,
+          textIfSubmitting: params.l10n.submitAnswer,
         });
       }
 

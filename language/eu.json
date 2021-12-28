@@ -47,6 +47,10 @@
           "default": "Egiaztatu"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "\"Erakutsi emaitza\" botoiaren testua",
           "default": "Erakutsi emaitza"
         },

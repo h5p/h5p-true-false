@@ -47,6 +47,10 @@
           "default": "Tarkista"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Painikkeen \"Katso vastaus\" nimi",
           "default": "Katso vastaus"
         },

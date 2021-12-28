@@ -47,6 +47,10 @@
           "default": "Sjekk"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Etikett for \"Fasit\"-knapp",
           "default": "Fasit"
         },

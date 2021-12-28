@@ -47,6 +47,10 @@
           "default": "Verifica"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text pel botó \"Mostrar solució\"",
           "default": "Mostra la solució"
         },

@@ -47,6 +47,10 @@
           "default": "Provjera"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Tekst za \"Prikazati rješenje\" dugme",
           "default": "Prikaži rješenje"
         },

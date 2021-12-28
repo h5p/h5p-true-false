@@ -47,6 +47,10 @@
           "default": "チェック"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "「解を表示」ボタンのテキスト",
           "default": "解を表示"
         },

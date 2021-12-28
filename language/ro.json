@@ -47,6 +47,10 @@
           "default": "Verifică"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text pentru butonul „Afișează soluția”",
           "default": "Arată soluția"
         },

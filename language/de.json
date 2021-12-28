@@ -47,6 +47,10 @@
           "default": "Überprüfen"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Beschriftung des \"Lösung anzeigen\"-Buttons",
           "default": "Lösung anzeigen"
         },

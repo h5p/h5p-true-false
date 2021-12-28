@@ -47,6 +47,10 @@
           "default": "اختبر"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "زر نص \"مشاهدة الحل\"",
           "default": "عرض الحل"
         },

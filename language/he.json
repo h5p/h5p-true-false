@@ -47,6 +47,10 @@
           "default": "בדיקה"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "תאור הכפתור \"הצגת הפתרון\"",
           "default": "הצגת הפתרון"
         },

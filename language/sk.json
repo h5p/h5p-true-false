@@ -47,6 +47,10 @@
           "default": "Potvrdiť"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text pre tlačítko \"Show solution\"",
           "default": "Zobraz riešenie"
         },

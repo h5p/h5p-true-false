@@ -47,6 +47,10 @@
           "default": "Svara"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text för \"Visa rätt svar\"-knapp",
           "default": "Visa rätt svar"
         },

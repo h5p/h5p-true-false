@@ -47,6 +47,10 @@
           "default": "ពិនិត្យចម្លើយ"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text for \"Show solution\" button",
           "default": "បង្ហាញចម្លើយត្រឹមត្រូវ"
         },
