@@ -47,8 +47,8 @@
           "default": "Έλεγχος"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "Ετικέτα κουμπιού υποβολής λύσης",
+          "default": "Υποβολή"
         },
         {
           "label": "Ετικέτα κουμπιού εμφάνισης λύσης",
