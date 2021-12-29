@@ -4,11 +4,11 @@
       "label": "Medya",
       "fields": [
         {
-          "label": "Tipi",
-          "description": "Soru üzerinde görüntülenecek isteğe bağlı medya."
+          "label": "Medya Türü",
+          "description": "Soru üzerinde istege bağlı görüntülenecek medya (video, resim)."
         },
         {
-          "label": "Soru görseli yakınlaştırmasını devre dışı bırakın"
+          "label": "Soru görseli yakınlaştırma işlevini devre dışı bırakın."
         }
       ]
     },
@@ -16,7 +16,7 @@
       "label": "Soru"
     },
     {
-      "label": "Doğru cevap",
+      "label": "Doğru yanıt",
       "options": [
         {
           "label": "Doğru"
@@ -30,11 +30,11 @@
       "label": "Doğru/Yanlış soruları için kullanıcı arayüzü çevirileri",
       "fields": [
         {
-          "label": "Doğru düğmesi etiketi",
+          "label": "Doğru butonu etiketi",
           "default": "Doğru"
         },
         {
-          "label": "Yanlış düğmesi etiketi",
+          "label": "Yanlış butonu etiketi",
           "default": "Yanlış"
         },
         {
@@ -47,7 +47,11 @@
           "default": "Kontrol et"
         },
         {
-          "label": "\"Çözümü göster\" düğmesi için metin",
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
+          "label": "\"Çözümü göster\" butonu için metin",
           "default": "Çözümü göster"
         },
         {
@@ -56,77 +60,73 @@
         },
         {
           "label": "Yanlış Cevap",
-          "default": "Yanlış cevap"
+          "default": "Yanlış yanıt"
         },
         {
           "label": "Doğru Cevap",
           "default": "Doğru cevap"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Seslendirici kullananlar için puan durumunun metinsel gösterimi.",
+          "default": ":total puan üzerinden :num  puan aldınız."
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "\"Kontrol et\" butonu için yardımcı açıklamalar.",
+          "default": "Yanıtlarınız kontrol edin. Soruların yanotları doğru, yanlış veya yanıtsız olarak işaretlenecektir."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "\"Çözümü göster\" butonu için yardımcı açıklamalar.",
+          "default": "Çözümü göster. Sorunun doğru yanıtı gösterilecektir."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "\"Yeniden dene\" butonu için yardımcı açıklamalar.",
+          "default": "Yeniden dene. Tüm yanıtları sıfırlar ve testi yeniden başlatır."
         }
       ]
     },
     {
-      "label": "Davranış ayarları",
+      "label": "Çalışma ayarları",
       "description": "Bu seçenekler aktivitenin çalışma şeklini denetlemenize izin verir.",
       "fields": [
         {
-          "label": "\"Yeniden dene\" butonunu aktifleştirin"
+          "label": "\"Yeniden dene\" düğmesi devrede"
         },
         {
-          "label": "\"Çözümü göster\" butonunu aktifleştirin"
+          "label": "\"Çözümü göster\" butonunu aktifleştirin."
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "\"Kontrol et\" butonunu aktifleştirin."
         },
         {
-          "label": "\"Kontrol et\"deki onay kutucuğunu göster"
+          "label": "\"Kontrol et\" butonununa tıklandığında onay iste."
         },
         {
-          "label": "\"Yeniden dene\"deki onay kutucuğunu göster"
+          "label": "\"Yeniden dene\" butonununa tıklandığında onay iste."
         },
         {
-          "label": "Yanıtları otomatik olarak denetle",
-          "description": "Bu seçeneği etkinleştirmenin erişilebilirliği etkileyeceğini unutmayın"
+          "label": "Yanıtları otomatik olarak konntrol et.",
+          "description": "Bu seçenek etkinleştirilirse kullanıcı kontrol et butonuna tıklamadan yanıtları kontrol edilir."
         },
         {
-          "label": "Doğru cevap geribildirimi",
-          "description": "Bu varsayılan geribildirim metnini geçersiz kılar. Mevcut değişkenler: @score ve @total"
+          "label": "Doğru yanıt için geribildirim",
+          "description": "Varsayılan geribildirim metni yerine özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
         },
         {
-          "label": "Yanlış cevap geribildirimi",
-          "description": "Bu varsayılan geribildirim metnini geçersiz kılar. Mevcut değişkenler: @score ve @total"
+          "label": "Yanlış yanıt için geribildirim",
+          "description": "Varsayılan geribildirim metni yerine  özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
         }
       ]
     },
     {
-      "label": "Onay kutucuğunu seçin",
+      "label": "İletişim kutusu ayarlarını kontrol et",
       "fields": [
         {
           "label": "Üstbaşlık Metni",
-          "default": "Bitir?"
+          "default": "Bitti mi?"
         },
         {
           "label": "Gövde Metni",
-          "default": "Tamamlamak istediğinizden emin misiniz?"
+          "default": "Bitirmek istediğinizden emin misiniz?"
         },
         {
           "label": "İptal et düğmesi etiketi",

@@ -1,14 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Multimédia",
+      "label": "Média",
       "fields": [
         {
           "label": "Tipo",
-          "description": "Multimédia opcional para exibir acima da pergunta."
+          "description": "Conteúdo multimédia opcional para mostrar acima da questão."
         },
         {
-          "label": "Desativar zoom da imagem"
+          "label": "Desativar ampliação de imagem para a imagem associada à questão"
         }
       ]
     },
@@ -47,6 +47,10 @@
           "default": "Verificar"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Texto para o botão \"Mostrar solução\"",
           "default": "Mostrar solução"
         },
@@ -73,10 +77,6 @@
         {
           "label": "Assistive technology description for \"Show Solution\" button",
           "default": "Show the solution. The task will be marked with its correct solution."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         },
         {
           "label": "Assistive technology description for \"Retry\" button",

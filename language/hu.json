@@ -16,7 +16,7 @@
       "label": "Question"
     },
     {
-      "label": "Correct answer",
+      "label": "Helyes válasz",
       "options": [
         {
           "label": "True"
@@ -47,6 +47,10 @@
           "default": "Check"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text for \"Show solution\" button",
           "default": "Show solution"
         },
@@ -60,7 +64,7 @@
         },
         {
           "label": "Correct Answer",
-          "default": "Correct answer"
+          "default": "Helyes válasz"
         },
         {
           "label": "Textual representation of the score bar for those using a readspeaker",
@@ -73,10 +77,6 @@
         {
           "label": "Assistive technology description for \"Show Solution\" button",
           "default": "Show the solution. The task will be marked with its correct solution."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         },
         {
           "label": "Assistive technology description for \"Retry\" button",

@@ -1,69 +1,73 @@
 {
   "semantics": [
     {
-      "label": "اعلام",
+      "label": "الوسائط",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "نوع",
+          "description": "وسائط اضافيه فوق السؤال."
         },
         {
-          "label": "Disable image zooming"
+          "label": "رفض تكبير الصوره"
         }
       ]
     },
     {
-      "label": "السؤال"
+      "label": "سؤال"
     },
     {
-      "label": "Correct answer",
+      "label": "اجابه صحيحه",
       "options": [
         {
-          "label": "True"
+          "label": "صح"
         },
         {
-          "label": "False"
+          "label": "خطاء"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "ترجمة مظهر المستخدم لاسئلة صح ام خطاء",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "تسمية زر الصواب",
+          "default": "صواب"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "تسمية زر الخطاء",
+          "default": "خطأ"
         },
         {
-          "label": "نص الملاحظات",
-          "default": "Feedback text",
-          "description": "ملاحظات النص، والمتغيرات المتاحة: النتيجة والمجموع. مثال: هل حصلت على درجة من مجموع النقاط الممكنة"
+          "label": "نص الاراء",
+          "default": "You got @score of @total points",
+          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
         },
         {
-          "label": "النص ل \"تحقق \" الزر",
-          "default": "Check"
+          "label": "نص زر التحقق",
+          "default": "اختبر"
         },
         {
-          "label": "النص  \"مشاهدة الحل \" لزر",
-          "default": "مشاهدة الحل"
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
         },
         {
-          "label": "النص ل \"إعادة المحاولة \" الزر",
-          "default": "إعادة المحاولة"
+          "label": "زر نص \"مشاهدة الحل\"",
+          "default": "عرض الحل"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "نص زر \"إعادة المحاولة \"",
+          "default": "أعد المحاولة"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "اجابه خاطئه",
+          "default": "إجابة خاطئة"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
+          "label": "اجابه صحيحه",
+          "default": "اجابه صحيحه"
+        },
+        {
+          "label": "عرض كتابي للنتيجه لمستخدمي القارئ المتكلم",
           "default": "You got :num out of :total points"
         },
         {
@@ -73,10 +77,6 @@
         {
           "label": "Assistive technology description for \"Show Solution\" button",
           "default": "Show the solution. The task will be marked with its correct solution."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         },
         {
           "label": "Assistive technology description for \"Retry\" button",

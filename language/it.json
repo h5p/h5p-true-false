@@ -47,6 +47,10 @@
           "default": "Verifica"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Testo per il pulsante \"Mostra la soluzione\"",
           "default": "Mostra la soluzione"
         },
@@ -77,16 +81,12 @@
         {
           "label": "Descrizione delle tecnologie assistive per il pulsante \"Riprova\"",
           "default": "Riprova"
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
     {
       "label": "Impostazioni di esecuzione",
-      "description": "Queste opzioni permettono di controllare il comportamento del compito",
+      "description": "Queste opzioni permettono di controllare il comportamento dell'esercizio.",
       "fields": [
         {
           "label": "Attiva pulsante \"Riprova\""

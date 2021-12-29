@@ -43,8 +43,12 @@
           "description": "Feedbacktext, tillgängliga variabler: @score och @total. Exempel: 'Du fick @score av @total möjliga poäng'"
         },
         {
-          "label": "Text för \"Rätta\"-knapp",
-          "default": "Rätta"
+          "label": "Text för \"Svara\"-knapp",
+          "default": "Svara"
+        },
+        {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
         },
         {
           "label": "Text för \"Visa rätt svar\"-knapp",
@@ -67,8 +71,8 @@
           "default": "Du fick :num av :total poäng"
         },
         {
-          "label": "Beskrivning av knappen \"Rätta\" för tillgänglighetshjälpmedel",
-          "default": "Rätta svaren.  Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
+          "label": "Beskrivning av knappen \"Svara\" för tillgänglighetshjälpmedel",
+          "default": "Rätta svaren. Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
         },
         {
           "label": "Beskrivning av knappen \"Visa lösning\" för tillgänglighetshjälpmedel",
@@ -77,28 +81,24 @@
         {
           "label": "Beskrivning av knappen \"Försök igen\" för tillgänglighetshjälpmedel",
           "default": "Försök igen med uppgiften. Nollställ alla svar och starta om uppgiften."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
     {
-      "label": "Allmänna inställningar",
-      "description": "Dessa inställningar påverkar hur uppgiften beter sig.",
+      "label": "Beteende-inställningar",
+      "description": "Denna inställningar påverkar hur uppgiften beter sig.",
       "fields": [
         {
-          "label": "Aktivera  knappen \"Försök igen\""
+          "label": "Aktivera knappen \"Försök igen\""
         },
         {
           "label": "Aktivera \"Visa rätt svar\"-knapp"
         },
         {
-          "label": "Aktivera \"Rätta\"-knapp"
+          "label": "Aktivera \"Svara\"-knapp"
         },
         {
-          "label": "Visa bekräftelsefönster vid \"Rätta\""
+          "label": "Visa bekräftelsefönster vid \"Svara\""
         },
         {
           "label": "Visa bekräftelsefönster vid \"Försök igen\""

@@ -47,6 +47,10 @@
           "default": "Перевірити"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Текст для \"Показати відповідь\" кнопки",
           "default": "Показати відповідь"
         },
@@ -67,20 +71,16 @@
           "default": "Ти маєш :num out з :total балів"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Опис допоміжних технологій для кнопки \"Перевірити\"",
+          "default": "Перевірити відповіді. Відповіді будуть позначені як правильні, неправильні або без відповіді."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Опис допоміжних технологій для кнопки \"Показати рішення\"",
+          "default": "Показати рішення. Завдання буде позначено правильним рішенням."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Опис допоміжних технологій для кнопки \"Повторити\"",
+          "default": "Повторити завдання. Скиньте всі відповіді та почніть завдання спочатку."
         }
       ]
     },

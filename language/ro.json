@@ -4,157 +4,157 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tip",
+          "description": "Suport opțional de afișat deasupra întrebării."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Dezactivați mărirea imaginii"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Întrebare"
     },
     {
-      "label": "Correct answer",
+      "label": "Răspuns corect",
       "options": [
         {
-          "label": "True"
+          "label": "Adevărat"
         },
         {
-          "label": "False"
+          "label": "Fals"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Traduceri de interfață utilizator pentru Întrebări adevărate / false",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Etichetă pentru butonul adevărat",
+          "default": "Adevărat"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Etichetă pentru buton fals",
+          "default": "Fals"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Text de feedback",
+          "default": "Ai obținut un scor de @din @puncte totale",
+          "description": "Text de feedback, variabile disponibile: @scor și @total. Exemplu: 'Ai obținut un scor de @ din @totalul de puncte posibile'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Text pentru butonul „Verificați”",
+          "default": "Verifică"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Text pentru butonul „Afișează soluția”",
+          "default": "Arată soluția"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Text pentru butonul „Reîncercați”",
+          "default": "Refă"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Răspuns greșit",
+          "default": "Răspuns greșit"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Răspuns corect",
+          "default": "Răspuns corect"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Reprezentare textuală a barei de scor pentru cei care utilizează un difuzor de citire",
+          "default": "Ai obținut :un număr de :total puncte"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Descrierea tehnologiei de asistență pentru butonul „Verificați”",
+          "default": "Verifică răspunsurile. Răspunsurile vor fi marcate ca fiind corecte, incorecte sau fără răspuns."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Descrierea tehnologiei de asistență pentru butonul „Afișează soluția”",
+          "default": "Arată soluția. Sarcina va fi marcată cu soluția corectă."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Descrierea tehnologiei de asistență pentru butonul „Reîncercați”",
+          "default": "Reîncercați sarcina. Resetați toate răspunsurile și începeți din nou sarcina."
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Setări comportamentale",
+      "description": "Aceste opțiuni vă vor permite să controlați cum se comportă sarcina.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Activați butonul „Reîncercați”"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Activați butonul „Afișați soluția”"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Activați butonul „Verificați”"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Afișați dialogul de confirmare la „Verificați”"
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Afișați dialogul de confirmare pe „Reîncercați”"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Verificați automat răspunsul",
+          "description": "Rețineți că accesibilitatea va avea de suferit dacă activați această opțiune"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Feedback despre răspunsul corect",
+          "description": "Aceasta va înlocui textul de feedback implicit. Variabile disponibile: @scor și @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Feedback la un răspuns greșit",
+          "description": "Aceasta va înlocui textul de feedback implicit. Variabile disponibile: @scor și @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Verificați dialogul de confirmare",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Antet",
+          "default": "Terminat ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Corpul textului",
+          "default": "Ești sigur că vrei să termini?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Eticheta butonului Anulare",
+          "default": "Anulare"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Confirmați eticheta butonului",
+          "default": "Terminat"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Încercați din nou dialogul de confirmare",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Antet",
+          "default": "Reîncercați ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Corpul textului",
+          "default": "Sigur doriți să încercați din nou?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Eticheta butonului Anulare",
+          "default": "Anulare"
         },
         {
-          "label": "Confirm button label",
+          "label": "Confirmați eticheta butonului",
           "default": "Confirm"
         }
       ]

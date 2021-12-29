@@ -4,158 +4,158 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipe",
+          "description": "Opsionele media wat bo die vraag vertoon word."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Deaktiveer zoomfunksie by prente"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Vraag"
     },
     {
-      "label": "Correct answer",
+      "label": "Regte antwoord",
       "options": [
         {
-          "label": "True"
+          "label": "Waar"
         },
         {
-          "label": "False"
+          "label": "Valse"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Gebruikerskoppelvlakvertalings vir ware/onwaar vrae",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Etiket vir waar knoppie",
+          "default": "Waar"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Etiket vir vals knoppie",
+          "default": "Vals"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Terugvoerteks",
+          "default": "Jy het @score van @total punte gekry",
+          "description": "Terugvoerteks, veranderlikes beskikbaar: @score en @total. Example: 'Jy het @score van @total moonltike punte gekry'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Teks vir \"Toets\" knoppie",
+          "default": "Toets"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Teks vir \"Wys antwoord\" knoppie",
+          "default": "Wys antwoord"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Teks vir \"Probeer weer\" knoppie",
+          "default": "Probeer weer"
         },
         {
-          "label": "Correct Answer",
-          "default": "Correct answer"
+          "label": "Verkeerde antwoord",
+          "default": "Verkeerde antwoord"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "Regte antwoord",
+          "default": "Regte antwoord"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Tekstuele tentoonstelling van die telkaart vir diegene wat 'n spreekleser gebruik",
+          "default": "Jy het :num uit :total punte gekry"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Hulptegnologieë beskrywing vir \"Toets\" knoppie",
+          "default": "Kyk na die antwoorde. Die antwoorde sal as korrek, verkeerd of onbeantwoord gemerk word."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Hulptegnologieë beskrywing vir \"Wys oplossing\" knoppie",
+          "default": "Wys die antwoord. Hierdie taak sal gemerk word met die regte antwoord."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Hulptegnologieë beskrywing vir \"Probeer weer\" knoppie",
+          "default": "Probeer die taak weer. Herstel alle antwoorde en begin die taak van nuuts af."
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Gedragsinstellings",
+      "description": "Hierdie keuses laat jou toe om te stel hoe die taak reageer.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "Aktiveer \"Probeer weer\" knoppie"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "Aktiveer \"Wys antwoord\" knoppie"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "Aktiveer \"Toets\" knoppie"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Wys bevestigingdialoog op \"Toets\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Wys bevestigingdialoog op \"Probeer weer\""
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "Toets antwoorde outomaties",
+          "description": "Let daarop dat toeganklikheid onder die volgende posisies sal ly"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Terugvoer op regte antwoord",
+          "description": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score and @total"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Terugvoer op verkeerde teks",
+          "description": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score en @total"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Toets bevestigingsdialoog",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Hoofopskrifteks",
+          "default": "Klaar ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Lyfteks",
+          "default": "Is jy seker jy wil klaarmaak ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Kanseleer knoppie etiket",
+          "default": "Kanselleer"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Bevestig knoppie etiket",
+          "default": "Klaar"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Probeer weer bevestigingsdialoog",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Hoofopskrifteks",
+          "default": "Probeer weer ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Liggaamteks",
+          "default": "Is jy seker jy wil weer probeer ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Kanseleer knoppie etiket",
+          "default": "Kanselleer"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Bevestig knoppie etiket",
+          "default": "Bevestig"
         }
       ]
     }

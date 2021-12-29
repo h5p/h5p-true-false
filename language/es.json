@@ -5,10 +5,10 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Medios opcionales para mostrar sobre la pregunta."
+          "description": "Medio opcional a mostrar arriba de la pregunta."
         },
         {
-          "label": "Desactivar zoom de imagen para imagen de pregunta"
+          "label": "Deshabilitar acercamiento de imagen"
         }
       ]
     },
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "label": "Traducciones de interfaz de usuario para preguntas verdaderas/falsas",
+      "label": "Traducciones de interfaz de usuario para preguntas Verdaderas/Falsas",
       "fields": [
         {
           "label": "Texto para el botón verdadero",
@@ -39,93 +39,93 @@
         },
         {
           "label": "Texto de retroalimentación",
-          "default": "Tienes @score de @total",
+          "default": "Tienes @score de @total puntos",
           "description": "Texto de retroalimentación, variables disponibles: @score y @total. Ejemplo: 'Tienes @score de @total puntos posibles'"
         },
         {
-          "label": "Texto para el botón \"Verificar\"",
-          "default": "Verificar"
+          "label": "Texto para botón \"Comprobar\"",
+          "default": "Comprobar"
         },
         {
-          "label": "Texto para el botón \"Mostrar solución\"",
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
+          "label": "Texto para botón \"Mostrar solución\"",
           "default": "Mostrar solución"
         },
         {
-          "label": "Texto para el botón \"Reintentar\"",
+          "label": "Texto para botón \"Reintentar\"",
           "default": "Reintentar"
         },
         {
-          "label": "Respuesta incorrecta",
+          "label": "Respuesta Incorrecta",
           "default": "Respuesta incorrecta"
         },
         {
-          "label": "Respuesta correcta",
+          "label": "Respuesta Correcta",
           "default": "Respuesta correcta"
         },
         {
-          "label": "Representación textual de la barra de puntaje para aquellos que usan un lector en voz alta",
-          "default": "Tienes :num de :puntos posibles"
+          "label": "Representación textual de la barra de puntaje para aquellos que usan un lector de texto en voz alta",
+          "default": "Obtuvo :num de un total de :total puntos"
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Revisar\" ",
-          "default": "Revisar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar."
+          "label": "Descripción de tecnología asistiva para botón \"Comprobar\"",
+          "default": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\" ",
-          "default": "Mostrar la solución. El trabajo será marcado con su solución correcta."
+          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\"",
+          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Reintentar\" ",
+          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
           "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
     {
-      "label": "Configuraciones de comportamiento",
-      "description": "Estas opciones te permitirán controlar cómo se comporta la tarea.",
+      "label": "Configuraciones del comportamiento",
+      "description": "Estas opciones le permitirán controlar como se comporta el trabajo.",
       "fields": [
         {
-          "label": "Habilitar el botón \"Reintentar\""
+          "label": "Habilitar botón \"Reintentar\""
         },
         {
-          "label": "Habilite el botón \"Mostrar solución\""
+          "label": "Habilitar botón \"Mostrar Solución\""
         },
         {
-          "label": "Habilite el botón \"Comprobar\""
+          "label": "Habilitar botón \"Comprobar\""
         },
         {
-          "label": "Mostrar el cuadro de diálogo de confirmación en \"Comprobar\""
+          "label": "Mostrar diálogo de confirmación en \"Comprobar\""
         },
         {
           "label": "Mostrar el diálogo de confirmación en \"Reintentar\""
         },
         {
-          "label": "Verificar automáticamente la respuesta",
+          "label": "Comprobar automáticamente la respuesta",
           "description": "Tenga en cuenta que la accesibilidad sufrirá si habilita esta opción"
         },
         {
-          "label": "Retrolimentación en respuestas correctas",
+          "label": "Retroalimentación en respuesta correcta",
           "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         },
         {
-          "label": "Retroalimentación en respuestas incorrectas",
+          "label": "Retroalimentación en respuesta incorrecta",
           "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         }
       ]
     },
     {
-      "label": "Verifique el diálogo de confirmación",
+      "label": "Diálogo de confirmación para Comprobar",
       "fields": [
         {
           "label": "Texto de cabecera",
           "default": "¿Terminar?"
         },
         {
-          "label": "Cuerpo del texto",
+          "label": "Texto del cuerpo",
           "default": "¿Seguro de que desea terminar?"
         },
         {
@@ -146,7 +146,7 @@
           "default": "¿Reintentar?"
         },
         {
-          "label": "Cuerpo de texto",
+          "label": "Texto del cuerpo",
           "default": "¿Estás seguro de que deseas volver a intentarlo?"
         },
         {

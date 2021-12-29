@@ -47,6 +47,10 @@
           "default": "Überprüfen"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Beschriftung des \"Lösung anzeigen\"-Buttons",
           "default": "Lösung anzeigen"
         },
@@ -77,10 +81,6 @@
         {
           "label": "Beschreibung des \"Wiederholen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
           "default": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
@@ -92,7 +92,7 @@
           "label": "\"Wiederholen\"-Button anzeigen"
         },
         {
-          "label": "\"Lösung anzeigen\"-Button aktivieren"
+          "label": "\"Lösung zeigen\"-Button anzeigen"
         },
         {
           "label": "\"Überprüfen\"-Button anzeigen"

@@ -8,7 +8,7 @@
           "description": "Volitelná média k zobrazení nad otázkou."
         },
         {
-          "label": "Zakázat zvětšení obrázku"
+          "label": "Zakázat zvětšení obrazu"
         }
       ]
     },
@@ -40,18 +40,22 @@
         {
           "label": "Text zpětné vazby",
           "default": "Získal jste @score z @total bodů",
-          "description": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: 'Získal jste @score z @total možných bodů'"
+          "description": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: \"Získal jste @score z @total možných bodů\""
         },
         {
-          "label": "Text pro tlačítko  \"Zkontrolovat\" ",
+          "label": "Text pro tlačítko \"Zkontrolovat\"",
           "default": "Zkontrolovat"
         },
         {
-          "label": "Text pro tlačítko  \"Zobrazit řešení\" ",
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
+          "label": "Text pro tlačítko \"Zobrazit řešení\"",
           "default": "Zobrazit řešení"
         },
         {
-          "label": "Text pro tlačítko  \"Opakovat\" ",
+          "label": "Text pro tlačítko \"Opakovat\"",
           "default": "Opakovat"
         },
         {
@@ -63,24 +67,20 @@
           "default": "Správná odpověď"
         },
         {
-          "label": "Textové znázornění výsledkové lišty pro ty, kteří používají čtecí zařízenír",
+          "label": "Textové znázornění výsledkové lišty pro ty, kteří používají čtecí zařízení",
           "default": "Získal jste :num z :total bodů"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Popisek podpůrné technologie pro tlačítko \"Zkontrolovat\"",
+          "default": "Zkontrolovat odpovědi. Odpovědi budou označeny jako správné, nesprávné nebo nezodpovězené."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Popisek podpůrné technologie pro tlačítko \"Zobrazit řešení\"",
+          "default": "Zobrazit řešení. Úkol bude zobrazen se správným řešením."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Popisek podpůrné technologie pro tlačítko \"Opakovat\"",
+          "default": "Zopakovat úkol. Resetovat všechny odpovědi a spustit úlohu znovu."
         }
       ]
     },
@@ -89,19 +89,19 @@
       "description": "Tyto možnosti vám umožní řídit, jak se bude úloha chovat.",
       "fields": [
         {
-          "label": "Povolit tlačítko \"Opakovat\" "
+          "label": "Povolit tlačítko \"Opakovat\""
         },
         {
-          "label": "Povolit tlačítko \"Zobrazit řešení\" "
+          "label": "Povolit tlačítko \"Zobrazit řešení\""
         },
         {
-          "label": "Povolit tlačítko \"Zkontrolovat\" "
+          "label": "Povolit tlačítko \"Zkontrolovat\""
         },
         {
-          "label": "Zobrazit potvrzovací dialog  \"Zkontrolovat\""
+          "label": "Zobrazit potvrzovací dialog \"Zkontrolovat\""
         },
         {
-          "label": "Zobrazit potvrzovací dialog  \"Opakovat\""
+          "label": "Zobrazit potvrzovací dialog \"Opakovat\""
         },
         {
           "label": "Automaticky zkontrolovat odpovědi",
@@ -143,7 +143,7 @@
       "fields": [
         {
           "label": "Text záhlaví",
-          "default": "Opakovat  ?"
+          "default": "Opakovat?"
         },
         {
           "label": "Tělo textu",

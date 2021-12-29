@@ -47,6 +47,10 @@
           "default": "Verifica"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Text pel botó \"Mostrar solució\"",
           "default": "Mostra la solució"
         },
@@ -77,10 +81,6 @@
         {
           "label": "Descripció de la tecnologia d’assistència per al botó \"Torna-ho a provar\"",
           "default": "Intenta de nou la tasca. Reajusta totes les respostes i comença la tasca de nou."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },
@@ -89,7 +89,7 @@
       "description": "Aquestes opcions et permetran controlar com es comporta la tasca.",
       "fields": [
         {
-          "label": "Activa el botó \"Torna-ho a provar\""
+          "label": "Activa el botó “Torna-ho a provar”"
         },
         {
           "label": "Activa el botó \"Mostra la solució\""
