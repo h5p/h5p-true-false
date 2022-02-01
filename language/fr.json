@@ -48,7 +48,7 @@
         },
         {
           "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "default": "Vérifier"
         },
         {
           "label": "Texte du bouton \"Voir la solution\"",
