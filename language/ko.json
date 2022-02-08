@@ -44,11 +44,11 @@
         },
         {
           "label": "\"Check\" 버튼 텍스트",
-          "default": "체크"
+          "default": "정답 확인"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "\"Submit\" 버튼 텍스트",
+          "default": "제출하기"
         },
         {
           "label": "\"Show solution\" (해답 보이기) 버튼 텍스트",
@@ -85,8 +85,8 @@
       ]
     },
     {
-      "label": "행동 설정",
-      "description": "이 옵션을 사용하면 과제가 어떻게 수행되는지 제어할 수 있음.",
+      "label": "동작 설정",
+      "description": "이 옵션을 사용하면 과제가 어떻게 수행되는지 제어할 수 있음",
       "fields": [
         {
           "label": "\"Retry\" (재시도) 버튼 활성화"
