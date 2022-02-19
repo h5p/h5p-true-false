@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Optionales Medium, das über der Frage dargestellt wird."
+          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
         },
         {
           "label": "Bild-Zoom deaktivieren"
@@ -47,7 +47,7 @@
           "default": "Überprüfen"
         },
         {
-          "label": "Text for \"Submit\" button",
+          "label": "Beschriftung des \"Absenden\"-Buttons",
           "default": "Submit"
         },
         {
