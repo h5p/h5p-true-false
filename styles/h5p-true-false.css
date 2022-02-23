@@ -59,11 +59,11 @@
 }
 .h5p-true-false-answer.correct {
   background: #fff;
-  border-color: #47b47d;
+  border-color: #239059;
   box-shadow: none;
 }
 .h5p-true-false-answer.correct:after {
-  background: #47b47d;
+  background: #239059;
   content: '\f00c';
   color: #fff;
 }
