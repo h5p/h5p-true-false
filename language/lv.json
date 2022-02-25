@@ -47,6 +47,10 @@
           "default": "Pārbaudīt"
         },
         {
+          "label": "Text for \"Submit\" button",
+          "default": "Submit"
+        },
+        {
           "label": "Pogas \"Parādīt risinājumu\" teksts",
           "default": "Parādīt risinājumu"
         },
