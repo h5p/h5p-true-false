@@ -1,19 +1,19 @@
 {
   "semantics": [
     {
-      "label": "Multimedia",
+      "label": "Medieelement",
       "fields": [
         {
           "label": "Type",
-          "description": "Eit valfritt multimediaelement som skal visast over spørsmålet."
+          "description": "Valfritt medieelement. Elementet vil bli plassert over spørsmålet."
         },
         {
-          "label": "Slå av bilete zooming"
+          "label": "Deaktiver zoomingfunksjon."
         }
       ]
     },
     {
-      "label": "Spørsmål"
+      "label": "Question"
     },
     {
       "label": "Riktig svar",
@@ -85,14 +85,14 @@
       ]
     },
     {
-      "label": "Innstillinger for oppgave-oppførsel",
-      "description": "Disse instillingene lar deg bestemme hvordan oppgavetypen skal oppføre seg.",
+      "label": "Oppgåveinnstillingar",
+      "description": "Desse vala lar deg styre ulike funksjonar i oppgåva.",
       "fields": [
         {
-          "label": "Aktiver \"Prøv igjen\""
+          "label": "Enable \"Retry\" button"
         },
         {
-          "label": "Aktiver \"Fasit\" knapp"
+          "label": "Enable \"Show Solution\" button"
         },
         {
           "label": "Enable \"Check\" button"
