@@ -47,8 +47,8 @@
           "default": "Kontrol et"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "\"Gönder\" düğmesi için metin",
+          "default": "Gönder"
         },
         {
           "label": "\"Çözümü göster\" butonu için metin",
@@ -85,14 +85,14 @@
       ]
     },
     {
-      "label": "Çalışma ayarları",
-      "description": "Bu seçenekler aktivitenin çalışma şeklini denetlemenize izin verir.",
+      "label": "Davranış yarları",
+      "description": "Bu seçenekler görevin nasıl davranması gerektiğini kontrol etmenizi sağlar.",
       "fields": [
         {
-          "label": "\"Yeniden dene\" düğmesi devrede"
+          "label": "\"Yeniden dene\" düğmesini devreye al"
         },
         {
-          "label": "\"Çözümü göster\" butonunu aktifleştirin."
+          "label": "\"Çözüm göster\" düğmesini devreye al"
         },
         {
           "label": "\"Kontrol et\" butonunu aktifleştirin."
