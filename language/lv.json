@@ -47,8 +47,8 @@
           "default": "Pārbaudīt"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "Pogas \"Iesniegt\" teksts",
+          "default": "Iesniegt"
         },
         {
           "label": "Pogas \"Parādīt risinājumu\" teksts",
@@ -68,7 +68,7 @@
         },
         {
           "label": "Punktu skalas tekstuālais atspoguļojums tiem, kuri izmanto asistējošās tehnoloģijas",
-          "default": "Jūs saņēmāt :num no :total punktiem"
+          "default": "Tu saņēmi :num no :total punktiem"
         },
         {
           "label": "Pogas \"Pārbaudīt\" apraksts priekš asistējošajām tehnoloģijām",
