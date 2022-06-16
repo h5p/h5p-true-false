@@ -1,11 +1,11 @@
 {
   "semantics": [
     {
-      "label": "Medio",
+      "label": "Medios",
       "fields": [
         {
           "label": "Tipo",
-          "description": "Medio opcional a mostrar arriba de la pregunta."
+          "description": "Medios opcionales mostrados encima de la pregunta."
         },
         {
           "label": "Deshabilitar acercamiento de imagen"
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "label": "Traducciones de interfaz de usuario para preguntas Verdaderas/Falsas",
+      "label": "Traducciones de interfaz de usuario para preguntas Verdadero/Falso",
       "fields": [
         {
           "label": "Texto para el botón verdadero",
@@ -39,7 +39,7 @@
         },
         {
           "label": "Texto de retroalimentación",
-          "default": "Tienes @score de @total puntos",
+          "default": "Has obtenido @score de un total de @total puntos",
           "description": "Texto de retroalimentación, variables disponibles: @score y @total. Ejemplo: 'Tienes @score de @total puntos posibles'"
         },
         {
@@ -48,15 +48,15 @@
         },
         {
           "label": "Texto para botón \"Enviar\"",
-          "default": "Submit"
+          "default": "Enviar"
         },
         {
           "label": "Texto para botón \"Mostrar solución\"",
           "default": "Mostrar solución"
         },
         {
-          "label": "Texto para botón \"Reintentar\"",
-          "default": "Reintentar"
+          "label": "Texto para el botón \"Intentar de nuevo\"",
+          "default": "Intentar de nuevo"
         },
         {
           "label": "Respuesta Incorrecta",
@@ -67,29 +67,29 @@
           "default": "Respuesta correcta"
         },
         {
-          "label": "Representación textual de la barra de puntaje para aquellos que usan un lector de texto en voz alta",
-          "default": "Obtuvo :num de un total de :total puntos"
+          "label": "Representación textual de la barra de puntuación cuando se usa un lector de pantalla",
+          "default": "Has conseguido :num de un total de :total puntos"
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Comprobar\"",
-          "default": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar."
+          "label": "Descripción para las tecnologías de asistencia del botón \"Comprobar\"",
+          "default": "Comprueba las respuestas. Las respuestas se marcarán como correctas, incorrectas o sin respuesta."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\"",
-          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
+          "label": "Descripción para las tecnologías de asistencia del botón \"Mostrar solución\"",
+          "default": "Mostrar la solución. La tarea se marcará con su solución correcta."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
-          "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
+          "label": "Descripción para las tecnologías de asistencia del botón \"Intentar de nuevo\"",
+          "default": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
         }
       ]
     },
     {
-      "label": "Configuraciones del comportamiento",
-      "description": "Estas opciones le permitirán controlar como se comporta el trabajo.",
+      "label": "Configuración del comportamiento",
+      "description": "Estas opciones te permitirán controlar como se comporta la tarea.",
       "fields": [
         {
-          "label": "Habilitar botón \"Reintentar\""
+          "label": "Habilitar botón \"Intentar de nuevo\""
         },
         {
           "label": "Habilitar botón \"Mostrar Solución\""
@@ -98,21 +98,21 @@
           "label": "Habilitar botón \"Comprobar\""
         },
         {
-          "label": "Mostrar diálogo de confirmación en \"Comprobar\""
+          "label": "Mostrar diálogo de confirmación para \"Comprobar\""
         },
         {
-          "label": "Mostrar el diálogo de confirmación en \"Reintentar\""
+          "label": "Mostrar diálogo de confirmación para \"Intentar de nuevo\""
         },
         {
           "label": "Comprobar automáticamente la respuesta",
-          "description": "Tenga en cuenta que la accesibilidad sufrirá si habilita esta opción"
+          "description": "Ten en cuenta que la accesibilidad se verá afectada si habilitas esta opción"
         },
         {
-          "label": "Retroalimentación en respuesta correcta",
+          "label": "Retroalimentación para respuesta correcta",
           "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         },
         {
-          "label": "Retroalimentación en respuesta incorrecta",
+          "label": "Retroalimentación para respuesta incorrecta",
           "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         }
       ]
@@ -126,7 +126,7 @@
         },
         {
           "label": "Texto del cuerpo",
-          "default": "¿Seguro de que desea terminar?"
+          "default": "¿Seguro que quieres terminar?"
         },
         {
           "label": "Texto del botón Cancelar",
@@ -139,15 +139,15 @@
       ]
     },
     {
-      "label": "Diálogo de confirmación Reintentar",
+      "label": "Diálogo de confirmación para Intentar de nuevo",
       "fields": [
         {
           "label": "Texto de cabecera",
-          "default": "¿Reintentar?"
+          "default": "¿Intentar de nuevo?"
         },
         {
           "label": "Texto del cuerpo",
-          "default": "¿Estás seguro de que deseas volver a intentarlo?"
+          "default": "¿Seguro que quieres volver a intentarlo?"
         },
         {
           "label": "Texto del botón Cancelar",
