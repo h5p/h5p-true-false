@@ -27,7 +27,7 @@
       ]
     },
     {
-      "label": "Prevodi uporabniškega vmesnika za aktivnost Drži/Ne drži",
+      "label": "Prevodi uporabniškega vmesnika",
       "fields": [
         {
           "label": "Oznaka gumba Drži",
@@ -39,16 +39,16 @@
         },
         {
           "label": "Besedilo za povratno informacijo",
-          "default": "Dosegli ste @score od @total točk",
-          "description": "Spremenljivki v povratni informaciji sta @score in @total. Primer: 'Dosegli ste @score od @total točk'"
+          "default": "Dosežene točke: @score od @total",
+          "description": "Spremenljivki v povratni informaciji sta @score in @total."
         },
         {
           "label": "Besedilo za gumb \"Preveri\"",
           "default": "Preveri"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "Besedilo za gumb \"Oddaj\"",
+          "default": "Oddaj"
         },
         {
           "label": "Besedilo za gumb \"Prikaži rešitev\"",
@@ -68,19 +68,19 @@
         },
         {
           "label": "Besedilo vrstice z rezultati za udeležence, ki uporabljajo bralnik zaslona",
-          "default": "Dosegli ste :num od :total točk"
+          "default": "Dosežene točke: :num od :total"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Besedilo za gumb \"Preveri\"",
+          "default": "Preveri"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Besedilo za gumb \"Prikaži rešitev\"",
+          "default": "Prikaži rešitev"
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Besedilo za gumb \"Poskusi ponovno\"",
+          "default": "Poskusi ponovno"
         }
       ]
     },
