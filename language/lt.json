@@ -55,7 +55,7 @@
         },
         {
           "default": "Bandyti dar kartą",
-          "label": "Tekstas mygtukui „Bandyti dar kartą“."
+          "label": "Tekstas mygtukui „Bandyti dar kartą“"
         },
         {
           "default": "Neteisingas atsakymas",
@@ -67,7 +67,7 @@
         },
         {
           "default": "Gavote :num iš :total taškų",
-          "label": "Textual representation of the score bar for those using a readspeaker"
+          "label": "Tekstinis rezultatų juostos atvaizdavimas tiems, kurie naudojasi skaitytuvu"
         },
         {
           "default": "Tikrinkite atsakymus. Atsakymai bus pažymėti kaip teisingi, neteisingi arba neatsakyti.",
@@ -75,7 +75,7 @@
         },
         {
           "default": "Rodyti sprendimą. Užduotis bus pažymėta teisingu jos sprendimu.",
-          "label": "Assistive technology description for \"Show Solution\" button"
+          "label": "Papildomas technologinis aprašymas mygtukui \"Rodyti sprendimą\""
         },
         {
           "default": "Pabandyti atlikti užduotį dar kartą. Iš naujo nustatyti visus atsakymus ir pradėti užduotį iš naujo.",
@@ -88,13 +88,13 @@
       "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
       "fields": [
         {
-          "label": "Įjungti mygtuką „Bandyti dar kartą“."
+          "label": "Įjungti mygtuką „Bandyti dar kartą“"
         },
         {
-          "label": "Įjungti mygtuką „Rodyti sprendimą“."
+          "label": "Įjungti mygtuką „Rodyti sprendimą“"
         },
         {
-          "label": "Įjungti mygtuką „Tikrinti“."
+          "label": "Įjungti mygtuką „Tikrinti“"
         },
         {
           "label": "Rodyti patvirtinimo dialogo langą „Tikrinti“"
