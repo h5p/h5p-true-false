@@ -126,7 +126,7 @@
         },
         {
           "label": "Texte du contenu",
-          "default": "Êtes-vous sûr de vouloir terminer ?"
+          "default": "Voulez-vous vraiment terminer ?"
         },
         {
           "label": "Texte du bouton d'annulation",
@@ -147,7 +147,7 @@
         },
         {
           "label": "Texte du contenu",
-          "default": "Êtes-vous sûr de vouloir recommencer ?"
+          "default": "Voulez-vous vraiment recommencer ?"
         },
         {
           "label": "Texte du bouton d'annulation",
