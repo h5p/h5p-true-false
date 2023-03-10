@@ -40,14 +40,14 @@
         {
           "label": "Texte de feedback",
           "default": "Vous avez obtenu @score points sur un total de @total",
-          "description": "Texte de feedback, les variables disponibles sont: @score et @total. Exemple: 'Vous avez obtenu @score sur @total points'."
+          "description": "Texte de feedback, les variables disponibles sont: @score et @total. Exemple: 'Vous avez obtenu @score sur @total points'"
         },
         {
           "label": "Texte du bouton \"Vérifier\"",
           "default": "Vérifier"
         },
         {
-          "label": "Text for \"Submit\" button",
+          "label": "Texte pour le bouton \"Envoyer\"",
           "default": "Vérifier"
         },
         {
@@ -71,16 +71,16 @@
           "default": "Vous avez obtenu @score points sur un total de @total"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Description des technologies d'assistance pour le bouton \"Vérifier\"",
+          "default": "Vérifiez les réponses.  Les réponses seront marquées comme correcte, incorrecte ou sans réponse."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Description des technologies d'assistance pour le bouton \"Montrer la solution\"",
+          "default": "Montrer la solution. L'exercice s'affichera avec la solution correcte."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Description des technologies d'assistance pour le bouton \"Réessayer\"",
+          "default": "Réessayer l'exercice. Réinitialisez toutes les réponses et recommencer l'exercice depuis le début."
         }
       ]
     },
@@ -105,15 +105,15 @@
         },
         {
           "label": "Vérifier automatiquement la réponse cochée",
-          "description": "Noter que l'accessibilité sera pénalisée si cette option est activée."
+          "description": "Noter que l'accessibilité sera pénalisée si cette option est activée"
         },
         {
           "label": "Commentaire pour une réponse correcte",
-          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total."
+          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
         },
         {
           "label": "Commentaire pour une mauvaise réponse",
-          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total."
+          "description": "Ceci remplacera le commentaire par défaut. Variables disponibles: @score et @total"
         }
       ]
     },
@@ -126,7 +126,7 @@
         },
         {
           "label": "Texte du contenu",
-          "default": "Êtes-vous sûr de vouloir terminer ?"
+          "default": "Voulez-vous vraiment terminer ?"
         },
         {
           "label": "Texte du bouton d'annulation",
@@ -147,7 +147,7 @@
         },
         {
           "label": "Texte du contenu",
-          "default": "Êtes-vous sûr de vouloir recommencer ?"
+          "default": "Voulez-vous vraiment recommencer ?"
         },
         {
           "label": "Texte du bouton d'annulation",

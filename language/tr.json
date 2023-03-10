@@ -4,8 +4,8 @@
       "label": "Medya",
       "fields": [
         {
-          "label": "Medya Türü",
-          "description": "Soru üzerinde istege bağlı görüntülenecek medya (video, resim)."
+          "label": "Türü",
+          "description": "Sorunun üst tarafında  istege bağlı görüntülenecek ortam (video, resim)."
         },
         {
           "label": "Soru görseli yakınlaştırma işlevini devre dışı bırakın."

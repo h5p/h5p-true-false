@@ -39,8 +39,8 @@
         },
         {
           "label": "نص الاراء",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "default": "لقد حصلت على @score من @total",
+          "description": "نص الملاحظات، المتغيرات المتاحة: @score و @total. مثال: 'جمعت من النقاط @score من @total'"
         },
         {
           "label": "نص زر التحقق",
@@ -64,7 +64,7 @@
         },
         {
           "label": "اجابه صحيحه",
-          "default": "اجابه صحيحه"
+          "default": "إجابة صحيحة"
         },
         {
           "label": "عرض كتابي للنتيجه لمستخدمي القارئ المتكلم",
@@ -79,8 +79,8 @@
           "default": "Show the solution. The task will be marked with its correct solution."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "وصف التقنية المساعدة لزر إعادة المحاولة",
+          "default": "إعادة المحاولة للمهمة. إعادة ضبط جميع الردود والبدء بالمهمة مرة أخرى."
         }
       ]
     },
