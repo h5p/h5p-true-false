@@ -4,7 +4,7 @@
   "machineName": "H5P.TrueFalse",
   "majorVersion": 1,
   "minorVersion": 8,
-  "patchVersion": 5,
+  "patchVersion": 6,
   "runnable": 1,
   "license": "MIT",
   "author": "Joubel",
@@ -40,7 +40,7 @@
     {
       "machineName": "H5P.Question",
       "majorVersion": 1,
-      "minorVersion": 5
+      "minorVersion": 8
     },
     {
       "machineName": "H5P.JoubelUI",
