@@ -283,7 +283,6 @@ H5P.TrueFalse = (function ($, Question) {
       // Create feedback widget
       var score = self.getScore();
       var scoreText;
-      var scoreBarLabel = params.l10n.scoreBarLabel;
 
       toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
 
@@ -295,11 +294,10 @@ H5P.TrueFalse = (function ($, Question) {
       }
       else {
         scoreText = params.l10n.score;
-        scoreBarLabel = ''; // HFP-3687: avoid screen readers reading seemingly duplicate labels
       }
       // Replace relevant variables:
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
-      self.setFeedback(scoreText, score, MAX_SCORE, scoreBarLabel);
+      self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
     };
 
