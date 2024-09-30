@@ -1,161 +1,161 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Média",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Típus",
+          "description": "A kérdés felett megjelenítendő opcionális médiatartalom."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Kép nagyíthatóságának tiltása"
         }
       ]
     },
     {
-      "label": "Question"
+      "label": "Kérdés"
     },
     {
       "label": "Helyes válasz",
       "options": [
         {
-          "label": "True"
+          "label": "Igaz"
         },
         {
-          "label": "False"
+          "label": "Hamis"
         }
       ]
     },
     {
-      "label": "User interface translations for True/False Questions",
+      "label": "Az Igaz/Hamis feladattípus felhasználói felületének fordításai",
       "fields": [
         {
-          "label": "Label for true button",
-          "default": "True"
+          "label": "Címkefelirat az „Igaz” gombhoz",
+          "default": "Igaz"
         },
         {
-          "label": "Label for false button",
-          "default": "False"
+          "label": "Címkefelirat a „Hamis” gombhoz",
+          "default": "Hamis"
         },
         {
-          "label": "Feedback text",
-          "default": "You got @score of @total points",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "label": "Visszajelző szöveg",
+          "default": "@score pontot kaptál az elérhető @total pontból",
+          "description": "A visszajelző szöveghez használható változók: @score (pontszám) és @total (összes pont). Példa: '@score pontot kaptál az elérhető @total pontból.'"
         },
         {
-          "label": "Text for \"Check\" button",
-          "default": "Check"
+          "label": "Az \"Ellenőrzés\" gomb felirata",
+          "default": "Ellenőrzés"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "A \"Beküldés\" gomb felirata",
+          "default": "Beküldés"
         },
         {
-          "label": "Text for \"Show solution\" button",
-          "default": "Show solution"
+          "label": "A \"Megoldás megmutatása\" gomb felirata",
+          "default": "Megoldás megmutatása"
         },
         {
-          "label": "Text for \"Retry\" button",
-          "default": "Retry"
+          "label": "Felrat az \"Újra próbálkozás\" gombhoz",
+          "default": "Újra próbálkozás"
         },
         {
-          "label": "Wrong Answer",
-          "default": "Wrong answer"
+          "label": "Helytelen válasz",
+          "default": "Helytelen válasz"
         },
         {
-          "label": "Correct Answer",
+          "label": "Helyes válasz",
           "default": "Helyes válasz"
         },
         {
-          "label": "Textual representation of the score bar for those using a readspeaker",
-          "default": "You got :num out of :total points"
+          "label": "A pontsáv szöveges formában a felolvasó programot használók számára (akadálymentesítés)",
+          "default": ":num pontot kaptál az elérhető :total pontból"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Az \"Ellenőrzés\" gomb megértést segítő magyarázatának leírása",
+          "default": "A válaszok ellenőrzése. A beküldött válaszok helyesnek, helytelennek vagy megválaszolatlannak lesznek megjelölve."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "A \"Megoldás megmutatása\" gomb megértést segítő magyarázatának leírása",
+          "default": "Megmutatja a helyes megoldást. A beküldött feladat a helyes megoldásával együtt jelenik meg."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Az \"Újra próbálkozás\" gomb megértést segítő magyarázatának leírása",
+          "default": "A feladat megoldásának ismételt megoldása. Alahelyzetbe állítja az összes választ, és elölről kezdődik a feladat."
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "label": "Viselkedési beállítások",
+      "description": "Ezekkel a beállításokkal szabályozható a feladat viselkedése.",
       "fields": [
         {
-          "label": "Enable \"Retry\" button"
+          "label": "\"Újra próbálkozás\" gomb engedélyezése"
         },
         {
-          "label": "Enable \"Show Solution\" button"
+          "label": "\"Megoldás megmutatása\" gomb engedélyezése"
         },
         {
-          "label": "Enable \"Check\" button"
+          "label": "\"Ellenőrzés\" gomb engedélyezése"
         },
         {
-          "label": "Show confirmation dialog on \"Check\""
+          "label": "Megerősítő párbeszédpanel megjelenítése az \"Ellenőrzés\" gombra kattintáskor"
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Megerősítő párbeszédpanel megjelenítése az \"Újra próbálkozás\" gombra kattintáskor"
         },
         {
-          "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "label": "A válasz automatikus ellenőrzése",
+          "description": "Vegye figyelembe, hogy ennek engedélyezésével csökken a feladat akadálymentessége"
         },
         {
-          "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Visszajelzés helyes válasz esetén",
+          "description": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
         },
         {
-          "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "label": "Visszajelzés helytelen válasz esetén",
+          "description": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Ellenőrzés párbeszédpanel",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Fejléc szöveg",
+          "default": "Befejezés?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Szöveges tartalom",
+          "default": "Biztosan be akarod fejezni?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "\"Mégsem\" gomb felriata",
+          "default": "Mégsem"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Megerősítő gomb felirata",
+          "default": "Befejezés"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Újra próbálkozás párbeszédpanel",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Fejléc szöveg",
+          "default": "Újra?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Szöveges rész",
+          "default": "Biztosan újra szeretnéd kezdeni?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "\"Mégsem\" gomb felirata",
+          "default": "Mégsem"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Megerősítő gomb felirata",
+          "default": "Megerősít"
         }
       ]
     }
