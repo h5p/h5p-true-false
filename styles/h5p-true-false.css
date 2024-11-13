@@ -1,19 +1,24 @@
-.h5p-true-false-answers {
-  margin: 1em 0 1em;
-}
+
 .h5p-true-false-answer {
   position: relative;
-  display: inline-block;
-  box-sizing: border-box;
+  display: inline-flex;
   cursor: pointer;
-  border-radius: 4px;
-  border: 2px solid #ddd;
-  margin: 0 1em 1em 0;
-  padding: .5em 3.5em .5em .3em;
-  box-shadow: 0 1px 0 0 #ccc;
+  align-content: center;
   outline: none;
-  background: #fff;
+  padding: var(--spacing-xs); 
+  background: var(--alternative-base); 
+  border-radius: var(--border-radius-medium); 
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: left;
+  line-height: normal;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: var(--spacing-xxs);
 }
+
+
 .aria-label {
   width: 0;
   height: 0;
@@ -22,24 +27,47 @@
   position: absolute;
 }
 .h5p-true-false-answer:hover {
-  border-color: #8cb9f0;
+  background: var(--alternative-dark);
+  border-color: var(--alternative-dark);
 }
 .h5p-true-false-answer:focus {
-  box-shadow: 0px 0px 5px 2px #5094e7;
+      box-shadow: 0 0 0.5em 0 var(--main-cta-base);
+    border-color: var(--main-cta-base);
 }
 .h5p-true-false-answer:before {
-  margin: 0 .5em;
-  font-family: 'H5PFontIcons';
-  font-size: 0.8em;
-  content: '\e60b';
+  content: "\e90e";
+  font-family: h5p-theme;
+  border: medium none;
+  display: inline;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: var(--font-size-xl);
+  margin-right: var(--spacing-xxs);
 }
+
 .h5p-true-false-answer[aria-checked=true] {
-  background: #d3ebfb;
-  border-color: #6b9fde;
-  color: #000;
+  background-color: var(--alternative-dark);
+  color: var(--text-primary);
+  border-color: var(--main-cta-base);
+}
+
+
+
+.h5p-true-false-answer[aria-checked=true]:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    height: calc(var(--spacing-xxs) / 2);
+    bottom: 100%;
+    left: 0;
+    background-color: var(--main-cta-base);
+    z-index: 1;
+    transition: transform 0.25s ease-out;
 }
 .h5p-true-false-answer[aria-checked=true]::before {
-  content: '\e60d';
+  content: '\e90d';
 }
 .h5p-true-false-answer:after {
   font-family: 'H5PFontAwesome4';
