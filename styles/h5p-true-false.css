@@ -32,7 +32,6 @@
   border-color: var(--h5p-theme-main-cta-base);
 }
 .h5p-true-false-answer:focus{
-  z-index: 3000;
   outline: 4px ridge var(--h5p-theme-main-cta-base);
   border-radius: 4px;
 }
