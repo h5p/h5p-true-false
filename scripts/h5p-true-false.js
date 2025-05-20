@@ -39,7 +39,7 @@ H5P.TrueFalse = (function ($, Question) {
     var self = this;
 
     // Inheritance
-    Question.call(self, 'true-false', true);
+    Question.call(self, 'true-false', { theme: true });
 
     var params = $.extend(true, {
       question: 'No question text provided',
