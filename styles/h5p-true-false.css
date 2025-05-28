@@ -15,6 +15,7 @@
   font-weight: 600;
   color: var(--h5p-theme-text-secondary);
   margin-right: var(--h5p-theme-spacing-xxs);
+  font-size: var(--h5p-theme-font-size-m);
 }
 .aria-label {
   width: 0;
