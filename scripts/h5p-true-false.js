@@ -136,6 +136,7 @@ H5P.TrueFalse = (function ($, Question) {
           'aria-label': params.l10n.a11yShowSolution,
         },
         {
+          styleType: 'secondary',
           icon: 'show-results'
         }
       );
@@ -174,6 +175,7 @@ H5P.TrueFalse = (function ($, Question) {
             instance: self,
             $parentElement: $container
           },
+          styleType: 'secondary',
           icon: 'retry'
         });
       }
