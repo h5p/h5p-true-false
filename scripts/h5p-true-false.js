@@ -136,7 +136,6 @@ H5P.TrueFalse = (function ($, Question) {
           'aria-label': params.l10n.a11yShowSolution,
         },
         {
-          styleType: 'secondary',
           icon: 'show-results'
         }
       );
@@ -158,7 +157,6 @@ H5P.TrueFalse = (function ($, Question) {
           },
           contentData: self.contentData,
           textIfSubmitting: params.l10n.submitAnswer,
-          styleType: 'secondary',
           icon: 'check'
         });
       }
@@ -176,7 +174,6 @@ H5P.TrueFalse = (function ($, Question) {
             instance: self,
             $parentElement: $container
           },
-          styleType: 'secondary',
           icon: 'retry'
         });
       }
