@@ -136,7 +136,8 @@ H5P.TrueFalse = (function ($, Question) {
           'aria-label': params.l10n.a11yShowSolution,
         },
         {
-          classes: 'h5p-theme-secondary-cta h5p-theme-show-results',
+          styleType: 'secondary',
+          icon: 'show-results'
         }
       );
       }
@@ -157,7 +158,8 @@ H5P.TrueFalse = (function ($, Question) {
           },
           contentData: self.contentData,
           textIfSubmitting: params.l10n.submitAnswer,
-          classes: 'h5p-theme-primary-cta h5p-theme-check',
+          styleType: 'secondary',
+          icon: 'check'
         });
       }
 
@@ -174,7 +176,8 @@ H5P.TrueFalse = (function ($, Question) {
             instance: self,
             $parentElement: $container
           },
-          classes: 'h5p-theme-secondary-cta h5p-theme-retry',
+          styleType: 'secondary',
+          icon: 'retry'
         });
       }
 
