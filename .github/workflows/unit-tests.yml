@@ -1,0 +1,34 @@
+name: Unit Tests
+
+on:
+  workflow_dispatch:
+  push:
+   branches:
+     - rpena/unit-test-prototype
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Clone h5p-cli repository
+        run: git clone https://github.com/h5p/h5p-cli.git
+
+      - name: Install h5p-cli from specific branch, install relevant libraries
+        run: |
+          ls
+          cd h5p-cli
+          npm install
+          cd ..
+          npm install -g ./h5p-cli
+          cd h5p-environment
+          h5p core
+          h5p setup h5p-true-false
+          ls
