@@ -28,6 +28,7 @@ jobs:
           npm install
           cd ..
           npm install -g ./h5p-cli
+          mkdir h5p-environment
           cd h5p-environment
           h5p core
           h5p setup h5p-true-false
