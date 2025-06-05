@@ -10,8 +10,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main repository
-        uses: actions/checkout@v3
+    #   - name: Checkout main repository
+    #     uses: actions/checkout@v3
 
       - name: Setup node
         uses: actions/setup-node@v3
@@ -33,3 +33,29 @@ jobs:
           h5p core
           h5p setup h5p-true-false
           ls
+  
+      - name: Clone E2E Test Repo
+        run: git clone https://github.com/h5p/h5pcom-e2e-tests.git
+
+      - name: Install Test Repo
+        run: |
+         cd h5pcom-e2e-tests
+         npm ci
+
+      - name: Install Playwright Browsers
+        run: |
+         cd h5pcom-e2e-tests
+         npx playwright install-deps
+
+      - name: Start H5P CLI Server
+        run: |
+         cd h5p-environment
+         h5p server 8080 &
+
+      - name: Wait for H5P CLI Server
+        run: curl --retry 10 --retry-connrefused http://localhost:8080
+
+      - name: Run E2E Tests
+        run: |
+         cd h5pcom-e2e-tests
+         npm run test:libraries
