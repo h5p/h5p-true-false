@@ -10,7 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
- 
 
       - name: Setup node
         uses: actions/setup-node@v3
@@ -32,20 +31,20 @@ jobs:
           h5p core
           ls
 
-      - name: Set Folder Name from Library.json
-        run: |
-           echo 'FOLDER_NAME<<EOF' >> $GITHUB_ENV
-           node compute-version.js >> $GITHUB_ENV
-           echo 'EOF' >> $GITHUB_ENV
+      # - name: Set Folder Name from Library.json
+      #   run: |
+      #      echo 'FOLDER_NAME<<EOF' >> $GITHUB_ENV
+      #      node compute-version.js >> $GITHUB_ENV
+      #      echo 'EOF' >> $GITHUB_ENV
       
       - name: Checkout True False into CLI Environment
         uses: actions/checkout@v3
         with:
-          path: h5p-environment/libraries/${{ env.FOLDER_NAME }}
+          path: h5p-environment/libraries/H5P.TrueFalse-CI
 
       - name: Install True False Library, install dependencies
         run: |
-          cd h5p-environment/libraries/${{ env.FOLDER_NAME }}
+          cd h5p-environment/libraries/H5P.TrueFalse-CI
           npm install
           h5p deps
   
