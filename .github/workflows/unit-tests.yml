@@ -49,7 +49,7 @@ jobs:
       
       - name: Install True False Library Dependencies
         run: |
-          cd h5p-environment/libraries/
+          cd h5p-environment
           h5p deps h5p-true-false
           ls
           h5p verify h5p-true-false
