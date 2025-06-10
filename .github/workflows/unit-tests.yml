@@ -49,10 +49,10 @@ jobs:
       
       - name: Install True False Library Dependencies
         run: |
-          cd h5p-environment
-          h5p deps /libraries/H5P.TrueFalse-CI
-          cd /libraries/H5P.TrueFalse-CI
+          cd h5p-environment/libraries/H5P.TrueFalse-CI
+          h5p get h5p-true-false
           ls
+          h5p verify h5p-true-false
   
       # - name: Clone E2E Test Repo
       #   run: git clone https://github.com/h5p/h5pcom-e2e-tests.git
