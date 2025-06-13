@@ -39,7 +39,7 @@ H5P.TrueFalse = (function ($, Question) {
     var self = this;
 
     // Inheritance
-    Question.call(self, 'true-false');
+    Question.call(self, 'true-false', { theme: true });
 
     var params = $.extend(true, {
       question: 'No question text provided',
@@ -134,7 +134,12 @@ H5P.TrueFalse = (function ($, Question) {
           self.showSolutions(true);
         }, false, {
           'aria-label': params.l10n.a11yShowSolution,
-        });
+        },
+        {
+          styleType: 'secondary',
+          icon: 'show-results'
+        }
+      );
       }
 
       // Check button
@@ -153,6 +158,7 @@ H5P.TrueFalse = (function ($, Question) {
           },
           contentData: self.contentData,
           textIfSubmitting: params.l10n.submitAnswer,
+          icon: 'check'
         });
       }
 
@@ -168,7 +174,9 @@ H5P.TrueFalse = (function ($, Question) {
             l10n: params.confirmRetry,
             instance: self,
             $parentElement: $container
-          }
+          },
+          styleType: 'secondary',
+          icon: 'retry'
         });
       }
 
@@ -244,7 +252,7 @@ H5P.TrueFalse = (function ($, Question) {
     };
 
     /**
-     * Toggles btton visibility dependent of current state
+     * Toggles button visibility dependent of current state
      *
      * @method toggleButtonVisibility
      * @private
