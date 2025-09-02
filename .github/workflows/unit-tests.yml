@@ -36,11 +36,16 @@ jobs:
       #      echo 'FOLDER_NAME<<EOF' >> $GITHUB_ENV
       #      node compute-version.js >> $GITHUB_ENV
       #      echo 'EOF' >> $GITHUB_ENV
+      
+      - name: Checkout True False into CLI Environment
+        uses: actions/checkout@v3
+        with:
+          path: H5P.TrueFalse-CI
 
       - name: Install True False Library
         run: |
           cd h5p-environment
-          h5p setup ${{ github.server_url }}/${{ github.repository }}/tree/${{ github.ref_name }}
+          h5p setup ../H5P.TrueFalse-CI/library.json
           h5p verify h5p-true-false
       
 
