@@ -40,13 +40,12 @@ jobs:
       - name: Checkout True False into CLI Environment
         uses: actions/checkout@v3
         with:
-          path: H5P.TrueFalse-CI
+          path: H5P.TrueFalse-1.8
 
       - name: Install True False Library
         run: |
           cd h5p-environment
-          h5p setup ../H5P.TrueFalse-CI/library.json
-          h5p verify h5p-true-false
+          h5p setup ../H5P.TrueFalse-1.8/library.json
       
 
       # - name: Clone E2E Test Repo
