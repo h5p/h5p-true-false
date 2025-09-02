@@ -36,11 +36,6 @@ jobs:
       #      echo 'FOLDER_NAME<<EOF' >> $GITHUB_ENV
       #      node compute-version.js >> $GITHUB_ENV
       #      echo 'EOF' >> $GITHUB_ENV
-      
-      - name: Checkout True False into CLI Environment
-        uses: actions/checkout@v3
-        with:
-          path: h5p-environment/libraries/H5P.TrueFalse-CI
 
       - name: Install True False Library
         run: |
