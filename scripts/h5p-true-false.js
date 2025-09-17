@@ -137,7 +137,7 @@ H5P.TrueFalse = (function ($, Question) {
         },
         {
           styleType: 'secondary',
-          icon: 'show-results'
+          icon: 'show-solutions'
         }
       );
       }
