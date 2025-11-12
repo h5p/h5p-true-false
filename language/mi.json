@@ -1,0 +1,163 @@
+{
+  "semantics": [
+    {
+      "label": "Arapāho",
+      "fields": [
+        {
+          "label": "Momo",
+          "description": "He kōwhiringa kia whakaaturia he rauemi arapāho ki runga i te pātai."
+        },
+        {
+          "label": "Monoa te āheinga topa ata"
+        }
+      ]
+    },
+    {
+      "label": "Pātai"
+    },
+    {
+      "label": "Whakautu tika",
+      "options": [
+        {
+          "label": "Pono"
+        },
+        {
+          "label": "Hē"
+        }
+      ]
+    },
+    {
+      "label": "He whakamāoritanga mō ngā Pātai Pono/Hē",
+      "fields": [
+        {
+          "label": "Tapanga mō te pātene pono",
+          "default": "Pono"
+        },
+        {
+          "label": "Tapanga mō te pātene hē",
+          "default": "Hē"
+        },
+        {
+          "label": "Tuhinga urupare",
+          "default": "I whiwhi koe @score o ngā piro @total ka taea",
+          "description": "He tuhinga urupare, ngā taurangi ka taea @score me @total. Hei tauira: 'I whiwhi koe @score o ngā piro @total ka taea'"
+        },
+        {
+          "label": "Tapanga mō te pātene \"Tirohia\" ",
+          "default": "Tirohia"
+        },
+        {
+          "label": "Tapanga mō te pātene \"Tukuna\" ",
+          "default": "Tukuna"
+        },
+        {
+          "label": "Tapanga mō te pātene \"Whakaatu otinga\" ",
+          "default": "Whakaatu otinga"
+        },
+        {
+          "label": "Tapanga mō te pātene  \"Whakamātau anō\" ",
+          "default": "Whakamātau anō"
+        },
+        {
+          "label": "Whakautu hē",
+          "default": "Whakautu hē"
+        },
+        {
+          "label": "Whakautu tika",
+          "default": "Whakautu tika"
+        },
+        {
+          "label": "Te pae piro ā-kupu mō te hunga e whakamahi ana i te taupānga pānui tuhinga",
+          "default": "I whiwhi koe @score o ngā piro @total ka taea"
+        },
+        {
+          "label": "Te whakamārama hangarau tomopai mō te pātene  \"Tirohia\"",
+          "default": "Tirohia ngā whakautu. Ka tohua ngā whakautu tika, hē, me ngā pātai kāore i whakautua."
+        },
+        {
+          "label": "Te whakamārama hangarau tomopai mō te pātene \"Whakaatu otinga\" ",
+          "default": "Ka whakaaturia te otinga tika mō tēnei pātai, ngohe rānei."
+        },
+        {
+          "label": "Te whakamārama hangarau tomopai mō te pātene \"Whakamātau anō\" ",
+          "default": "Whakamātauria anōtia te ngohe. Ka whakakorengia ngā whakautu, ā, ka tīmatahia anōtia te ngohe."
+        }
+      ]
+    },
+    {
+      "label": "Kōwhiringa whanonga",
+      "description": "Mā ēnei kōwhiringa whanonga, ka taea te whakahaere i ngā whanonga o tēnei ngohe.",
+      "fields": [
+        {
+          "label": "Whakakāngia te pātene \"Whakamātau anō\" "
+        },
+        {
+          "label": "Whakakāngia te pātene \"Whakaaturia te otinga\" "
+        },
+        {
+          "label": "Whakakāngia te pātene \"Tukuna\" "
+        },
+        {
+          "label": "Ka riro te \"Tukuna\" whakaaturia te pouaka whakaū"
+        },
+        {
+          "label": "Ka riro te  \"Whakamātau anō\" whakaaturia te pouaka whakaū"
+        },
+        {
+          "label": "Tirohia aunoatia te whakautu",
+          "description": "Kia mataara, ka pāngia te tomopai ina whakakāngia tēnei kōwhiringa"
+        },
+        {
+          "label": "Urupare mō ngā whakautu tika",
+          "description": "Ka whakakapi tēnei i te tuhinga uruapare taunoa. Ka taea ngā taurangi: @score me @total"
+        },
+        {
+          "label": "Urupare mō ngā whakautu hē",
+          "description": "Ka whakakapi tēnei i te tuhinga uruapare taunoa. Ka taea ngā taurangi: @score me @total"
+        }
+      ]
+    },
+    {
+      "label": "Pouaka Whakaū Tukunga",
+      "fields": [
+        {
+          "label": "Tuhinga Pane",
+          "default": "Kua oti ?"
+        },
+        {
+          "label": "Tuhinga tinana",
+          "default": "Āe rānei, kua mutu ?"
+        },
+        {
+          "label": "Tapanga pātene whakakore",
+          "default": "Whakakore"
+        },
+        {
+          "label": "Tapanga pātene whakaoti",
+          "default": "Whakaotia"
+        }
+      ]
+    },
+    {
+      "label": "Pouaka Whakaū Whakamātau anō",
+      "fields": [
+        {
+          "label": "Tuhinga Pane",
+          "default": "Whakamātau anō ?"
+        },
+        {
+          "label": "Tuhinga tinana",
+          "default": "Āe rānei me whakamātau anō?"
+        },
+        {
+          "label": "Tapanga pātene whakakore",
+          "default": "Whakakore"
+        },
+        {
+          "label": "Tapanga pātene whakaū",
+          "default": "Āe"
+        }
+      ]
+    }
+  ]
+}
