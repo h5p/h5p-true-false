@@ -39,24 +39,24 @@
         },
         {
           "label": "Spätná väzba - text",
-          "default": "Získali ste @score z @total celkvoých bodov",
-          "description": "Text spätnej väzby, dostupné premenné: @score a @total. Príklad: „Dostali ste @ skóre @ možných bodov“"
+          "default": "Získali ste @score z @total celkových bodov",
+          "description": "Text spätnej väzby, dostupné premenné: @score a @total. Príklad: „Dostali ste @score z @total možných bodov“"
         },
         {
-          "label": "Text pre tlačítko \"Check\"",
-          "default": "Potvrdiť"
+          "label": "Text pre tlačítko \"Skontrolovať\"",
+          "default": "Skontrolovať"
         },
         {
-          "label": "Text for \"Submit\" button",
-          "default": "Submit"
+          "label": "Text pre tlačidlo \"Odoslať\"",
+          "default": "Odoslať"
         },
         {
-          "label": "Text pre tlačítko \"Show solution\"",
-          "default": "Zobraz riešenie"
+          "label": "Text pre tlačidlo \"Ukázať riešenie\"",
+          "default": "Ukázať riešenie"
         },
         {
-          "label": "Text pre tlačítko \"Retry\"",
-          "default": "Skúsiť znova"
+          "label": "Text pre tlačidlo \"Zopakovať\"",
+          "default": "Zopakovať"
         },
         {
           "label": "Nesprávna odpoveď",
@@ -68,44 +68,44 @@
         },
         {
           "label": "Textové znázornenie výsledkovej lišty pre tých, ktorí používajú čítačku",
-          "default": "Získali ste :num z :total celkových bodov"
+          "default": "Získali ste :num z celkového počtu bodov :total"
         },
         {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+          "label": "Popis pomocnej technológie pre tlačidlo „Skontrolovať“",
+          "default": "Skontrolovať odpovede. Odpovede budú označené ako správne, nesprávne alebo nezodpovedané."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Popis pomocnej technológie pre tlačidlo „Zobraziť riešenie“",
+          "default": "Ukázať riešenie. Úloha bude označená s jej správnym riešením."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Popis asistenčnej technológie pre tlačidlo „Zopakovať“",
+          "default": "Skúsiť úlohu zopakovať. Vyprázdniť všetky odpovede a začať úlohu odznova."
         }
       ]
     },
     {
-      "label": "Behaviorálne nastavenia",
-      "description": "Tieto možnosti vám umožnia kontrolovať, ako sa bude úloha správať.",
+      "label": "Nastavenia správania",
+      "description": "Tieto možnosti vám umožnia ovládať, ako sa bude úloha správať.",
       "fields": [
         {
-          "label": "Povoliť tlačítko \"Retry\""
+          "label": "Povoliť tlačidlo \"Zopakovať\""
         },
         {
-          "label": "Povoliť tlačítko \"Show Solution\""
+          "label": "Povoliť tlačidlo \"Ukázať riešenie\""
         },
         {
-          "label": "Povoliť tlačítko \"Check\""
+          "label": "Povoliť tlačidlo \"Skontrolovať\""
         },
         {
-          "label": "Zobraziť dialógové okno s potvrdením pri stlačení \"Check\""
+          "label": "Zobraziť dialógové okno s potvrdením pri stlačení \"Skontrolovať\""
         },
         {
-          "label": "Zobraziť dialógové okno s potvrdením pri stlačení \"Retry\""
+          "label": "Zobraziť dialógové okno s potvrdením pri stlačení \"Zopakovať\""
         },
         {
           "label": "Automaticky skontrolovať odpoveď",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "description": "Upozorňujeme, že ak povolíte túto možnosť, zhorší sa tým prístupnosť"
         },
         {
           "label": "Spätná väzba pri správnej odpovedi",
@@ -113,48 +113,48 @@
         },
         {
           "label": "Spätná väzba pri nesprávnej odpovedi",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "description": "Týmto sa prepíše predvolený text spätnej väzby. Dostupné premenné: @score a @total"
         }
       ]
     },
     {
-      "label": "Potvrdzovacie okno Potvrdiť",
+      "label": "Potvrdzovacie okno pre Skontrolovať",
       "fields": [
         {
           "label": "Text nadpisu",
-          "default": "Odovzdať odpoveď ?"
+          "default": "Dokončiť ?"
         },
         {
           "label": "Text tela",
-          "default": "Ste si istý, že chcete odovzdať odpoveď ?"
+          "default": "Ste si istý, že chcete ukončiť ?"
         },
         {
-          "label": "Názov tlačítka zrušiť",
+          "label": "Názov tlačidla Zrušiť",
           "default": "Zrušiť"
         },
         {
-          "label": "Názov tlačítka potvrdiť",
-          "default": "Potvrdiť"
+          "label": "Názov tlačidla Potvrdiť",
+          "default": "Ukončiť"
         }
       ]
     },
     {
-      "label": "Potvrdzovacie okno Skúsiť znova",
+      "label": "Potvrdzovacie okno Zopakovať",
       "fields": [
         {
           "label": "Text nadpisu",
-          "default": "Skúsiť znova ?"
+          "default": "Zopakovať ?"
         },
         {
           "label": "Text tela",
-          "default": "Ste si istý, že chcete otázku skúsiť znova ?"
+          "default": "Ste si istý, že chcete otázku zopakovať ?"
         },
         {
-          "label": "Názov tlačítka zrušiť",
+          "label": "Názov tlačidla Zrušiť",
           "default": "Zrušiť"
         },
         {
-          "label": "Názov tlačítka potvrdiť",
+          "label": "Názov tlačidla Potvrdiť",
           "default": "Potvrdiť"
         }
       ]
