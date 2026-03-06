@@ -19,7 +19,7 @@ H5P.TrueFalse.Answer = (function ($, EventDispatcher) {
    * @param {String} correctMessage Message read by readspeaker when correct alternative is chosen
    * @param {String} wrongMessage Message read by readspeaker when wrong alternative is chosen
    */
-  function Answer (text, correctMessage, wrongMessage) {
+  function Answer(text, correctMessage, wrongMessage) {
     var self = this;
 
     EventDispatcher.call(self);
