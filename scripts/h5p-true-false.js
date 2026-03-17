@@ -307,6 +307,21 @@ H5P.TrueFalse = (function ($, Question) {
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
       self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
+
+      requestAnimationFrame(function () {
+        var $content = $('[data-content-id="' + self.contentId + '"].h5p-content');
+        if (score === MAX_SCORE) {
+          var $feedback = $content.find('.h5p-question-introduction');
+          if ($feedback.length) {
+            $feedback.attr('tabindex', '-1').focus();
+          }
+        } else {
+          var $showSolutionBtn = $content.find('.h5p-question-show-solution .h5p-theme-label');
+          if ($showSolutionBtn.length) {
+            $showSolutionBtn.focus();
+          }
+        }
+      });
     };
 
     /**
