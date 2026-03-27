@@ -145,6 +145,7 @@ H5P.TrueFalse = (function ($, Question) {
       // Check button
       if (!params.behaviour.autoCheck && params.behaviour.enableCheckButton) {
         self.addButton(Button.CHECK, params.l10n.checkAnswer, function () {
+          self.isAnswered = true;
           checkAnswer();
           triggerXAPIAnswered();
         }, true, {
@@ -382,7 +383,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @returns {Boolean} true
      */
     self.getAnswerGiven = function () {
-      return answerGroup.hasAnswered();
+      return this.isAnswered || answerGroup.hasAnswered();
     };
 
     /**
@@ -441,6 +442,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @public
      */
     self.resetTask = function () {
+      self.isAnswered = false;
       answerGroup.reset();
       self.removeFeedback();
       toggleButtonState(State.ONGOING);
