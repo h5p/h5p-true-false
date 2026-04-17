@@ -292,6 +292,8 @@ H5P.TrueFalse = (function ($, Question) {
       var score = self.getScore();
       var scoreText;
 
+      toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
+
       if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
         scoreText = params.behaviour.feedbackOnCorrect;
       }
@@ -305,9 +307,6 @@ H5P.TrueFalse = (function ($, Question) {
       scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
       self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
-
-      // Toggle buttons last to prevent lost focus
-      toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
     };
 
     /**
