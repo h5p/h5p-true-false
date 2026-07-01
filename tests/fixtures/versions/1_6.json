@@ -1,0 +1,33 @@
+{
+  "question": "<p>This image shows a right triangle.</p>",
+  "correct": "true",
+  "media": {
+    "library": "H5P.Image 1.1",
+    "params": {
+      "file": {
+        "path": "images/triangle.jpg",
+        "mime": "image/jpeg",
+        "width": 400,
+        "height": 300
+      },
+      "alt": "A right triangle"
+    },
+    "subContentId": "00000000-0000-4000-8000-000000000001"
+  },
+  "l10n": {
+    "trueText": "True",
+    "falseText": "False",
+    "score": "You got @score of @total points",
+    "checkAnswer": "Check",
+    "showSolutionButton": "Show solution",
+    "tryAgain": "Retry",
+    "wrongAnswerMessage": "Wrong answer",
+    "correctAnswerMessage": "Correct answer"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "disableImageZooming": true
+  }
+}
+

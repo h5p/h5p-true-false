@@ -25,6 +25,9 @@
       "path": "scripts/h5p-true-false.js"
     },
     {
+      "path": "scripts/h5p-true-false-scoring.js"
+    },
+    {
       "path": "scripts/h5p-true-false-answer-group.js"
     },
     {

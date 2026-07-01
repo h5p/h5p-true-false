@@ -223,7 +223,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getCorrectAnswer = function () {
-      return (params.correct === 'true' ? 'true' : 'false');
+      return H5P.TrueFalse.scoring.getCorrectAnswer(params.correct);
     };
 
     /**
@@ -234,7 +234,7 @@ H5P.TrueFalse = (function ($, Question) {
      * @return {String}
      */
     var getWrongAnswer = function () {
-      return (params.correct === 'false' ? 'true' : 'false');
+      return H5P.TrueFalse.scoring.getWrongAnswer(params.correct);
     };
 
     /**
@@ -294,17 +294,7 @@ H5P.TrueFalse = (function ($, Question) {
 
       toggleButtonState(score === MAX_SCORE ? State.FINISHED_CORRECT : State.FINISHED_WRONG);
 
-      if (score === MAX_SCORE && params.behaviour.feedbackOnCorrect) {
-        scoreText = params.behaviour.feedbackOnCorrect;
-      }
-      else if (score === 0 && params.behaviour.feedbackOnWrong) {
-        scoreText = params.behaviour.feedbackOnWrong;
-      }
-      else {
-        scoreText = params.l10n.score;
-      }
-      // Replace relevant variables:
-      scoreText = scoreText.replace('@score', score).replace('@total', MAX_SCORE);
+      scoreText = H5P.TrueFalse.scoring.scoreText(score, MAX_SCORE, params.l10n, params.behaviour);
       self.setFeedback(scoreText, score, MAX_SCORE, params.l10n.scoreBarLabel);
       answerGroup.reveal();
     };
