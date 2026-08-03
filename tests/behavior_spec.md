@@ -82,8 +82,8 @@ See h5p.org/documentation/developers/contracts. These survive any UI rewrite.
 ## Contracts — data (semantics / upgrades / presave)
 | ID | Statement | Tier | Current binding | Notes |
 |---|---|---|---|---|
-| TF-DATA-01 | Presave yields `{maxScore: 1}` for valid content. | Contract | `tests/unit/presave.spec.js` (vs. **mock**) | Fixture: `content/with-retry-show.json`. Unit binding runs against the `H5PEditor.Presave` **stub**; needs an **integration** binding vs. the real Presave (parity). |
-| TF-DATA-02 | Presave throws `InvalidContentSemanticsException` when `question` is missing or blank. | Contract | `tests/unit/presave.spec.js` (vs. **mock**) | On-the-fly minimal params. Same mock caveat as TF-DATA-01 → add integration binding vs. real Presave. |
+| TF-DATA-01 | Presave yields `{maxScore: 1}` for valid content. | Contract | `tests/unit/presave.spec.js` (vs. **mock**) + `tests/integration/presave-real.spec.js` (vs. **real** Presave) | Fixture: `content/with-retry-show.json`. Unit runs against the `H5PEditor.Presave` **stub**; the integration binding exercises the **real** Presave. Generic mock↔real parity of the stub is validated centrally in `h5p-js-testing-shared`. |
+| TF-DATA-02 | Presave throws `InvalidContentSemanticsException` when `question` is missing or blank. | Contract | `tests/unit/presave.spec.js` (vs. **mock**) + `tests/integration/presave-real.spec.js` (vs. **real**) | On-the-fly minimal params. The integration binding pins the real-core exception shape (`.code === 'H5P-P500'`); the mock hardcodes `.name`. |
 | TF-UPG-01 | Upgrade 1.5 sets `metadata.title` from `question` with HTML tags stripped; falls back to existing title or `'True-False'`. | Contract | `tests/unit/upgrades.spec.js` | Fixture: `versions/1_5.json`. |
 | TF-UPG-02 | Upgrade 1.6 moves `disableImageZooming` from `behaviour` into `media` and deletes the old key; lossless for unrelated params. | Contract | `tests/unit/upgrades.spec.js` | Fixture: `versions/1_6.json`. |
 
@@ -125,5 +125,9 @@ scoring, or moving to web components), re-tier the affected entries and drop the
 
 When a `Contract` is proven only against a **mock** of an H5P collaborator, note the mock
 in its binding and treat an **integration/parity** binding against the real
-implementation as outstanding — a mock-only contract is not fully verified.
+implementation as outstanding — a mock-only contract is not fully verified. The Presave
+rows (TF-DATA-01/02) now carry that integration binding (`tests/integration/presave-real.spec.js`);
+the generic mock↔real parity of the shared `EventDispatcher`/`Presave` stubs is validated
+centrally in the `h5p-js-testing-shared` package, so content types trust it rather than
+re-proving it.
 
