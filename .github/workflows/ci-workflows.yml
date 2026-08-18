@@ -17,7 +17,7 @@ on:
   pull_request:
     branches:
       - master
-    types: [opened, synchronize]
+    types: [opened, synchronize]  # Triggers on PR open and commits to PR
     paths-ignore:
       - '**.md'
       - 'LICENSE*'
