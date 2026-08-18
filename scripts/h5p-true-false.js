@@ -26,6 +26,7 @@ H5P.TrueFalse = (function ($, Question) {
     SHOW_SOLUTION: 'show-solution'
   });
 
+  // CI test #1
   /**
    * Initialize module.
    *
