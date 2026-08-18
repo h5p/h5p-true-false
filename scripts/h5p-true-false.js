@@ -38,6 +38,7 @@ H5P.TrueFalse = (function ($, Question) {
   function TrueFalse(options, id, contentData) {
     var self = this;
 
+    
     // Inheritance
     Question.call(self, 'true-false', { theme: true });
 
