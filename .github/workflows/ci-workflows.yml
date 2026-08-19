@@ -25,6 +25,10 @@ on:
 
 jobs:
   ci:
+    permissions:
+      contents: read
+      packages: read
+      actions: write
     uses: h5p/h5p-ci-workflows/.github/workflows/h5p-ci-workflow.yml@master
     with:
       run-translations: true
