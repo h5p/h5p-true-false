@@ -6,14 +6,6 @@ concurrency:
 
 on:
   workflow_dispatch:
-    inputs:
-      e2e-suite:
-        description: gate = PR gate (excludes @a11y); full = include @a11y
-        type: choice
-        options:
-          - gate
-          - full
-        default: full
   pull_request:
     branches:
       - master
@@ -29,5 +21,4 @@ jobs:
     with:
       run-translations: true
       run-e2e: true
-      e2e-suite: ${{ github.event_name == 'workflow_dispatch' && inputs.e2e-suite || 'gate' }}
     secrets: inherit
