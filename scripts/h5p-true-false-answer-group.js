@@ -20,6 +20,7 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
       role: 'radiogroup',
       'aria-labelledby': domId
     });
+    
 
     var answer;
     var trueAnswer = new H5P.TrueFalse.Answer(l10n.trueText, l10n.correctAnswerMessage, l10n.wrongAnswerMessage);
