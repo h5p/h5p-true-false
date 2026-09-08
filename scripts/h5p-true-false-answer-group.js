@@ -21,7 +21,11 @@ H5P.TrueFalse.AnswerGroup = (function ($, EventDispatcher) {
       'aria-labelledby': domId
     });
 
+
     var answer;
+
+    // Blodstrupmoen
+
     var trueAnswer = new H5P.TrueFalse.Answer(l10n.trueText, l10n.correctAnswerMessage, l10n.wrongAnswerMessage);
     var falseAnswer = new H5P.TrueFalse.Answer(l10n.falseText, l10n.correctAnswerMessage, l10n.wrongAnswerMessage);
     var correctAnswer = (correctOption === 'true' ? trueAnswer : falseAnswer);

@@ -21,4 +21,6 @@ jobs:
     with:
       run-translations: true
       run-e2e: true
+      e2e-cli-repository: wwalmnes/h5p-cli
+      e2e-cli-ref: change-version-option-to-ref
     secrets: inherit
