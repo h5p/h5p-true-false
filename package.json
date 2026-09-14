@@ -13,7 +13,13 @@
     "url": "https://github.com/h5p/h5p-true-false/issues"
   },
   "homepage": "https://github.com/h5p/h5p-true-false#readme",
+  "scripts": {
+    "unit-test": "web-test-runner \"test/**/*.test.js\" --node-resolve",
+    "setup-h5p-env": "node test/setup-h5p-env.js"
+  },
   "devDependencies": {
+    "@web/test-runner": "^1.0.0",
+    "env": "^0.0.2",
     "h5p-view": "^1.0.2",
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.5.2"
