@@ -1,6 +1,6 @@
-export const serverUrl = 'http://localhost:8080';
-export const contentTypeName = 'h5p-true-false';
+// The h5p server is proxied onto the test runner's origin by web-test-runner.config.js.
+const contentTypeName = 'h5p-true-false';
 
-export function buildUrl(contentName, contentType = contentTypeName) {
-	return `${serverUrl}/view/${contentType}/${contentName}`;
+export function buildUrl(contentName) {
+	return `/view/${contentTypeName}/${contentName}`;
 };

@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "@web/test-runner": "^1.0.0",
+    "@web/test-runner-playwright": "^1.0.0",
+    "chai": "^6.2.2",
     "env": "^0.0.2",
     "h5p-view": "^1.0.2",
     "jasmine": "^2.4.1",

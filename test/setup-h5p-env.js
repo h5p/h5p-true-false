@@ -12,12 +12,13 @@
  *   3. If it is missing, run `h5p setup <contentTypeName>` in <h5pEnvPath>
  *   4. Link that library folder to this repo
  *   5. Copy each folder in test/artifacts into <h5pEnvPath>/content
- *   6. Start `h5p server` with H5P_SERVER_URL / H5P_CONTENT_TYPE_NAME exported
+ *   6. Start `h5p server`
  */
 
 const fs = require('fs');
 const path = require('path');
 const { spawnSync, spawn } = require('child_process');
+const envConfig = require('./utilities/envConfig.js');
 
 const fail = (message) => {
   console.error(message);
@@ -26,19 +27,21 @@ const fail = (message) => {
 const log = (message) => console.log(`[setup] ${message}`);
 
 const args = process.argv.slice(2);
-const envPath = args.find((arg) => !arg.startsWith('--'));
-const port = args[args.indexOf('--port') + 1];
+const envPath = args.find((arg) => !arg.startsWith('--')) ?? envConfig.envPath;
+const portIndex = args.indexOf('--port');
+const port = portIndex === -1 ? undefined : args[portIndex + 1];
 
 if (!envPath) {
   fail('Usage: node test/setup-h5p-env.js <h5pEnvPath> [--port 8080] [--no-server]');
 }
-if (args.includes('--port') && !/^\d+$/.test(port ?? '')) {
+if (portIndex !== -1 && !/^\d+$/.test(port ?? '')) {
   fail(`Invalid --port value: ${port}`);
 }
 
 const repoDir = path.resolve(__dirname, '..');
-const contentTypeName = path.basename(repoDir);
 const envDir = path.resolve(envPath);
+const serverPort = port ?? envConfig.serverPort;
+const serverUrl = port ? `http://localhost:${port}` : envConfig.serverUrl;
 
 // `h5p setup` takes the repo name, but installs the library as <machineName>-<major>.<minor>.
 const library = JSON.parse(fs.readFileSync(path.join(repoDir, 'library.json'), 'utf8'));
@@ -47,18 +50,26 @@ const libraryLink = path.join(envDir, 'libraries', libraryFolder);
 const artifactsDir = path.join(__dirname, 'artifacts');
 const contentDir = path.join(envDir, 'content');
 
-// `h5p server` defaults to 8080; tests read these env vars instead of hardcoding the URL.
-const serverPort = port ?? process.env.H5P_SERVER_PORT ?? '8080';
-Object.assign(process.env, {
-  H5P_SERVER_PORT: serverPort,
-  H5P_SERVER_URL: process.env.H5P_SERVER_URL ?? `http://localhost:${serverPort}`,
-  H5P_CONTENT_TYPE_NAME: contentTypeName
-});
-
 // The H5P CLI is a .cmd shim on Windows, so it needs a shell. Args are part of the command
 // string (instead of an args array) to avoid the DEP0190 deprecation warning.
 const spawnOptions = { cwd: envDir, stdio: 'inherit', shell: true };
 const hasLibrary = () => fs.existsSync(libraryLink);
+
+// rmSync recurses into a junction's target and fails with EPERM, so links are unlinked instead.
+const removePath = (target) => {
+  const stat = fs.lstatSync(target, { throwIfNoEntry: false });
+  if (!stat) return;
+
+  if (stat.isSymbolicLink()) {
+    try {
+      fs.unlinkSync(target);
+    } catch {
+      fs.rmdirSync(target);
+    }
+  } else {
+    fs.rmSync(target, { recursive: true, force: true });
+  }
+};
 
 const requiredFolders = ['content', 'libraries', 'temp', 'uploads'];
 const missingFolders = () => requiredFolders.filter((folder) => !fs.existsSync(path.join(envDir, folder)));
@@ -81,7 +92,7 @@ if (missingFolders().length > 0) {
 // only fetches what is still missing.
 for (let attempt = 1; attempt <= 3 && !hasLibrary(); attempt++) {
   log(`${libraryFolder} not found in ${envDir}, running h5p setup (attempt ${attempt}/3)...`);
-  spawnSync(`h5p setup ${contentTypeName}`, spawnOptions);
+  spawnSync(`h5p setup ${envConfig.contentTypeName}`, spawnOptions);
 }
 
 if (!hasLibrary()) {
@@ -92,7 +103,7 @@ const linkStat = fs.lstatSync(libraryLink);
 const linksToRepo = linkStat.isSymbolicLink() && path.resolve(fs.readlinkSync(libraryLink)) === repoDir;
 
 if (!linksToRepo) {
-  fs.rmSync(libraryLink, { recursive: true, force: true });
+  removePath(libraryLink);
   // 'junction' is ignored on non-Windows platforms.
   fs.symlinkSync(repoDir, libraryLink, 'junction');
 }
@@ -105,7 +116,7 @@ const artifacts = fs.existsSync(artifactsDir)
 
 for (const { name } of artifacts) {
   const target = path.join(contentDir, name);
-  fs.rmSync(target, { recursive: true, force: true });
+  removePath(target);
   fs.cpSync(path.join(artifactsDir, name), target, { recursive: true });
   log(`Copied artifact content "${name}" to ${target}`);
 }
@@ -123,5 +134,5 @@ if (args.includes('--no-server')) {
   process.exit(0);
 }
 
-log(`Starting h5p server at ${process.env.H5P_SERVER_URL}`);
+log(`Starting h5p server at ${serverUrl}`);
 spawn(`h5p server ${serverPort}`, spawnOptions).on('exit', (code) => process.exit(code ?? 0));
