@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "details": "Optional media to display above the question."
+          "details": "Media to display above the question"
         },
         {
           "label": "Disable image zooming"
