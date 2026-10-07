@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Türü",
-          "description": "Sorunun üst tarafında  istege bağlı görüntülenecek ortam (video, resim)."
+          "details": "Sorunun üst tarafında  istege bağlı görüntülenecek ortam (video, resim)."
         },
         {
           "label": "Soru görseli yakınlaştırma işlevini devre dışı bırakın."
@@ -40,7 +40,7 @@
         {
           "label": "Geribildirim metni",
           "default": "@total puan üzerinden @score puan aldınız",
-          "description": "Geri bildirim metni, mevcut değişkenler: @score ve @total. Örneğin: '@total puan üzerinden @score puan aldınız'"
+          "details": "Geri bildirim metni, mevcut değişkenler: @score ve @total. Örneğin: '@total puan üzerinden @score puan aldınız'"
         },
         {
           "label": "\"Kontrol et\" düğmesi için metin",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Davranış yarları",
-      "description": "Bu seçenekler görevin nasıl davranması gerektiğini kontrol etmenizi sağlar.",
+      "details": "Bu seçenekler görevin nasıl davranması gerektiğini kontrol etmenizi sağlar.",
       "fields": [
         {
           "label": "\"Yeniden dene\" düğmesini devreye al"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Doğru yanıt için geribildirim",
-          "description": "Varsayılan geribildirim metni yerine özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
+          "details": "Varsayılan geribildirim metni yerine özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
         },
         {
           "label": "Yanlış yanıt için geribildirim",
-          "description": "Varsayılan geribildirim metni yerine  özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
+          "details": "Varsayılan geribildirim metni yerine  özel geribildirim metninizi oluşturabilirsiniz. Mevcut değişkenler: @score ve @total"
         }
       ]
     },

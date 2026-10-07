@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "النوع",
-          "description": "وسائط إضافية اختيارية تُعرض أعلى السؤال."
+          "details": "وسائط إضافية اختيارية تُعرض أعلى السؤال."
         },
         {
           "label": "إيقاف ميزة تكبير الصور"
@@ -40,7 +40,7 @@
         {
           "label": "نص الاراء",
           "default": "لقد حصلت على @score من @total",
-          "description": "نص الملاحظات، المتغيرات المتاحة: @score و @total. مثال: 'جمعت من النقاط @score من @total'"
+          "details": "نص الملاحظات، المتغيرات المتاحة: @score و @total. مثال: 'جمعت من النقاط @score من @total'"
         },
         {
           "label": "نص زر التحقق",
@@ -86,7 +86,7 @@
     },
     {
       "label": "إعدادت النشاط",
-      "description": "وهذه الخيارات تمكنك من التحكم في كيفية سلوك هذا النشاط",
+      "details": "وهذه الخيارات تمكنك من التحكم في كيفية سلوك هذا النشاط",
       "fields": [
         {
           "label": "تمكين \"إعادة المحاولة \""
@@ -105,15 +105,15 @@
         },
         {
           "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "description": "Enabling this option may reduce accessibility"
         },
         {
           "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         },
         {
           "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         }
       ]
     },

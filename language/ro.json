@@ -5,7 +5,7 @@
         "fields": [
           {
             "label": "Tip",
-            "description": "Media opțională de afișat deasupra întrebării."
+            "details": "Media opțională de afișat deasupra întrebării."
           },
           {
             "label": "Dezactivează mărirea imaginii"
@@ -40,7 +40,7 @@
           {
             "label": "Text feedback",
             "default": "Ai obținut @score din @total puncte",
-            "description": "Text feedback, variabile disponibile: @score și @total. Exemplu: 'Ai obținut @score din @total puncte posibile'"
+            "details": "Text feedback, variabile disponibile: @score și @total. Exemplu: 'Ai obținut @score din @total puncte posibile'"
           },
           {
             "label": "Text pentru butonul „Verifică”",
@@ -86,7 +86,7 @@
       },
       {
         "label": "Setări de comportament",
-        "description": "Aceste opțiuni vă vor permite să controlați cum se comportă sarcina.",
+        "details": "Aceste opțiuni vă vor permite să controlați cum se comportă sarcina.",
         "fields": [
           {
             "label": "Activează butonul „Reîncearcă”"
@@ -109,11 +109,11 @@
           },
           {
             "label": "Feedback la răspuns corect",
-            "description": "Acesta va suprascrie textul implicit de feedback. Variabile disponibile: @score și @total"
+            "details": "Acesta va suprascrie textul implicit de feedback. Variabile disponibile: @score și @total"
           },
           {
             "label": "Feedback la răspuns greșit",
-            "description": "Acesta va suprascrie textul implicit de feedback. Variabile disponibile: @score și @total"
+            "details": "Acesta va suprascrie textul implicit de feedback. Variabile disponibile: @score și @total"
           }
         ]
       },

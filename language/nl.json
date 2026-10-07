@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Optionele media, die boven de vraag wordt getoond."
+          "details": "Optionele media, die boven de vraag wordt getoond."
         },
         {
           "label": "Beeld zoomen uitschakelen"
@@ -40,7 +40,7 @@
         {
           "label": "Feedbacktekst",
           "default": "Je hebt @score van @total punten",
-          "description": "Feedbacktekst, beschikbare variabelen: @score en @total. Voorbeeld: 'Je hebt @score van @total mogelijke punten.'"
+          "details": "Feedbacktekst, beschikbare variabelen: @score en @total. Voorbeeld: 'Je hebt @score van @total mogelijke punten.'"
         },
         {
           "label": "Tekst voor \"Controleer\"-knop",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Gedragsinstelllingen",
-      "description": "Met deze opties kun je bepalen hoe de taak zich gedraagt.",
+      "details": "Met deze opties kun je bepalen hoe de taak zich gedraagt.",
       "fields": [
         {
           "label": "Schakel \"Opnieuw\"-knop in"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Feedback bij het juiste antwoord",
-          "description": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
+          "details": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
         },
         {
           "label": "Feedback bij het onjuiste antwoord",
-          "description": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
+          "details": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
         }
       ]
     },

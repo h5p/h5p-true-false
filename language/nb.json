@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Valgfritt medieelement. Elementet vil bli plassert over spørsmålet."
+          "details": "Valgfritt medieelement. Elementet vil bli plassert over spørsmålet."
         },
         {
           "label": "Deaktiver zoomingfunksjon."
@@ -40,7 +40,7 @@
         {
           "label": "Tilbakemeldingstekst",
           "default": "@score av @total poeng",
-          "description": "Tekstlig tilbakemelding, tilgjengelige variabler: @score og @total. Eksempel: 'Du fikk @score av @total poeng.'"
+          "details": "Tekstlig tilbakemelding, tilgjengelige variabler: @score og @total. Eksempel: 'Du fikk @score av @total poeng.'"
         },
         {
           "label": "Etikett for \"Sjekk\"-knapp",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Oppgaveinnstillinger",
-      "description": "Disse valga lar deg styre ulike funksjoner i oppgava.",
+      "details": "Disse valga lar deg styre ulike funksjoner i oppgava.",
       "fields": [
         {
           "label": "Enable \"Retry\" button"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Tilbakemelding ved rett svar",
-          "description": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
+          "details": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
         },
         {
           "label": "Tilbakemelding ved feil svar",
-          "description": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
+          "details": "Dette vil overstyre standard tilbakemeldingstekst. Tilgjengelige variabler er: @score og @total"
         }
       ]
     },

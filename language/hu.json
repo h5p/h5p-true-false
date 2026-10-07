@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Típus",
-          "description": "A kérdés felett megjelenítendő opcionális médiatartalom."
+          "details": "A kérdés felett megjelenítendő opcionális médiatartalom."
         },
         {
           "label": "Kép nagyíthatóságának tiltása"
@@ -40,7 +40,7 @@
         {
           "label": "Visszajelző szöveg",
           "default": "@score pontot kaptál az elérhető @total pontból",
-          "description": "A visszajelző szöveghez használható változók: @score (pontszám) és @total (összes pont). Példa: '@score pontot kaptál az elérhető @total pontból.'"
+          "details": "A visszajelző szöveghez használható változók: @score (pontszám) és @total (összes pont). Példa: '@score pontot kaptál az elérhető @total pontból.'"
         },
         {
           "label": "Az \"Ellenőrzés\" gomb felirata",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Viselkedési beállítások",
-      "description": "Ezekkel a beállításokkal szabályozható a feladat viselkedése.",
+      "details": "Ezekkel a beállításokkal szabályozható a feladat viselkedése.",
       "fields": [
         {
           "label": "\"Újra próbálkozás\" gomb engedélyezése"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Visszajelzés helyes válasz esetén",
-          "description": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
+          "details": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
         },
         {
           "label": "Visszajelzés helytelen válasz esetén",
-          "description": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
+          "details": "Felülírja az alapértelmezett visszajelző szöveget. Használható változók: @score (pontszám) és @total (összpontszám)"
         }
       ]
     },

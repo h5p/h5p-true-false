@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Aina",
-          "description": "Vyombo vya habari vya hiari vya kuonyesha juu ya swali."
+          "details": "Vyombo vya habari vya hiari vya kuonyesha juu ya swali."
         },
         {
           "label": "Zima ukuzaji wa picha"
@@ -40,7 +40,7 @@
         {
           "label": "Maandishi ya maoni",
           "default": "Umepata @scorekati ya alama @total",
-          "description": "Maandishi ya maoni, vigezo vinavyopatikana: @scorena@total. Mfano: ‘Umepata @scorekati ya alama @total ziwezekanazo'"
+          "details": "Maandishi ya maoni, vigezo vinavyopatikana: @scorena@total. Mfano: ‘Umepata @scorekati ya alama @total ziwezekanazo'"
         },
         {
           "label": "Maandishi ya kitufe cha \"Weka alama\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Mipangilio ya tabia",
-      "description": "Chaguzi hizi zitakuwezesha kudhibiti jinsi kazi inavyofanya.",
+      "details": "Chaguzi hizi zitakuwezesha kudhibiti jinsi kazi inavyofanya.",
       "fields": [
         {
           "label": "Washa kitufe cha \"Jaribu tena\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Maoni kuhusu jibu sahihi",
-          "description": "Hili litabatilisha maandishi ya maoni chaguo-msingi. Vigezo vinavyopatikana: @score na @total"
+          "details": "Hili litabatilisha maandishi ya maoni chaguo-msingi. Vigezo vinavyopatikana: @score na @total"
         },
         {
           "label": "Maoni kuhusu jibu lisilo sahihi",
-          "description": "Hili litabatilisha maandishi ya maoni chaguo-msingi. Vigezo vinavyopatikana: @score na @total"
+          "details": "Hili litabatilisha maandishi ya maoni chaguo-msingi. Vigezo vinavyopatikana: @score na @total"
         }
       ]
     },

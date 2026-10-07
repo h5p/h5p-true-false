@@ -4,7 +4,7 @@
       "fields": [
         {
           "label": "Tipas",
-          "description": "Pasirenkama medija, rodoma virš klausimo."
+          "details": "Pasirenkama medija, rodoma virš klausimo."
         },
         {
           "label": "Išjungti paveikslėlio mastelio keitimą"
@@ -38,7 +38,7 @@
         },
         {
           "label": "Atsiliepimo tekstas",
-          "description": "Atsiliepimo tekstas, galimi kintamieji: @score ir @total. Pavyzdys: „Jūs gavote @score iš @total galimų taškų“",
+          "details": "Atsiliepimo tekstas, galimi kintamieji: @score ir @total. Pavyzdys: „Jūs gavote @score iš @total galimų taškų“",
           "default": "Jūs gavote @score iš @total taškų"
         },
         {
@@ -85,7 +85,7 @@
       "label": "Naudotojo sąsajos Tiesa/ Netiesa klausimų vertimai"
     },
     {
-      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "details": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
       "fields": [
         {
           "label": "Įjungti mygtuką „Bandyti dar kartą“"
@@ -108,11 +108,11 @@
         },
         {
           "label": "Atsiliepimas kai atsakymas teisingas",
-          "description": "Tai pakeis numatytąjį atsiliepimo tekstą. Galimi kintamieji: @score ir @total"
+          "details": "Tai pakeis numatytąjį atsiliepimo tekstą. Galimi kintamieji: @score ir @total"
         },
         {
           "label": "Atsiliepimas, kai atsakymas neteisingas",
-          "description": "Tai pakeis numatytąjį atsiliepimo tekstą. Galimi kintamieji: @score ir @total"
+          "details": "Tai pakeis numatytąjį atsiliepimo tekstą. Galimi kintamieji: @score ir @total"
         }
       ],
       "label": "Veikimo nustatymai"

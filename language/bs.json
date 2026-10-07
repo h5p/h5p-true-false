@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Prikaz medija iznad pitanja (opcionalno)."
+          "details": "Prikaz medija iznad pitanja (opcionalno)."
         },
         {
           "label": "Onemogući zumiranje slike kod pitanja sa slikom"
@@ -40,7 +40,7 @@
         {
           "label": "Feedback tekst",
           "default": "Osvojili ste @score od @total bodova",
-          "description": "Feedback tekst, moguće varijable: @score i @total. Primjer: 'Osvojili ste @score od @total mogućih bodova'"
+          "details": "Feedback tekst, moguće varijable: @score i @total. Primjer: 'Osvojili ste @score od @total mogućih bodova'"
         },
         {
           "label": "Tekst za \"Provjera\" dugme",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Podešavanje ponašanja",
-      "description": "Ove opcije će vam omogućiti da kontrolirate kako se zadatak ponaša.",
+      "details": "Ove opcije će vam omogućiti da kontrolirate kako se zadatak ponaša.",
       "fields": [
         {
           "label": "Omogući \"Ponoviti\" dugme"
@@ -105,15 +105,15 @@
         },
         {
           "label": "Automatski provjeri odgovor",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "description": "Enabling this option may reduce accessibility"
         },
         {
           "label": "Feedback za tačan odgovor",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         },
         {
           "label": "Feedback za pogrešan odgovor",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         }
       ]
     },

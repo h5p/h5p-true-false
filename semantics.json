@@ -16,7 +16,7 @@
           "H5P.Audio 1.5"
         ],
         "optional": true,
-        "description": "Optional media to display above the question."
+        "details": "Media to display above the question"
       },
       {
         "name": "disableImageZooming",
@@ -101,7 +101,7 @@
         "name": "score",
         "type": "text",
         "default": "You got @score of @total points",
-        "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+        "details": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
       },
       {
         "label": "Text for \"Check\" button",
@@ -180,7 +180,7 @@
     "type": "group",
     "label": "Behavioural settings",
     "importance": "low",
-    "description": "These options will let you control how the task behaves.",
+    "details": "These options will let you control how the task behaves.",
     "fields": [
       {
         "name": "enableRetry",
@@ -222,7 +222,7 @@
       {
         "label": "Automatically check answer",
         "importance": "low",
-        "description": "Note that accessibility will suffer if enabling this option",
+        "description": "Enabling this option may reduce accessibility",
         "name": "autoCheck",
         "type": "boolean",
         "default": false
@@ -231,7 +231,7 @@
         "name": "feedbackOnCorrect",
         "label": "Feedback on correct answer",
         "importance": "low",
-        "description": "This will override the default feedback text. Variables available: @score and @total",
+        "details": "This will override the default feedback text. Variables available: @score and @total",
         "type": "text",
         "maxLength": 2048,
         "optional": true
@@ -240,7 +240,7 @@
         "name": "feedbackOnWrong",
         "label": "Feedback on wrong answer",
         "importance": "low",
-        "description": "This will override the default feedback text. Variables available: @score and @total",
+        "details": "This will override the default feedback text. Variables available: @score and @total",
         "type": "text",
         "maxLength": 2048,
         "optional": true

@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Volitelná média zobrazená nad otázkou."
+          "details": "Volitelná média zobrazená nad otázkou."
         },
         {
           "label": "Zakázat zvětšení obrazu"
@@ -40,7 +40,7 @@
         {
           "label": "Text zpětné vazby",
           "default": "Získal jste @score z @total bodů",
-          "description": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: \"Získal jste @score z @total možných bodů\""
+          "details": "Text zpětné vazby, dostupné proměnné @score a @total. Příklad: \"Získal jste @score z @total možných bodů\""
         },
         {
           "label": "Text pro tlačítko \"Zkontrolovat\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Nastavení chování",
-      "description": "Tyto možnosti vám umožní řídit, jak se bude úloha chovat.",
+      "details": "Tyto možnosti vám umožní řídit, jak se bude úloha chovat.",
       "fields": [
         {
           "label": "Povolit tlačítko \"Opakovat\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Zpětná vazba na správnou odpověď",
-          "description": "Toto přepíše výchozí text zpětné vazby. Dostupné proměnné: @score a @total"
+          "details": "Toto přepíše výchozí text zpětné vazby. Dostupné proměnné: @score a @total"
         },
         {
           "label": "Zpětná vazba na špatnou odpověď",
-          "description": "Toto přepíše výchozí text zpětné vazby. Dostupné proměnné: @score a @total"
+          "details": "Toto přepíše výchozí text zpětné vazby. Dostupné proměnné: @score a @total"
         }
       ]
     },

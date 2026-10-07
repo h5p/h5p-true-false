@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tips",
-          "description": "Papildu multimedijs, kuru atspoguļot virs jautājuma."
+          "details": "Papildu multimedijs, kuru atspoguļot virs jautājuma."
         },
         {
           "label": "Atspējot attēla tālummaiņu"
@@ -40,7 +40,7 @@
         {
           "label": "Atgriezeniskās saites teksts",
           "default": "Jūs saņēmāt @score no @total punktiem",
-          "description": "Atgriezeniskās saites teksts, pieejami mainīgie: @score un @total. Piemēram: 'Jūs saņēmāt @score no @total iespējamajiem punktiem'"
+          "details": "Atgriezeniskās saites teksts, pieejami mainīgie: @score un @total. Piemēram: 'Jūs saņēmāt @score no @total iespējamajiem punktiem'"
         },
         {
           "label": "Pogas \"Pārbaudīt\" teksts",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Uzvedības iestatītījumi",
-      "description": "Šie iestatījumi ļaus jums kontrolēt uzdevuma uzvedību.",
+      "details": "Šie iestatījumi ļaus jums kontrolēt uzdevuma uzvedību.",
       "fields": [
         {
           "label": "Atļaut pogu \"Mēģināt vēlreiz\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Atgriezeniskā saite par pareizo atbildi",
-          "description": "Šis iestatījums pārrakstīs noklusēto atgriezeniskās saites tekstu. Pieejamie mainīgie: @score un @total"
+          "details": "Šis iestatījums pārrakstīs noklusēto atgriezeniskās saites tekstu. Pieejamie mainīgie: @score un @total"
         },
         {
           "label": "Atgriezeniskā saite par nepareizu atbildi",
-          "description": "Šis iestatījums pārrakstīs noklusēto atgriezeniskās saites tekstu. Pieejamie mainīgie: @score un @total"
+          "details": "Šis iestatījums pārrakstīs noklusēto atgriezeniskās saites tekstu. Pieejamie mainīgie: @score un @total"
         }
       ]
     },

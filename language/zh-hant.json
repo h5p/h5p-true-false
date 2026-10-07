@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "類型",
-          "description": "非必要項，在問題上方要顯示的媒體。"
+          "details": "非必要項，在問題上方要顯示的媒體。"
         },
         {
           "label": "停用題目上圖片的放大功能"
@@ -40,7 +40,7 @@
         {
           "label": "回饋文字",
           "default": "你得到 @score 分，總分 @total 分。",
-          "description": "回饋文字，@score 表示得分，@total 表示總分。"
+          "details": "回饋文字，@score 表示得分，@total 表示總分。"
         },
         {
           "label": "核對答案按鈕的顯示文字",
@@ -86,7 +86,7 @@
     },
     {
       "label": "行為設置",
-      "description": "用來控制任務行為的一些設定。",
+      "details": "用來控制任務行為的一些設定。",
       "fields": [
         {
           "label": "啟用「再試一次」按鈕"
@@ -109,11 +109,11 @@
         },
         {
           "label": "正確回饋訊息",
-          "description": "這會覆蓋預設的答對時顯示文字，可用變數為 @score 和 @total。"
+          "details": "這會覆蓋預設的答對時顯示文字，可用變數為 @score 和 @total。"
         },
         {
           "label": "錯誤回饋訊息",
-          "description": "這會覆蓋預設的答錯時顯示文字，可用變數為 @score 和 @total。"
+          "details": "這會覆蓋預設的答錯時顯示文字，可用變數為 @score 和 @total。"
         }
       ]
     },
