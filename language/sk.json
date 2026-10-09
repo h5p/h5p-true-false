@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Voliteľné médiá zobrazené nad otázkou."
+          "details": "Voliteľné médiá zobrazené nad otázkou."
         },
         {
           "label": "Zakázať priblíženie obrázka"
@@ -40,7 +40,7 @@
         {
           "label": "Spätná väzba - text",
           "default": "Získali ste @score z @total celkových bodov",
-          "description": "Text spätnej väzby, dostupné premenné: @score a @total. Príklad: „Dostali ste @score z @total možných bodov“"
+          "details": "Text spätnej väzby, dostupné premenné: @score a @total. Príklad: „Dostali ste @score z @total možných bodov“"
         },
         {
           "label": "Text pre tlačítko \"Skontrolovať\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Nastavenia správania",
-      "description": "Tieto možnosti vám umožnia ovládať, ako sa bude úloha správať.",
+      "details": "Tieto možnosti vám umožnia ovládať, ako sa bude úloha správať.",
       "fields": [
         {
           "label": "Povoliť tlačidlo \"Zopakovať\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Spätná väzba pri správnej odpovedi",
-          "description": "Toto prepíše predvolený text spätnej väzby. Dostupné premenné: @score a @total"
+          "details": "Toto prepíše predvolený text spätnej väzby. Dostupné premenné: @score a @total"
         },
         {
           "label": "Spätná väzba pri nesprávnej odpovedi",
-          "description": "Týmto sa prepíše predvolený text spätnej väzby. Dostupné premenné: @score a @total"
+          "details": "Týmto sa prepíše predvolený text spätnej väzby. Dostupné premenné: @score a @total"
         }
       ]
     },

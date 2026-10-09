@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tipe",
-          "description": "Opsionele media wat bo die vraag vertoon word."
+          "details": "Opsionele media wat bo die vraag vertoon word."
         },
         {
           "label": "Deaktiveer zoomfunksie by prente"
@@ -40,7 +40,7 @@
         {
           "label": "Terugvoerteks",
           "default": "Jy het @score van @total punte gekry",
-          "description": "Terugvoerteks, veranderlikes beskikbaar: @score en @total. Example: 'Jy het @score van @total moonltike punte gekry'"
+          "details": "Terugvoerteks, veranderlikes beskikbaar: @score en @total. Example: 'Jy het @score van @total moonltike punte gekry'"
         },
         {
           "label": "Teks vir \"Toets\" knoppie",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Gedragsinstellings",
-      "description": "Hierdie keuses laat jou toe om te stel hoe die taak reageer.",
+      "details": "Hierdie keuses laat jou toe om te stel hoe die taak reageer.",
       "fields": [
         {
           "label": "Aktiveer \"Probeer weer\" knoppie"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Terugvoer op regte antwoord",
-          "description": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score and @total"
+          "details": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score and @total"
         },
         {
           "label": "Terugvoer op verkeerde teks",
-          "description": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score en @total"
+          "details": "Hierdie sal die verstek terugvoerteks oorskry. Veranderlikes beskikbaar: @score en @total"
         }
       ]
     },

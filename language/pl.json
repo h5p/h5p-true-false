@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Obraz do wyświetlenia nad pytaniem (opcjonalny)."
+          "details": "Obraz do wyświetlenia nad pytaniem (opcjonalny)."
         },
         {
           "label": "Zablokuj powiększanie obrazu"
@@ -40,7 +40,7 @@
         {
           "label": "Podsumowanie odpowiedzi",
           "default": "Masz @score z @total punktów",
-          "description": "Umieść w tekście zmienne @score i @total. Przykład: 'Udało Ci się zdobyć @score punktów spośród @total możliwych'"
+          "details": "Umieść w tekście zmienne @score i @total. Przykład: 'Udało Ci się zdobyć @score punktów spośród @total możliwych'"
         },
         {
           "label": "Etykieta przycisku Sprawdź",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Ustawienia zachowania",
-      "description": "Te opcje pozwalają określić, jak ma przebiegać zadanie.",
+      "details": "Te opcje pozwalają określić, jak ma przebiegać zadanie.",
       "fields": [
         {
           "label": "Wyświetl przycisk \"Powtórz\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Reakcja na poprawną odpowiedź",
-          "description": "Ten tekst zastąpi domyślny komunikat. Można użyć zmiennych @score i @total"
+          "details": "Ten tekst zastąpi domyślny komunikat. Można użyć zmiennych @score i @total"
         },
         {
           "label": "Reakcja na błędną odpowiedź",
-          "description": "Ten tekst zastąpi domyślny komunikat. Można użyć zmiennych @score i @total"
+          "details": "Ten tekst zastąpi domyślny komunikat. Można użyć zmiennych @score i @total"
         }
       ]
     },

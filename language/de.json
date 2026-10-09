@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
+          "details": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
         },
         {
           "label": "Bild-Zoom deaktivieren"
@@ -40,7 +40,7 @@
         {
           "label": "Rückmeldungstext",
           "default": "Du hast @score von @total Punkten erreicht.",
-          "description": "Verfügbare Platzhalter: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten erreicht.'"
+          "details": "Verfügbare Platzhalter: @score und @total. Beispiel: 'Du hast @score von @total möglichen Punkten erreicht.'"
         },
         {
           "label": "Beschriftung des \"Überprüfen\"-Buttons",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Verhaltenseinstellungen",
-      "description": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
+      "details": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
       "fields": [
         {
           "label": "\"Wiederholen\"-Button anzeigen"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Rückmeldung bei richtiger Antwort",
-          "description": "Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Platzhalter: @score und @total"
+          "details": "Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Platzhalter: @score und @total"
         },
         {
           "label": "Rückmeldung bei falscher Antwort",
-          "description": "Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Platzhalter: @score und @total"
+          "details": "Dies überschreibt den Standard-Rückmeldungstext. Verfügbare Platzhalter: @score und @total"
         }
       ]
     },

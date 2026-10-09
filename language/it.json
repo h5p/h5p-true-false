@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Media facoltativo da mostrare sopra la domanda"
+          "details": "Media facoltativo da mostrare sopra la domanda"
         },
         {
           "label": "Disabilita lo zoom dell'immagine"
@@ -40,7 +40,7 @@
         {
           "label": "Testo del feedback",
           "default": "Il tuo punteggio è di @score su @total",
-          "description": "Testo di feedback, variabili disponibili: @score e @total. Esempio: 'Hai @score di @total punti possibili'"
+          "details": "Testo di feedback, variabili disponibili: @score e @total. Esempio: 'Hai @score di @total punti possibili'"
         },
         {
           "label": "Testo per il pulsante \"Verifica\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Impostazioni di esecuzione",
-      "description": "Queste opzioni permettono di controllare il comportamento dell'esercizio.",
+      "details": "Queste opzioni permettono di controllare il comportamento dell'esercizio.",
       "fields": [
         {
           "label": "Attiva pulsante \"Riprova\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Feedback sulla risposta corretta",
-          "description": "Sostituirà il testo di feedback predefinito. Variabili disponibili: @score e @total"
+          "details": "Sostituirà il testo di feedback predefinito. Variabili disponibili: @score e @total"
         },
         {
           "label": "Feedback sulla risposta sbagliata",
-          "description": "Sostituirà il testo di feedback predefinito. Variabili disponibili: @score e @total"
+          "details": "Sostituirà il testo di feedback predefinito. Variabili disponibili: @score e @total"
         }
       ]
     },

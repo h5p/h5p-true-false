@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Optional media to display above the question."
+          "details": "Media to display above the question"
         },
         {
           "label": "Disable image zooming"
@@ -40,7 +40,7 @@
         {
           "label": "Feedback text",
           "default": "អ្នកបានពិន្ទុ @score លើ @total",
-          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
+          "details": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total possible points'"
         },
         {
           "label": "Text for \"Check\" button",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Behavioural settings",
-      "description": "These options will let you control how the task behaves.",
+      "details": "These options will let you control how the task behaves.",
       "fields": [
         {
           "label": "Enable \"Retry\" button"
@@ -105,15 +105,15 @@
         },
         {
           "label": "Automatically check answer",
-          "description": "Note that accessibility will suffer if enabling this option"
+          "description": "Enabling this option may reduce accessibility"
         },
         {
           "label": "Feedback on correct answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         },
         {
           "label": "Feedback on wrong answer",
-          "description": "This will override the default feedback text. Variables available: @score and @total"
+          "details": "This will override the default feedback text. Variables available: @score and @total"
         }
       ]
     },

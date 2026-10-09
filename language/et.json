@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tüüp",
-          "description": "Pilt või video, mida kuvatakse küsimuse juures (mittekohustuslik element)."
+          "details": "Pilt või video, mida kuvatakse küsimuse juures (mittekohustuslik element)."
         },
         {
           "label": "Keela pildi suumimine"
@@ -40,7 +40,7 @@
         {
           "label": "Tagasiside tekst",
           "default": "Said @score punkti @total võimalikust",
-          "description": "Tagasiside tekst, kasutatavad muutujad on: @score ja @total. Näiteks: 'Said @score punkti @total võimalikust'"
+          "details": "Tagasiside tekst, kasutatavad muutujad on: @score ja @total. Näiteks: 'Said @score punkti @total võimalikust'"
         },
         {
           "label": "\"Check\" nupu tekst",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Käitumisseaded",
-      "description": "Need valikud määravad, kuidas ülesanne käitub.",
+      "details": "Need valikud määravad, kuidas ülesanne käitub.",
       "fields": [
         {
           "label": "Luba \"Proovi uuesti\" nupp"
@@ -109,11 +109,11 @@
         },
         {
           "label": "Õige vastuse tagasiside",
-          "description": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
+          "details": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
         },
         {
           "label": "Vale vastuse tagasiside",
-          "description": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
+          "details": "See asendab vaikimisi tagasiside teksti. Kasutatavad muutujad on: @score ja @total"
         }
       ]
     },

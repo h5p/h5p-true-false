@@ -4,7 +4,7 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Mídia opcional para exibir acima da pergunta."
+          "details": "Mídia opcional para exibir acima da pergunta."
         },
         {
           "label": "Desativar o zoom da imagem"
@@ -38,7 +38,7 @@
         },
         {
           "label": "Texto de feedback",
-          "description": "Texto de feedback, variáveis disponíveis: @score e @total. Exemplo: 'Você tem @score de @total de pontos possíveis'",
+          "details": "Texto de feedback, variáveis disponíveis: @score e @total. Exemplo: 'Você tem @score de @total de pontos possíveis'",
           "default": "Você conseguiu @score de @total pontos possíveis"
         },
         {
@@ -85,7 +85,7 @@
       "label": "Traduções da interface do usuário para perguntas Verdadeiro/Falso"
     },
     {
-      "description": "Estas opções lhe permitirão controlar como a tarefa se comporta.",
+      "details": "Estas opções lhe permitirão controlar como a tarefa se comporta.",
       "fields": [
         {
           "label": "Ativar o botão \"Tentar Novamente\""
@@ -108,11 +108,11 @@
         },
         {
           "label": "Feedback sobre a resposta correta",
-          "description": "Isto substituirá o texto padrão de feedback. Variáveis disponíveis: @score e @total"
+          "details": "Isto substituirá o texto padrão de feedback. Variáveis disponíveis: @score e @total"
         },
         {
           "label": "Feedback sobre a resposta incorreta",
-          "description": "Isto substituirá o texto padrão de feedback. Variáveis disponíveis: @score e @total"
+          "details": "Isto substituirá o texto padrão de feedback. Variáveis disponíveis: @score e @total"
         }
       ],
       "label": "Configurações comportamentais"

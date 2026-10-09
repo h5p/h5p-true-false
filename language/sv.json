@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Typ",
-          "description": "Valfri media att visa ovanför frågan."
+          "details": "Valfri media att visa ovanför frågan."
         },
         {
           "label": "Inaktivera zoomning i bild"
@@ -40,7 +40,7 @@
         {
           "label": "Feedbacktext",
           "default": "Du fick @score av @total poäng",
-          "description": "Feedbacktext, tillgängliga variabler: @score och @total. Exempel: 'Du fick @score av @total möjliga poäng'"
+          "details": "Feedbacktext, tillgängliga variabler: @score och @total. Exempel: 'Du fick @score av @total möjliga poäng'"
         },
         {
           "label": "Text för \"Svara\"-knapp",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Beteende-inställningar",
-      "description": "Denna inställningar påverkar hur uppgiften beter sig.",
+      "details": "Denna inställningar påverkar hur uppgiften beter sig.",
       "fields": [
         {
           "label": "Aktivera knappen \"Försök igen\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Feedback vid rätt svar",
-          "description": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
+          "details": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
         },
         {
           "label": "Feedback vid fel svar",
-          "description": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
+          "details": "Detta kommer att ersätta standardtexten för feedback. Tillgängliga variabler: @score och @total"
         }
       ]
     },

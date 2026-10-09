@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "类型",
-          "description": "非必要项，在问题上方要显示的媒体。"
+          "details": "非必要项，在问题上方要显示的媒体。"
         },
         {
           "label": "停用题目上图片的放大功能"
@@ -40,7 +40,7 @@
         {
           "label": "回馈文字",
           "default": "你得到 @score 分，总分 @total 分。",
-          "description": "回馈文字，@score 表示得分，@total 表示总分。"
+          "details": "回馈文字，@score 表示得分，@total 表示总分。"
         },
         {
           "label": "核对答案按钮的显示文字",
@@ -86,7 +86,7 @@
     },
     {
       "label": "行为设置",
-      "description": "用来控制任务行为的一些设定。",
+      "details": "用来控制任务行为的一些设定。",
       "fields": [
         {
           "label": "启用「再试一次」按钮"
@@ -109,11 +109,11 @@
         },
         {
           "label": "正确回馈讯息",
-          "description": "这会覆盖预设的答对时显示文字，可用变数为 @score 和 @total。"
+          "details": "这会覆盖预设的答对时显示文字，可用变数为 @score 和 @total。"
         },
         {
           "label": "错误回馈讯息",
-          "description": "这会覆盖预设的答错时显示文字，可用变数为 @score 和 @total。"
+          "details": "这会覆盖预设的答错时显示文字，可用变数为 @score 和 @total。"
         }
       ]
     },

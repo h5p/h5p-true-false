@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tip",
-          "description": "Neobvezna nastavitev dodatnega medija za prikaz nad vprašanjem."
+          "details": "Neobvezna nastavitev dodatnega medija za prikaz nad vprašanjem."
         },
         {
           "label": "Onemogoči povečavo slike"
@@ -40,7 +40,7 @@
         {
           "label": "Besedilo za povratno informacijo",
           "default": "Dosežene točke: @score od @total",
-          "description": "Spremenljivki v povratni informaciji sta @score in @total."
+          "details": "Spremenljivki v povratni informaciji sta @score in @total."
         },
         {
           "label": "Besedilo za gumb \"Preveri\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Nastavitve interakcije",
-      "description": "Nastavitve omogočajo nadzor nad interakcijo aktivnosti za udeležence.",
+      "details": "Nastavitve omogočajo nadzor nad interakcijo aktivnosti za udeležence.",
       "fields": [
         {
           "label": "Omogoči gumb \"Poskusi ponovno\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Povratna informacija za pravilni odgovor",
-          "description": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
+          "details": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
         },
         {
           "label": "Povratna informacija za nepravilni odgovor",
-          "description": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
+          "details": "Nastavitev bo prepisala splošno povratno informacijo. Možni spremenljivki: @score in @total"
         }
       ]
     },

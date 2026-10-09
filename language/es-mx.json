@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Medios opcionales mostrados encima de la pregunta."
+          "details": "Medios opcionales mostrados encima de la pregunta."
         },
         {
           "label": "Deshabilitar acercamiento de imagen"
@@ -40,7 +40,7 @@
         {
           "label": "Texto de retroalimentación",
           "default": "Tienes @score de @total puntos",
-          "description": "Texto de retroalimentación, variables disponibles: @score y @total. Ejemplo: 'Tienes @score de @total puntos posibles'"
+          "details": "Texto de retroalimentación, variables disponibles: @score y @total. Ejemplo: 'Tienes @score de @total puntos posibles'"
         },
         {
           "label": "Texto para botón \"Comprobar\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Configuraciones del comportamiento",
-      "description": "Estas opciones le permitirán controlar como se comporta el trabajo.",
+      "details": "Estas opciones le permitirán controlar como se comporta el trabajo.",
       "fields": [
         {
           "label": "Habilitar botón \"Reintentar\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Retroalimentación en respuesta correcta",
-          "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
+          "details": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         },
         {
           "label": "Retroalimentación en respuesta incorrecta",
-          "description": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
+          "details": "Esto anulará el texto de retroalimentación predeterminado. Variables disponibles: @score y @total"
         }
       ]
     },

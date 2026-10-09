@@ -5,7 +5,7 @@
       "fields": [
         {
           "label": "Tipo",
-          "description": "Mídia opcional para exibir acima da pergunta."
+          "details": "Mídia opcional para exibir acima da pergunta."
         },
         {
           "label": "Desactivar o zoom da imagem"
@@ -40,7 +40,7 @@
         {
           "label": "Texto do feedback",
           "default": "Obteve @score de @total pontos",
-          "description": "Texto de feedback, variáveis disponíveis: @score e @total. Exemplo: 'Obteve @score de @total pontos possíveis'"
+          "details": "Texto de feedback, variáveis disponíveis: @score e @total. Exemplo: 'Obteve @score de @total pontos possíveis'"
         },
         {
           "label": "Texto para o botão \"Verificar\"",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Configurações gerais",
-      "description": "Estas opções permitem que controle o comportamento da atividade.",
+      "details": "Estas opções permitem que controle o comportamento da atividade.",
       "fields": [
         {
           "label": "Ativar o botão \"Tentar novamente\""
@@ -109,11 +109,11 @@
         },
         {
           "label": "Feedback sobre a resposta correta",
-          "description": "Irá substituir o texto predefinido do feedback. Variáveis disponíveis: @score e @total"
+          "details": "Irá substituir o texto predefinido do feedback. Variáveis disponíveis: @score e @total"
         },
         {
           "label": "Feedback sobre a resposta incorreta",
-          "description": "Irá substituir o texto predefinido do feedback. Variáveis disponíveis: @score e @total"
+          "details": "Irá substituir o texto predefinido do feedback. Variáveis disponíveis: @score e @total"
         }
       ]
     },
