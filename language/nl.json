@@ -27,15 +27,15 @@
       ]
     },
     {
-      "label": "Vertalingen van de gebruikersinterface voor Juist/onjuist-vragen",
+      "label": "Vertalingen van de gebruikersinterface voor Juist/Fout-vragen",
       "fields": [
         {
           "label": "Label voor \"Juist\"-knop",
           "default": "Juist"
         },
         {
-          "label": "Label voor \"Onjuist\"-knop",
-          "default": "Onjuist"
+          "label": "Label voor \"Fout\"-knop",
+          "default": "Fout"
         },
         {
           "label": "Feedbacktekst",
@@ -59,8 +59,8 @@
           "default": "Opnieuw"
         },
         {
-          "label": "Onjuist antwoord",
-          "default": "Onjuist antwoord"
+          "label": "Fout antwoord",
+          "default": "Fout antwoord"
         },
         {
           "label": "Juist antwoord",
@@ -72,7 +72,7 @@
         },
         {
           "label": "Ondersteunende technologie beschrijving voor \"Controleer\" knop",
-          "default": "Controleer de antwoorden. De antwoorden worden gemarkeerd als juist, onjuist, of niet-beantwoord."
+          "default": "Controleer de antwoorden. De antwoorden worden gemarkeerd als juist, fout, of niet-beantwoord."
         },
         {
           "label": "Ondersteunende technologie beschrijving voor \"Toon oplossing\"-knop",
@@ -112,7 +112,7 @@
           "description": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
         },
         {
-          "label": "Feedback bij het onjuiste antwoord",
+          "label": "Feedback bij het fout antwoord",
           "description": "Deze tekst overschrijft de standaard feedbacktekst. Beschikbare variabelen zijn: @score en @total"
         }
       ]
