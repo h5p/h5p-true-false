@@ -1,6 +1,6 @@
 # Security Policy
 
 ## Reporting a Vulnerability
+Please do not report security vulnerabilities as regular issues, as this could expose them publicly.
 
-Security issues shall not be reported as regular issues to avoid making them publicly known.
-Instead, follow [this guide](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately) when reporting a security issue
+Instead, report security vulnerabilities privately via [GitHub Security Advisories](https://github.com/h5p/h5p-true-false/security/advisories).
