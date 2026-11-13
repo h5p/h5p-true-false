@@ -1,6 +1,7 @@
 {
   "semantics": [
     {
+      "label": "Medija",
       "fields": [
         {
           "label": "Tipas",
@@ -9,8 +10,7 @@
         {
           "label": "Išjungti paveikslėlio mastelio keitimą"
         }
-      ],
-      "label": "Medija"
+      ]
     },
     {
       "label": "Klausimas"
@@ -27,6 +27,7 @@
       ]
     },
     {
+      "label": "Naudotojo sąsajos Tiesa/ Netiesa klausimų vertimai",
       "fields": [
         {
           "label": "Tiesa mygtuko pavadinimas",
@@ -38,53 +39,41 @@
         },
         {
           "label": "Atsiliepimo tekstas",
-          "description": "Atsiliepimo tekstas, galimi kintamieji: @score ir @total. Pavyzdys: „Jūs gavote @score iš @total galimų taškų“",
-          "default": "Jūs gavote @score iš @total taškų"
+          "default": "Jūs gavote @score iš @total taškų",
+          "description": "Atsiliepimo tekstas, galimi kintamieji: @score ir @total. Pavyzdys: „Jūs gavote @score iš @total galimų taškų“"
         },
         {
-          "default": "Tikrinti",
-          "label": "Tekstas \"Tikrinti\" mygtukui"
+          "label": "Tekstas \"Tikrinti\" mygtukui",
+          "default": "Tikrinti"
         },
         {
-          "default": "Pateikti",
-          "label": "Tekstas \"Pateikti\" mygtukui"
+          "label": "Tekstas \"Pateikti\" mygtukui",
+          "default": "Pateikti"
         },
         {
-          "default": "Rodyti sprendimą",
-          "label": "Mygtuko „Rodyti sprendimą“ tekstas"
+          "label": "Mygtuko „Rodyti sprendimą“ tekstas",
+          "default": "Rodyti sprendimą"
         },
         {
-          "default": "Bandyti dar kartą",
-          "label": "Tekstas mygtukui „Bandyti dar kartą“"
+          "label": "Tekstas mygtukui „Bandyti dar kartą“",
+          "default": "Bandyti dar kartą"
         },
         {
-          "default": "Neteisingas atsakymas",
-          "label": "Neteisingas atsakymas"
+          "label": "Neteisingas atsakymas",
+          "default": "Neteisingas atsakymas"
         },
         {
-          "default": "Teisingas atsakymas",
-          "label": "Teisingas atsakymas"
+          "label": "Teisingas atsakymas",
+          "default": "Teisingas atsakymas"
         },
         {
-          "default": "Gavote :num iš :total taškų",
-          "label": "Tekstinis rezultatų juostos atvaizdavimas tiems, kurie naudojasi skaitytuvu"
-        },
-        {
-          "default": "Tikrinkite atsakymus. Atsakymai bus pažymėti kaip teisingi, neteisingi arba neatsakyti.",
-          "label": "Mygtuko „Tikrinti“ pagalbinės technologijos aprašymas"
-        },
-        {
-          "default": "Rodyti sprendimą. Užduotis bus pažymėta teisingu jos sprendimu.",
-          "label": "Papildomas technologinis aprašymas mygtukui \"Rodyti sprendimą\""
-        },
-        {
-          "default": "Pabandyti atlikti užduotį dar kartą. Iš naujo nustatyti visus atsakymus ir pradėti užduotį iš naujo.",
-          "label": "Pagalbinis technologinis aprašymas mygtukui \"Bandyti dar kartą\""
+          "label": "Tekstinis rezultatų juostos atvaizdavimas tiems, kurie naudojasi skaitytuvu",
+          "default": "Gavote :num iš :total taškų"
         }
-      ],
-      "label": "Naudotojo sąsajos Tiesa/ Netiesa klausimų vertimai"
+      ]
     },
     {
+      "label": "Veikimo nustatymai",
       "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
       "fields": [
         {
@@ -114,31 +103,31 @@
           "label": "Atsiliepimas, kai atsakymas neteisingas",
           "description": "Tai pakeis numatytąjį atsiliepimo tekstą. Galimi kintamieji: @score ir @total"
         }
-      ],
-      "label": "Veikimo nustatymai"
+      ]
     },
     {
       "label": "Patikrinkite patvirtinimo dialogo langą",
       "fields": [
         {
-          "default": "Baigti ?",
-          "label": "Antraštės tekstas"
+          "label": "Antraštės tekstas",
+          "default": "Baigti ?"
         },
         {
-          "default": "Ar tikrai norite baigti?",
-          "label": "Turinio tekstas"
+          "label": "Turinio tekstas",
+          "default": "Ar tikrai norite baigti?"
         },
         {
-          "default": "Atšaukti",
-          "label": "„Atšaukti“ mygtuko pavadinimas"
+          "label": "„Atšaukti“ mygtuko pavadinimas",
+          "default": "Atšaukti"
         },
         {
-          "default": "Baigti",
-          "label": "„Patvirtinti“ mygtuko pavadinimas"
+          "label": "„Patvirtinti“ mygtuko pavadinimas",
+          "default": "Baigti"
         }
       ]
     },
     {
+      "label": "„Bandyti dar kartą“ patvirtinimo dialogo langas",
       "fields": [
         {
           "label": "Antraštės tekstas",
@@ -156,8 +145,7 @@
           "label": "„Patvirtinti“ mygtuko pavadinimas",
           "default": "Patvirtinti"
         }
-      ],
-      "label": "„Bandyti dar kartą“ patvirtinimo dialogo langas"
+      ]
     }
   ]
 }

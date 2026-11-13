@@ -69,18 +69,6 @@
         {
           "label": "Besedilo vrstice z rezultati za udeležence, ki uporabljajo bralnik zaslona",
           "default": "Dosežene točke: :num od :total"
-        },
-        {
-          "label": "Besedilo za gumb \"Preveri\"",
-          "default": "Preveri"
-        },
-        {
-          "label": "Besedilo za gumb \"Prikaži rešitev\"",
-          "default": "Prikaži rešitev"
-        },
-        {
-          "label": "Besedilo za gumb \"Poskusi ponovno\"",
-          "default": "Poskusi ponovno"
         }
       ]
     },
