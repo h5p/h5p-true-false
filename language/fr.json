@@ -69,18 +69,6 @@
         {
           "label": "Représentation textuelle de la barre de score pour ceux qui utilisent une synthèse vocale",
           "default": "Vous avez obtenu @score points sur un total de @total"
-        },
-        {
-          "label": "Description des technologies d'assistance pour le bouton \"Vérifier\"",
-          "default": "Vérifiez les réponses.  Les réponses seront marquées comme correcte, incorrecte ou sans réponse."
-        },
-        {
-          "label": "Description des technologies d'assistance pour le bouton \"Montrer la solution\"",
-          "default": "Montrer la solution. L'exercice s'affichera avec la solution correcte."
-        },
-        {
-          "label": "Description des technologies d'assistance pour le bouton \"Réessayer\"",
-          "default": "Réessayer l'exercice. Réinitialisez toutes les réponses et recommencer l'exercice depuis le début."
         }
       ]
     },

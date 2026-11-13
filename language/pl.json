@@ -69,18 +69,6 @@
         {
           "label": "Tekstowe przedstawienie punktacji dla osób korzystających z czytnika tekstu",
           "default": "Masz :num z :total punktów"
-        },
-        {
-          "label": "Opis technologii wspomagającej dla przycisku \"Sprawdź\"",
-          "default": "Sprawdź odpowiedzi. Odpowiedzi zostaną oznaczone jako poprawne, niepoprawne lub bez odpowiedzi."
-        },
-        {
-          "label": "Opis technologii wspomagającej dla przycisku \"Pokaż rozwiązanie\"",
-          "default": "Pokaż rozwiązanie. Zadanie zostanie oznaczone poprawnym rozwiązaniem."
-        },
-        {
-          "label": "Opis technologii wspomagającej dla  przycisku \"Ponów próbę\"",
-          "default": "Ponów zadanie. Zresetuj wszystkie odpowiedzi i rozpocznij zadanie od nowa."
         }
       ]
     },

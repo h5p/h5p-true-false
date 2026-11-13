@@ -69,18 +69,6 @@
         {
           "label": "Representación textual da barra de puntuación cando se usa un lector de pantalla",
           "default": "Conseguiches :num de :total puntos"
-        },
-        {
-          "label": "Descrición do botón\"Comprobar\" para tecnoloxías de asistencia",
-          "default": "Comproba as respostas. As respostas marcaranse como correctas, incorrectas ou non respondidas."
-        },
-        {
-          "label": "Descrición do botón \"Amosar solución\" para tecnoloxías de asistencia",
-          "default": "Amosar a solución. A tarefa marcarase coa solución correcta."
-        },
-        {
-          "label": "Descrición do botón \"Reintentar\" para tecnoloxías de asistencia",
-          "default": "Reintentar a tarefa. Borrar todas as respostas e empezar a tarefa de novo."
         }
       ]
     },

@@ -69,18 +69,6 @@
         {
           "label": "Textové znázornenie výsledkovej lišty pre tých, ktorí používajú čítačku",
           "default": "Získali ste :num z celkového počtu bodov :total"
-        },
-        {
-          "label": "Popis pomocnej technológie pre tlačidlo „Skontrolovať“",
-          "default": "Skontrolovať odpovede. Odpovede budú označené ako správne, nesprávne alebo nezodpovedané."
-        },
-        {
-          "label": "Popis pomocnej technológie pre tlačidlo „Zobraziť riešenie“",
-          "default": "Ukázať riešenie. Úloha bude označená s jej správnym riešením."
-        },
-        {
-          "label": "Popis asistenčnej technológie pre tlačidlo „Zopakovať“",
-          "default": "Skúsiť úlohu zopakovať. Vyprázdniť všetky odpovede a začať úlohu odznova."
         }
       ]
     },
