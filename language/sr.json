@@ -69,18 +69,6 @@
         {
           "label": "Текстуална репрезентација траке резултата за оне који користе читач екрана",
           "default": "Освојили сте :num out од укупно :total поена"
-        },
-        {
-          "label": "Assistive technology description for \"Check\" button",
-          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
-        },
-        {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
-        },
-        {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     },

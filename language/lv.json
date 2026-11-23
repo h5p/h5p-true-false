@@ -69,18 +69,6 @@
         {
           "label": "Punktu skalas tekstuālais atspoguļojums tiem, kuri izmanto asistējošās tehnoloģijas",
           "default": "Tu saņēmi :num no :total punktiem"
-        },
-        {
-          "label": "Pogas \"Pārbaudīt\" apraksts priekš asistējošajām tehnoloģijām",
-          "default": "Pārbaudīt atbildes. Sniegtās atbildes tiks atzīmētas kā pareizas, nepareizas, vai neatbildētas."
-        },
-        {
-          "label": "Pogas \"Rādīt risinājumu\" apraksts priekš asistējošām tehnoloģijām",
-          "default": "Rādīt risinājumu. Uzdevums tiks atzīmēts ar tā pareizo risinājumu."
-        },
-        {
-          "label": "Pogas \"Mēģināt vēlreiz\" apraksts priekš asistējošām tehnoloģijām",
-          "default": "Mēģināt uzdevumu vēlreiz. Atiestatīt visas sniegtās atbildes un sākt uzdevumu vēlreiz."
         }
       ]
     },

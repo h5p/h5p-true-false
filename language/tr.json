@@ -69,18 +69,6 @@
         {
           "label": "Seslendirici kullananlar için puan durumunun metinsel gösterimi.",
           "default": ":total puan üzerinden :num  puan aldınız."
-        },
-        {
-          "label": "\"Kontrol et\" butonu için yardımcı açıklamalar.",
-          "default": "Yanıtlarınız kontrol edin. Soruların yanotları doğru, yanlış veya yanıtsız olarak işaretlenecektir."
-        },
-        {
-          "label": "\"Çözümü göster\" butonu için yardımcı açıklamalar.",
-          "default": "Çözümü göster. Sorunun doğru yanıtı gösterilecektir."
-        },
-        {
-          "label": "\"Yeniden dene\" butonu için yardımcı açıklamalar.",
-          "default": "Yeniden dene. Tüm yanıtları sıfırlar ve testi yeniden başlatır."
         }
       ]
     },
