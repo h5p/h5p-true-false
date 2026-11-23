@@ -69,18 +69,6 @@
         {
           "label": "A pontsáv szöveges formában a felolvasó programot használók számára (akadálymentesítés)",
           "default": ":num pontot kaptál az elérhető :total pontból"
-        },
-        {
-          "label": "Az \"Ellenőrzés\" gomb megértést segítő magyarázatának leírása",
-          "default": "A válaszok ellenőrzése. A beküldött válaszok helyesnek, helytelennek vagy megválaszolatlannak lesznek megjelölve."
-        },
-        {
-          "label": "A \"Megoldás megmutatása\" gomb megértést segítő magyarázatának leírása",
-          "default": "Megmutatja a helyes megoldást. A beküldött feladat a helyes megoldásával együtt jelenik meg."
-        },
-        {
-          "label": "Az \"Újra próbálkozás\" gomb megértést segítő magyarázatának leírása",
-          "default": "A feladat megoldásának ismételt megoldása. Alahelyzetbe állítja az összes választ, és elölről kezdődik a feladat."
         }
       ]
     },

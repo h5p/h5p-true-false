@@ -54,10 +54,7 @@ H5P.TrueFalse = (function ($, Question) {
         tryAgain: 'Retry',
         wrongAnswerMessage: 'Wrong answer',
         correctAnswerMessage: 'Correct answer',
-        scoreBarLabel: 'You got :num out of :total points',
-        a11yCheck: 'Check the answers. The responses will be marked as correct, incorrect, or unanswered.',
-        a11yShowSolution: 'Show the solution. The task will be marked with its correct solution.',
-        a11yRetry: 'Retry the task. Reset all responses and start the task over again.',
+        scoreBarLabel: 'You got :num out of :total points'
       },
       behaviour: {
         enableRetry: true,
@@ -133,7 +130,7 @@ H5P.TrueFalse = (function ($, Question) {
         self.addButton(Button.SHOW_SOLUTION, params.l10n.showSolutionButton, function () {
           self.showSolutions(true);
         }, false, {
-          'aria-label': params.l10n.a11yShowSolution,
+          'aria-label': params.l10n.showSolutionButton,
         });
       }
 
@@ -143,7 +140,7 @@ H5P.TrueFalse = (function ($, Question) {
           checkAnswer();
           triggerXAPIAnswered();
         }, true, {
-          'aria-label': params.l10n.a11yCheck
+          'aria-label': params.l10n.checkAnswer
         }, {
           confirmationDialog: {
             enable: params.behaviour.confirmCheckDialog,
@@ -161,7 +158,7 @@ H5P.TrueFalse = (function ($, Question) {
         self.addButton(Button.TRYAGAIN, params.l10n.tryAgain, function () {
           self.resetTask();
         }, true, {
-          'aria-label': params.l10n.a11yRetry,
+          'aria-label': params.l10n.tryAgain,
         }, {
           confirmationDialog: {
             enable: params.behaviour.confirmRetryDialog,
